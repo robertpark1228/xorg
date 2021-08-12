@@ -4,7 +4,7 @@
 
 ### INTEGRATED
 
-1. [ ] WGRS/WES GATK4 Germline / GATK4 Mutect2 / Caveman DNASEQ ANALYSIS  1\) SNV/INDEL 2\) MUT SNV / INDEL 3\) GERMLINE CNV ANALYSIS / 5 CNV Caller + AnnotSV + Visualization + IGV Loading  기타!\)  1. FFPE 샘플의 경우 파이프라인에 변화가 있습니다. 2. 실험 방법 중 PCR Duplicate 은 고려되어야 합니다. 3. FFPE 가 아닌 WGRS/WES 의 경우 실험 과정에서 샘플이 바뀌지 않는 이상 이상하게 나오는 경우는 거의 없으며, 일반적으로 batch effect 영향이 그리 크지 않어 분석 진행시 marginal 한 부분이 있습니다. 
+1. [ ] WGRS/WES GATK4 Germline / GATK4 Mutect2 / Caveman DNASEQ ANALYSIS  1\) SNV/INDEL 2\) MUT SNV / INDEL 3\) GERMLINE CNV ANALYSIS / 5 CNV Caller + AnnotSV + Visualization + IGV Loading  기타!\)  1. FFPE 샘플의 경우 파이프라인에 변화가 있습니다. 2. 실험 방법 중 PCR Duplicate 은 고려되어야 합니다. 3. FFPE 가 아닌 WGRS/WES 의 경우 실험 과정에서 샘플이 바뀌지 않는 이상 이상하게 나오는 경우는 일반적으로 거의 없으며, batch effect 영향이 그리 크지는 않어 분석 진행시 marginal 한 부분이 있습니다. 
 
 
 
