@@ -197,7 +197,7 @@ ${file} : input 파일
 \([https://genome.sph.umich.edu/wiki/Variant\_Normalization](https://genome.sph.umich.edu/wiki/Variant_Normalization)\)  
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](../../.gitbook/assets/image%20%2889%29.png)
 
 ### 기타
 

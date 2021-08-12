@@ -8,7 +8,7 @@ description: 'Structure Variation [구조변이 : 복제수 변이]'
 
 * CNV 를 검출하는 방법은 다양한 알고리즘이 존재하나 결과값이 상이하다는 문제점이 있습니다.  해당 문제를 극복하기 위해 여러 툴을 겹쳐 사용할 수 있습니다.  
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
   
 
@@ -82,7 +82,7 @@ docker run -v ${folder_1}:/home/dnanexus/in -v ${folder_1}/${bam_name}_output:/h
 결과물  
 
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](../../.gitbook/assets/image%20%2868%29.png)
 
   
 Annotation & Visualization

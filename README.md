@@ -1,5 +1,44 @@
 # 목차
 
+## 1.0.0 - 2021-08-09
+
+### INTEGRATED
+
+1. [ ] WGRS/WES GATK4 Germline / GATK4 Mutect2 / Caveman DNASEQ ANALYSIS  1\) SNV/INDEL 2\) MUT SNV / INDEL 3\) GERMLINE CNV ANALYSIS / 5 CNV Caller + AnnotSV + Visualization + IGV Loading
+
+
+
+* [ ] TOTAL RNASEQ ANALYSIS  Rawdata read count Analysis 1\) STAR2-GATK Variants Calling \[MAPPING - CALLING \] 2\)HISAT2-SEQMONK \[MAPPING - RPKM READ COUNT\] 3\) HISAT2-CUFFLINKS  4\) Salmon - Deseq2/EdgeR2 Analysis \[ NON-MAPPING \(TPM\) -  
+* [ ] Post Processing 1\) GSEA ANALYSIS 2\) Deseq2 / EdgeR2 Analysis
+
+
+
+* [ ] Single Cell RNA -  1\) Basic Analysis  2\) Seurat Analysis  3\) Cell Time Serise Analysis
+
+
+
+* [ ] Methyle Seq Analysis 1\) MAPPING + Bismark + Seqmonk
+
+###      
+
+### Multiomics 분석 : 
+
+![](.gitbook/assets/image%20%2896%29.png)
+
+### 각 데이터에서 유의미한 뭔가를 끌어 내는 것.
+
+### DNA 원본에서 존재하는 Gene 이, RNA Seq 에서 실제로 발현이 되는지? RNAseq 과 DNASeq 에서 발견되는 Variants 가 비슷하다면 해당 SNP이 유의미한 Impact 를 미치는지? Gene
+
+### 
+
+###  [https://www.mcponline.org/article/S1535-9476\(20\)60015-9/fulltext](https://www.mcponline.org/article/S1535-9476%2820%2960015-9/fulltext)
+
+
+
+## 
+
+## 
+
 ## 1. Linux 시스템 기본
 
 {% tabs %}

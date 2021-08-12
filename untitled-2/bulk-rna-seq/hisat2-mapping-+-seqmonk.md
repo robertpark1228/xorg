@@ -83,7 +83,7 @@ Plot -&gt; Data Store Similarity -&gt; PCA tSNE DataTree 등을 Selection 된 pr
 
 ![](../../.gitbook/assets/image%20%2839%29.png)
 
-![](../../.gitbook/assets/image%20%2877%29.png)
+![](../../.gitbook/assets/image%20%2878%29.png)
 
 
 
@@ -98,7 +98,7 @@ Plot -&gt; Data Store Similarity -&gt; PCA tSNE DataTree 등을 Selection 된 pr
   
 
 
-![RNASeq &#xC73C;&#xB85C; Quantification &#xD6C4;](../../.gitbook/assets/image%20%2889%29.png)
+![RNASeq &#xC73C;&#xB85C; Quantification &#xD6C4;](../../.gitbook/assets/image%20%2890%29.png)
 
 
 

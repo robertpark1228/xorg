@@ -16,13 +16,13 @@ description: Next Generation Sequencing 기본
 
 
 
-![](../.gitbook/assets/image%20%2875%29.png)
+![](../.gitbook/assets/image%20%2876%29.png)
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
 ![](../.gitbook/assets/image%20%2820%29.png)
 
-![](../.gitbook/assets/image%20%2887%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
 ![](../.gitbook/assets/image%20%2861%29.png)
 
@@ -30,11 +30,11 @@ description: Next Generation Sequencing 기본
 
 ![](../.gitbook/assets/image%20%2838%29.png)
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../.gitbook/assets/image%20%2877%29.png)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ![](../.gitbook/assets/image%20%2846%29.png)
 
@@ -44,7 +44,7 @@ description: Next Generation Sequencing 기본
 
 ![](../.gitbook/assets/image%20%2828%29.png)
 
-![](../.gitbook/assets/image%20%2869%29.png)
+![](../.gitbook/assets/image%20%2870%29.png)
 
 ![](../.gitbook/assets/image%20%2825%29.png)
 
@@ -54,17 +54,17 @@ description: Next Generation Sequencing 기본
 
 ![](../.gitbook/assets/image%20%2856%29.png)
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 ![](../.gitbook/assets/image%20%2823%29.png)
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 ![](../.gitbook/assets/image%20%2865%29.png)
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 ## NGS - Genome Data 분석 파트 
 
@@ -90,7 +90,7 @@ FASTA 는 간단한 형식으로 한개의 Gene / Chromosome / BAC 등을 기재
 
 FASTQ 파일 quality score 가 포함되어 있는 형식으로 각 시퀀스 별로 얼마나 시퀀싱이 제대로 되었는지 점수 정보를 포함 하고 있습니다. 점수 정보의 경우 플랫폼 별로 메기는 방식이 다르기 때문에 같은 fastq 파일이라도 다른 시퀀싱 기기를 이용하는 경우 호환이 되지는 않습니다. 
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2886%29.png)
 
 
 

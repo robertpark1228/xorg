@@ -26,7 +26,7 @@ description: 시스템 관련은 생략 합니다.
 
 ### 리눅스 폴더 구조\(참고\)
 
-![](../.gitbook/assets/image%20%2871%29.png)
+![](../.gitbook/assets/image%20%2872%29.png)
 
 
 
