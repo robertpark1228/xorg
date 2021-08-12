@@ -45,17 +45,7 @@
 >
 > RNA/scRNA & Cancer
 
-
-
-
-
-
-
-
-
-### 
-
-###  [https://www.mcponline.org/article/S1535-9476\(20\)60015-9/fulltext](https://www.mcponline.org/article/S1535-9476%2820%2960015-9/fulltext)
+### [https://www.mcponline.org/article/S1535-9476\(20\)60015-9/fulltext](https://www.mcponline.org/article/S1535-9476%2820%2960015-9/fulltext)
 
 
 
