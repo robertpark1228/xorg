@@ -16,11 +16,25 @@ description: 파이썬 기초 + 응용 패키지 사용
 
 ### 
 
-### Python 기본 강
+### Python 기본 강의 - 참고 자료
 
-
+#### 파이쏜 강의는 인터넷에 많기 때문에 필요한 것들은 검
 
 {% file src="../.gitbook/assets/\_1-.pptx" caption="" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
