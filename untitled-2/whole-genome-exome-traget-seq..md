@@ -1,4 +1,4 @@
-# Whole Genome/Exome/Traget Seq. 소개
+# Whole Genome/Exome/Target Seq. 소개
 
 ## Whole Genome/Exome/Target Sequencing
 
