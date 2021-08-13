@@ -47,6 +47,11 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 
 9\)[https://hbctraining.github.io/DGE\_workshop\_salmon\_online/lessons/03\_DGE\_QC\_analysis.html](https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/03_DGE_QC_analysis.html)
 
+10\)[https://angus.readthedocs.io/en/2016/\_static/DifferentialExpressionBasics\_NGS2016\_ID.pdf](https://angus.readthedocs.io/en/2016/_static/DifferentialExpressionBasics_NGS2016_ID.pdf)  
+
+
+11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)
+
 
 
 
