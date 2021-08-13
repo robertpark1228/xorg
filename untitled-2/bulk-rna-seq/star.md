@@ -1,2 +1,2 @@
-# STAR
+# STAR-GATK Mapping
 

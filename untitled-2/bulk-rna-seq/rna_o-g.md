@@ -1,10 +1,20 @@
 ---
-description: Salmon -> DEseq2 / edgeR Pipeline
+description: Salmon -> DEseq2 / edgeR Pipeline /
 ---
 
-# RNA\_O-G
+# RNA\(Salmon-Deseq2 / edgeR \) 분석
 
 
+
+
+
+
+
+
+
+
+
+GO / GSEA 분석은 
 
 
 
