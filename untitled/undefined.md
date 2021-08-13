@@ -4,7 +4,7 @@ description: 래퍼런스/인덱스/기타 분석 중 필요한 파일 다운로
 
 # 인덱스/래퍼런스 파일
 
-
+[ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38\_hla\_decoy\_ebv/](ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38_hla_decoy_ebv/)
 
 
 

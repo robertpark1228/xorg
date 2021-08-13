@@ -38,6 +38,6 @@
 * [기타 - 정리중](untitled/README.md)
   * [인덱스/래퍼런스 파일](untitled/undefined.md)
   * [Whole Genome Sequencing](untitled/whole-genome-sequencing.md)
+  * [References](untitled/undefined-2.md)
   * [실습](untitled/undefined-1.md)
-* [References](undefined.md)
 
