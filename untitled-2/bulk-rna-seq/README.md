@@ -39,5 +39,15 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 5\) 강좌 :   
 [https://www.youtube.com/watch?v=xh\_wpWj0AzM](https://www.youtube.com/watch?v=xh_wpWj0AzM)
 
+6\) [http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+
+7\)[https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv\#Gene-Ontology](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv#Gene-Ontology)
+
+8\)[https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html\#transcript-quantification-and-tximport-txime](https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html#transcript-quantification-and-tximport-tximeta)
+
+9\)[https://hbctraining.github.io/DGE\_workshop\_salmon\_online/lessons/03\_DGE\_QC\_analysis.html](https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/03_DGE_QC_analysis.html)
+
+
+
 
 
