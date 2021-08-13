@@ -35,7 +35,7 @@
   * [RNASeq 실습](4./untitled-1.md)
   * [WGRS 실습](4./untitled-4.md)
 * [Whole Genome Sequencing](whole-genome-sequencing.md)
-* [Untitled](untitled.md)
+* [기타 - 정리중](untitled.md)
 * [References](undefined.md)
 * [실습](undefined-1.md)
 
