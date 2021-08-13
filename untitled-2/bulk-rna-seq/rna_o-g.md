@@ -1,3 +1,7 @@
+---
+description: Salmon -> DEseq2 / edgeR Pipeline
+---
+
 # RNA\_O-G
 
 
