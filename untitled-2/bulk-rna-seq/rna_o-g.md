@@ -288,7 +288,7 @@ genetable <- data.frame(gene.id = rownames(txi$counts))
 
 
 
-GO / GSEA 분석은 
+GO / GSEA 분석은 웹 및 Cytoscape 이용 추천
 
 
 
