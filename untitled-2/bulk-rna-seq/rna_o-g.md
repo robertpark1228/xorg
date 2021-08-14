@@ -4,6 +4,12 @@ description: Salmon -> DEseq2 / edgeR Pipeline /
 
 # RNA\(Salmon-Deseq2 / edgeR \) 분석
 
+SALMON -&gt; READ COUNT 세는 방법
+
+
+
+
+
 SALMON -&gt; DESEQ2
 
 ```text
