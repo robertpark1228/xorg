@@ -56,7 +56,7 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
     </tr>
     <tr>
       <td style="text-align:center">DESeq2</td>
-      <td style="text-align:center">Raw Count &#xAE30;&#xBC18; GLM &#xC774;</td>
+      <td style="text-align:center">Raw Count &#xAE30;&#xBC18; GLM</td>
       <td style="text-align:center">&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;&#xC758; &#xBE44;&#xAD50;
         <br
         />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;
@@ -65,7 +65,7 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
     </tr>
     <tr>
       <td style="text-align:center">EdgeR</td>
-      <td style="text-align:center">TMM &#xC774;</td>
+      <td style="text-align:center">TMM &#xACC4;&#xC0B0;</td>
       <td style="text-align:center">
         <p>&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;/&#xC0D8;&#xD50C; &#xB0B4;
           <br
