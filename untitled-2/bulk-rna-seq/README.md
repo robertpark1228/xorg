@@ -20,9 +20,9 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
 <table>
   <thead>
     <tr>
-      <th style="text-align:center">&#xACC4;&#xC0B0;&#xBC29;</th>
-      <th style="text-align:center">&#xD65C;&#xC6A9;&#xBAA8;</th>
-      <th style="text-align:center">&#xC0AC;&#xC6A9; &#xD558;&#xB294;</th>
+      <th style="text-align:center">&#xACC4;&#xC0B0;&#xBC29;&#xC2DD;</th>
+      <th style="text-align:center">&#xD65C;&#xC6A9;&#xBAA8;&#xB378;</th>
+      <th style="text-align:center">&#xC0AC;&#xC6A9; &#xD558;&#xB294; &#xACF3;</th>
     </tr>
   </thead>
   <tbody>
