@@ -10,9 +10,28 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
   
 이는 물론 Resequencing 이 가능한 Human 한정이며, 다른 포유류, 식물등은 Denovo 방식을 고려해야 하기 때문에 분석이 쉬운 편은 아닙니다.   
 
+RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있으며, 분석법 역시 많이 출시가 되어 있으나   
+결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다
 
 
-## 
+
+
+
+\(STAR - HTSEQ COUNT.txt 자료\) 
+
+![](../../.gitbook/assets/image%20%2898%29.png)
+
+
+
+## RNA 분석 전략
+
+1. 목표에 맞는 분석 법 선정. 대부분 분석의 목표는 군집-군집을 비교하는 DEG 분석
+
+
+
+
+
+
 
 ## 대표적인 Pipeline
 
@@ -20,11 +39,13 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 
 
 
-## 분석 전략을 세울때 참고 자료
+## 분석 전략을 세울 시 참고 자료
 
 ![](../../.gitbook/assets/image%20%2897%29.png)
 
-## 
+
+
+
 
 ## - 참고자료
 
@@ -50,7 +71,9 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 10\)[https://angus.readthedocs.io/en/2016/\_static/DifferentialExpressionBasics\_NGS2016\_ID.pdf](https://angus.readthedocs.io/en/2016/_static/DifferentialExpressionBasics_NGS2016_ID.pdf)  
 
 
-11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)
+11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)  
+  
+12\)
 
 
 
