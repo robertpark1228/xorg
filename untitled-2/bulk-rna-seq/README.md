@@ -11,9 +11,74 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 이는 물론 Resequencing 이 가능한 Human 한정이며, 다른 포유류, 식물등은 Denovo 방식을 고려해야 하기 때문에 분석이 쉬운 편은 아닙니다.   
 
 RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있으며, 분석법 역시 많이 출시가 되어 있으나   
-결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다
+결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다.
 
 
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center"></th>
+      <th style="text-align:center"></th>
+      <th style="text-align:center">&#xC0AC;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">
+        <p>CPM</p>
+        <p>Counts Per Million</p>
+      </td>
+      <td style="text-align:center">&#xC804;&#xCCB4; Reads &#xC758; &#xC218;</td>
+      <td style="text-align:center">
+        <p>&#xB3D9;&#xC77C; &#xC0D8;&#xD50C; &#xADF8;&#xB8F9;&#xC758;
+          <br />Replicates &#xC0D8;&#xD50C;&#xAC04;
+          <br />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;&#xAD50;</p>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">TPM</td>
+      <td style="text-align:center">Transcript / Reads</td>
+      <td style="text-align:center">
+        <p>&#xAC19;&#xC740; &#xC0D8;&#xD50C; &#xAC04;
+          <br />&#xAC19;&#xC740; &#xC0D8;&#xD50C; &#xADF8;&#xB8F9; &#xB0B4; &#xC0D8;&#xD50C;&#xC5D0;&#xC11C;</p>
+        <p>Gene &#xC758; &#xBC1C;&#xD604; &#xBE44;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">RPKM/FPKM</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:center">&#xC0D8;&#xD50C; &#xB0B4; Gene &#xC758;
+        <br />&#xBC1C;&#xD604; &#xBE44;&#xAD50;</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">DESeq2</td>
+      <td style="text-align:center">Raw Count &#xAE30;&#xBC18; GLM &#xC774;</td>
+      <td style="text-align:center">&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;&#xC758; &#xBE44;&#xAD50;
+        <br
+        />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;
+        <br /><b>DEG &#xBD84;&#xC11D;</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">EdgeR</td>
+      <td style="text-align:center">TMM &#xC774;</td>
+      <td style="text-align:center">
+        <p>&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;/&#xC0D8;&#xD50C; &#xB0B4;
+          <br
+          />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;
+          <br /><b>DEG &#xBD84;&#xC11D;</b>
+        </p>
+        <p>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+\*\*\*\*
 
 
 
@@ -73,7 +138,9 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
 
 11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)  
   
-12\)
+12\)[https://support.bioconductor.org/p/119776/](https://support.bioconductor.org/p/119776/)   
+  
+13\) [https://www.biostars.org/p/298272/](https://www.biostars.org/p/298272/)
 
 
 
