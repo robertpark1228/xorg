@@ -11,9 +11,11 @@ RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 
 이는 물론 Resequencing 이 가능한 Human 한정이며, 다른 포유류, 식물등은 Denovo 방식을 고려해야 하기 때문에 분석이 쉬운 편은 아닙니다.   
 
 RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있으며, 분석법 역시 많이 출시가 되어 있으나   
-결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다.
+결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다.  
+  
 
 
+[https://pubmed.ncbi.nlm.nih.gov/22988256/](https://pubmed.ncbi.nlm.nih.gov/22988256/)
 
 
 
