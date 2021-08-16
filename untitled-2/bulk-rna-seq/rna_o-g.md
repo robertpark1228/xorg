@@ -2,7 +2,7 @@
 description: Salmon -> DEseq2 / edgeR Pipeline /
 ---
 
-# RNA\(Salmon-Deseq2 / edgeR \) 분석
+# RNA : Salmon-Deseq2 / edgeR
 
 SALMON -&gt; READ COUNT 세는 방법
 
@@ -284,7 +284,11 @@ genetable <- data.frame(gene.id = rownames(txi$counts))
 
 
 
+[https://gettinggeneticsdone.blogspot.com/2012/09/deseq-vs-edger-comparison.html](https://gettinggeneticsdone.blogspot.com/2012/09/deseq-vs-edger-comparison.html)
 
+
+
+[http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching\_pg/workshops/biocDGE.html\#gc\_content](http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content)
 
 
 
