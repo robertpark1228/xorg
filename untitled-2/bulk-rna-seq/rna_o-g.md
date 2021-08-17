@@ -6,6 +6,21 @@ description: Salmon -> DEseq2 / edgeR Pipeline /
 
 SALMON -&gt; READ COUNT 세는 방법
 
+```text
+$salmon quant -i /main/references/hg38/salmon_index/ -l A -1 ./${1}_1.fq.gz -2 ./${1}_2.fq.gz -o ${1}.quant --gcBias --useVBOpt
+```
+
+{% hint style="info" %}
+-l : 라이브러리 타입, A = 자동  
+-1 : read1  
+-2 : read2  
+-o : output folder   
+gcBias: DESeq2 에서 Recommendation   
+useBVopt : 베이지안 EM 알고리즘을 사용  
+{% endhint %}
+
+
+
 
 
 
