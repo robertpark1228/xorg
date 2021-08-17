@@ -28,7 +28,7 @@
   * [Bulk RNA Seq](untitled-2/bulk-rna-seq/README.md)
     * [RNAseq 통계 모델](untitled-2/bulk-rna-seq/rnaseq.md)
     * [STAR2-GATK Mapping](untitled-2/bulk-rna-seq/star.md)
-    * [RNA : Salmon-Deseq2 / edgeR](untitled-2/bulk-rna-seq/rna_o-g.md)
+    * [Salmon-Deseq2 / edgeR](untitled-2/bulk-rna-seq/rna_o-g.md)
     * [HISAT2 Mapping + SeqMonk](untitled-2/bulk-rna-seq/hisat2-mapping-+-seqmonk.md)
   * [Single Cell RNASeq](untitled-2/single-cell-rnaseq.md)
 * [4. Chip 분석](4.-chip.md)

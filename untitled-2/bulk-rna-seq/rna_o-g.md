@@ -2,7 +2,7 @@
 description: Salmon -> DEseq2 / edgeR Pipeline /
 ---
 
-# RNA : Salmon-Deseq2 / edgeR
+# Salmon-Deseq2 / edgeR
 
 SALMON -&gt; READ COUNT 세는 방법
 
