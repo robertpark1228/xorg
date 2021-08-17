@@ -37,7 +37,7 @@
   * [RNASeq 실습](4./untitled-1.md)
   * [WGRS 실습](4./untitled-4.md)
 * [기타 - 정리중](untitled/README.md)
-  * [전처리 자동화 파이프라인](untitled/undefined-3.md)
+  * [도커 : 전처리 자동화 파이프라인](untitled/undefined-3.md)
   * [인덱스/래퍼런스 파일](untitled/undefined.md)
   * [Whole Genome Sequencing](untitled/whole-genome-sequencing.md)
   * [References](untitled/undefined-2.md)

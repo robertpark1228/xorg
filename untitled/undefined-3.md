@@ -1,8 +1,8 @@
 ---
-description: Docker / Singularity
+description: Docker
 ---
 
-# 전처리 자동화 파이프라인
+# 도커 : 전처리 자동화 파이프라인
 
 ## 도커 
 
