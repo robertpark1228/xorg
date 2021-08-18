@@ -106,9 +106,15 @@ Starting Parallel block 1: Fri Aug 13 04:17:12 UTC 2021
 
 ```
 
+## 에러처리
 
+![bas &#xD30C;&#xC77C;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;](../../.gitbook/assets/image%20%28104%29.png)
 
+### :해결방법 
 
+: bam\_stat -i \[bam파일\] -o \[bas파일\] 
+
+![](../../.gitbook/assets/image%20%28102%29.png)
 
 
 
