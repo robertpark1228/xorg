@@ -17,8 +17,6 @@ description: Docker
 
 
 
-   도커 시스템은 
-
 
 
 ## 새로운 이미지 설치 화면
