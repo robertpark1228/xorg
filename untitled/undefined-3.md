@@ -43,5 +43,17 @@ $ docker images
 $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
 ```
 
+{% hint style="info" %}
+-it : 가상 도커에 접속 유지  
+-v : 볼륨 설정 / 가상 이미지 &lt;-&gt; 서버상 파일 / rw 옵션  - 읽기쓰기, ro : 읽기만   
+마지막 : \[image ID\]
+{% endhint %}
+
+
+
+{% hint style="info" %}
+
+{% endhint %}
+
 
 
