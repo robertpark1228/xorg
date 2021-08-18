@@ -37,7 +37,7 @@ $ docker images
 
 
 
-:도커 이미지의 실행
+## :도커 이미지의 실행
 
 ```text
 $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
