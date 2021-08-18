@@ -10,7 +10,10 @@ description: Docker
 
 {% embed url="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=todoskr&logNo=221261803381" %}
 
-* 미리 구성된 파이프라인을 기반으로 래퍼런스와 처리할 파일만 확보시 바로 Running 가능
+
+
+장점\) 미리 구성된 파이프라인을 기반으로 하며  래퍼런스와 처리할 파일만 확보시 바로 Running 가능  
+단점\) 시스템 권한이 필요하며 리눅스 시스템에 대한 이해도가 필요 / 가상화 폴더에 대한 약간의 이해 필요
 
 
 
@@ -18,9 +21,11 @@ description: Docker
 
 ![](../.gitbook/assets/image%20%28100%29.png)
 
-* 설치된 이미지 확인
+## 설치된 이미지 확인
 
-
+```text
+$ docker images
+```
 
 
 
