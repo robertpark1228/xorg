@@ -31,7 +31,7 @@ description: Docker
 $ docker images
 ```
 
-![](../.gitbook/assets/image%20%28101%29.png)
+![](../.gitbook/assets/image%20%28103%29.png)
 
 : 현재까지 설치된 이미지 리스트 확인 가능
 
@@ -49,11 +49,5 @@ $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae
 마지막 : \[image ID\]
 {% endhint %}
 
-
-
-{% hint style="info" %}
-
-{% endhint %}
-
-
+![](../.gitbook/assets/image%20%28101%29.png)
 

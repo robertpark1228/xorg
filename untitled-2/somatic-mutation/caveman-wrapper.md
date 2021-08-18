@@ -4,7 +4,15 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 
 # CAVEMAN WRAPPER
 
-### Caveman SNV Calling 소개
+### Caveman-Wrapper : Whole Genome & Exome SNV Calling 
+
+
+
+ASCAT  
+BRASS  
+CAVEMAN  
+PINDEL  
+
 
   
 
@@ -24,11 +32,25 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 
 
 
-DOCKER 기반의 실
+: DOCKER 기반의 caveman Wrapper 실
 
 ```text
-ds-cgpwgs.pl -r ~/core_ref_GRCh38_hla_decoy_ebv.tar.gz -a ~/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz -si ~/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz -t ~/p33-CDDO0nM/p33-CDDO0nM_sorted.bam -tidx ~/p33-CDDO0nM/p33-CDDO0nM_sorted.bam.bai -n ~/p22-hFSiPS1/p22-hFSiPS1_sorted.bam -nidx ~/p22-hFSiPS1/p22-hFSiPS1_sorted.bam.bai -species human -assembly GRCh38 -cores 20 -exclude chrEBV,%_random,chrUn_% -o /home/ubuntu/ -cs ./CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz -qcset ./qcGenotype_GRCh38_hla_decoy_ebv.tar.gz -pl 3.65 -pu 1.0
+$ ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz -a /home/ubuntu/data/reference/VAGrENT
+_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz -si /home/ubuntu/data/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz -t /home/
+ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam -tidx /home/ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam.bai -
+n /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.bam -nidx /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.b
+am.bai -species human -assembly GRCh38 -cores 100 -exclude chrEBV,%_random,chrUn_% -o /home/ubuntu/data/ -cs /home/ubuntu/dat
+a/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz -qcset /home/ubuntu/data/reference/qcGenotype_GRCh38_hla_decoy_ebv
+.tar.gz -pl 3.65 -pu 1.0
 ```
+
+## 구동 성공시 :
+
+![](../../.gitbook/assets/image%20%28102%29.png)
+
+![](../../.gitbook/assets/image%20%28106%29.png)
+
+
 
 RUNNING 화면
 
@@ -106,15 +128,23 @@ Starting Parallel block 1: Fri Aug 13 04:17:12 UTC 2021
 
 ```
 
+## :구동 성공시
+
+
+
+
+
+## 
+
 ## 에러처리
 
-![bas &#xD30C;&#xC77C;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;](../../.gitbook/assets/image%20%28104%29.png)
+![bas &#xD30C;&#xC77C;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;](../../.gitbook/assets/image%20%28107%29.png)
 
 ### :해결방법 
 
 : bam\_stat -i \[bam파일\] -o \[bas파일\] 
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+![](../../.gitbook/assets/image%20%28104%29.png)
 
 
 
@@ -140,13 +170,14 @@ docker 처리 -&gt; filteration stratagy
 
 
 
-Calling 방법 설명이 매우 부
 
 
 
 
+## 참고자료
 
-노
+1\) [https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html)  
+2\) Caveman Wrapper 방법
 
 {% embed url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6097605/\#S21" %}
 
