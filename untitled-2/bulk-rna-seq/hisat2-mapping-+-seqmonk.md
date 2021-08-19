@@ -104,7 +104,7 @@ Plot -&gt; Data Store Similarity -&gt; PCA tSNE DataTree 등을 Selection 된 pr
 
 
 
-### 원하는 Gene 리스트 만들기
+### 내가 원하는 Gene 리스트 만들기
 
 Filtering -&gt; Probe Name Filter -&gt; Gene name   
 해당 기능은 Regex 기능이 붙어 있어 \_gene, \_upstream,\_downstream 을 gene name 뒤에 붙어 주면 됩니다.
