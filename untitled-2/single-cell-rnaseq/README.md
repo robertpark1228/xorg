@@ -1,6 +1,6 @@
 # Single Cell RNASeq
 
-### Rawdata Count 
+### Rawdata Coun t 
 
 ```text
 $ cellranger count 
