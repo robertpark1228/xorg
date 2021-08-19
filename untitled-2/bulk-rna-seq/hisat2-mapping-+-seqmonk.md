@@ -104,3 +104,9 @@ Plot -&gt; Data Store Similarity -&gt; PCA tSNE DataTree 등을 Selection 된 pr
 
 
 
+### 원하는 Gene 리스트 만들기
+
+
+
+
+
