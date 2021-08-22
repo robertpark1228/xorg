@@ -91,6 +91,16 @@ Exome 및 Target Seq은 최종 분석 후 bed 또는 gff 를 이용하여 초기
 
 
 
+\[분석방법 파이프라인\]
+
+참고.\) [http://bigd.big.ac.cn/gvm/analysis\_standards](http://bigd.big.ac.cn/gvm/analysis_standards)  
+
+
+\[Calling 방법\]  
+참고.\) [https://www.pnas.org/content/114/40/E8320](https://www.pnas.org/content/114/40/E8320) 
+
+
+
 
 
 
