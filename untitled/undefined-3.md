@@ -49,3 +49,9 @@ $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae
 
 ![](../.gitbook/assets/image%20%28101%29.png)
 
+
+
+
+
+
+
