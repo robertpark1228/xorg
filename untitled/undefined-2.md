@@ -1,8 +1,24 @@
 ---
-description: 래퍼런스 / 참고사r이트 / 볼만한 교육자료 등
+description: 래퍼런스 / 참고사이트 / 볼만한 교육자료 등
 ---
 
 # References
+
+## 10x genomics references download
+
+{% file src="../.gitbook/assets/\_10x\_ref.txt" caption="10x genomics ref. download" %}
+
+
+
+## 
+
+## 
+
+## 1. 암데이터 
+
+
+
+## 
 
 ## 한국어 사이트
 
