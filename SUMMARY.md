@@ -13,6 +13,7 @@
   * [R](untitled-3/untitled-1.md)
 * [3. NGS 기본](untitled-2/README.md)
   * [Rawdata QC 및 전처리](untitled-2/untitled.md)
+  * [Mapping](untitled-2/mapping.md)
   * [Whole Genome/Exome/Target Seq. 소개](untitled-2/whole-genome-exome-traget-seq..md)
   * [기타분석 :STR](untitled-2/str.md)
   * [Germline Mutation 분석](untitled-2/germline/README.md)
