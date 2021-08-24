@@ -2,6 +2,7 @@
 
 * [목차](README.md)
 * [1. Linux 시스템 기본](1.-linux/README.md)
+  * [가상화 환경 기반의 분석 시스템](1.-linux/undefined-1.md)
   * [데이터 분석을 위한 Linux 명령어](1.-linux/linux-1.md)
   * [Linux 운용 및 기본 기능 소개/실습](1.-linux/linux.md)
   * [기타 : 서버 운용](1.-linux/undefined.md)
@@ -12,6 +13,7 @@
   * [Python 기초](untitled-3/python.md)
   * [R](untitled-3/untitled-1.md)
 * [3. NGS 기본](untitled-2/README.md)
+  * [Whole Genome Methylation Sequencing](untitled-2/whole-genome-methylation-sequencing.md)
   * [Rawdata QC 및 전처리](untitled-2/untitled.md)
   * [Mapping](untitled-2/mapping.md)
   * [Whole Genome/Exome/Target Seq. 소개](untitled-2/whole-genome-exome-traget-seq..md)
