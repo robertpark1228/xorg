@@ -4,12 +4,6 @@ description: Star 2Pass Mapping
 
 # STAR2-GATK Variants Calling
 
-
-
-STAR2 INDEXING -&gt; 원타
-
-
-
 STAR2 2PASS MAPPING
 
 ```text
