@@ -41,6 +41,9 @@
 * [5. 실습 및 기타 참고 자료](4./README.md)
   * [RNASeq 실습](4./untitled-1.md)
   * [WGRS 실습](4./untitled-4.md)
+* [6. Data Science](untitled-1/README.md)
+  * [Untitled](untitled-1/untitled-1.md)
+  * [Untitled](untitled-1/untitled.md)
 * [기타 - 정리중](untitled/README.md)
   * [유용한 툴](untitled/undefined-4.md)
   * [도커 : 전처리 자동화 파이프라인](untitled/undefined-3.md)
@@ -48,7 +51,4 @@
   * [Whole Genome Sequencing](untitled/whole-genome-sequencing.md)
   * [References](untitled/undefined-2.md)
   * [실습](untitled/undefined-1.md)
-* [6. Data Science](untitled-1/README.md)
-  * [Untitled](untitled-1/untitled-1.md)
-  * [Untitled](untitled-1/untitled.md)
 
