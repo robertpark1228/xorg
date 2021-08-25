@@ -13,7 +13,7 @@ STAR2 INDEXING -&gt; 원타
 STAR2 2PASS MAPPING
 
 ```text
-$ STAR --genomeDir /disk1/oneomics_analysis/rna_rnaseq_pipeline/STAR_Align_referece/ --runThreadN 6 --runMode alignReads --readFilesIn ./sample_hfsips1-p23_1_val_1.fq ./sample_hfsips1-p23_2_val_2.fq --outFileNamePrefix ./STAR_htseqcount_p22 --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --outSAMattrRGline ID:hfsips_p23 SM:hfsips_p23 PL:ILLUMINA --quantMode GeneCounts
+$ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2.fq.gz --runThreadN 64 --readFilesCommand zcat --outFilterType BySJout --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outSAMtype BAM SortedByCoordinate --outSAMattrRGline ID:hfsips1_p23 LB:library PL:illumina PU:machine SM:hfsips1_p23 --twopassMode Basic
 ```
 
 {% embed url="https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-" %}
