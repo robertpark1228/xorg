@@ -8,6 +8,14 @@ description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 
 Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분석 -&gt; REACTOME 분석
 
+
+
+```bash
+$ hisat2
+```
+
+
+
 ## 0. Seqmonk 소개
 
 
