@@ -10,6 +10,18 @@ Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분
 
 ## 0. Seqmonk 소개
 
+
+
+![](../../.gitbook/assets/.png.png)
+
+
+
+
+
+
+
+
+
 ## 
 
 ## 
