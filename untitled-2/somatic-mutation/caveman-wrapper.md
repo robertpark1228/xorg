@@ -6,12 +6,11 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 
 ### Caveman-Wrapper : Whole Genome & Exome SNV Calling 
 
+| **Result** | **SNP\(SNV\)** | **INDEL** | **CNV** | **SV** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tools** | **CAVEMAN** | **PINDEL** | **ASCAT** | **BRASS** |
 
-
-ASCAT  
-BRASS  
-CAVEMAN  
-PINDEL  
+  
 
 
   
