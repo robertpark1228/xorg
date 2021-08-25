@@ -1,14 +1,10 @@
+---
+description: 사용법 위주
+---
+
 # STAR2 - HT-seq
 
-*  STAR2 Expression 용 Mapping
-
-
-
-
-
-
-
-* * * * * Reference Genome 및 Transcriptome 만들기 
+### Reference Genome 및 Transcriptome 만들기 
 
 ```text
 $ STAR --runThreadN 6 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile ./Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
@@ -31,7 +27,15 @@ GTF : [ftp://ftp.ensembl.org/pub/release-104/gtf/homo\_sapiens/](ftp://ftp.ensem
 FASTA : [ftp://ftp.ensembl.org/pub/release-104/fasta/homo\_sapiens/dna/Homo\_sapiens.GRCh38.dna.primary\_assembly.fa.gz](ftp://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz)
 {% endhint %}
 
-
+```text
+$ STAR --genomeDir /n/groups/hbctraining/intro_rnaseq_hpc/reference_data_ensembl38/ensembl38_STAR_index/ \
+--runThreadN 6 \
+--readFilesIn Mov10_oe_1.subset.fq \
+--outFileNamePrefix ../results/STAR/Mov10_oe_1_ \
+--outSAMtype BAM SortedByCoordinate \
+--outSAMunmapped Within \
+--outSAMattributes Standard 
+```
 
 
 
