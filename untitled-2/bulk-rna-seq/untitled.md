@@ -27,7 +27,7 @@ FASTA : [ftp://ftp.ensembl.org/pub/release-104/fasta/homo\_sapiens/dna/Homo\_sap
 {% endhint %}
 
 ```text
-$ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsips1_p23_2.fq.gz --outFileNamePrefix ./hfsips1_p23 --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+$ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsips1_p23_2.fq.gz --outFileNamePrefix ./STAR_Expression --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
 ```
 
 {% hint style="info" %}
