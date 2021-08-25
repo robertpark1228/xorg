@@ -28,18 +28,20 @@ FASTA : [ftp://ftp.ensembl.org/pub/release-104/fasta/homo\_sapiens/dna/Homo\_sap
 {% endhint %}
 
 ```text
-$ STAR --genomeDir /n/groups/hbctraining/intro_rnaseq_hpc/reference_data_ensembl38/ensembl38_STAR_index/ \
---runThreadN 6 \
---readFilesIn Mov10_oe_1.subset.fq \
---outFileNamePrefix ../results/STAR/Mov10_oe_1_ \
---outSAMtype BAM SortedByCoordinate \
---outSAMunmapped Within \
---outSAMattributes Standard 
+$ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsips1_p23_2.fq.gz --outFileNamePrefix ./hfsips1_p23 --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
 ```
 
-
-
-
+{% hint style="info" %}
+--genomeDir : 래퍼런스 지놈  
+--runThreadN : 쓰레드 개수  
+--readFilesIn : Paired End 파일  
+--outFileNamePrefix : 맵핑된 파일명칭   
+--outSAMtype : SAM / BAM 어떤것으로 할지  
+--outSAMunmapped :   
+--outSAMattributes   
+--readFilesCommand  
+  
+{% endhint %}
 
 ## 기타 : STAR Aligner 알고리즘 / 참고
 
