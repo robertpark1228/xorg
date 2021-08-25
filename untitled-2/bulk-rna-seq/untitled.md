@@ -36,10 +36,10 @@ $ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hf
 --runThreadN : 쓰레드 개수  
 --readFilesIn : Paired End 파일  
 --outFileNamePrefix : 맵핑된 파일명칭   
---outSAMtype : SAM / BAM 어떤것으로 할지  
---outSAMunmapped :   
---outSAMattributes   
---readFilesCommand  
+--outSAMtype : SAM / BAM 어떤것으로 할지 / Coordinate 된 bam 파일을 만들지  
+--outSAMunmapped : Unmapped 파일 처리여부  
+--outSAMattributes : SAM 파일 내 Specification 명칭 여부  
+--readFilesCommand : ReadFileIn gunzip / gz 로 압축된 경우 붙이지 않으면 에러  
   
 {% endhint %}
 
