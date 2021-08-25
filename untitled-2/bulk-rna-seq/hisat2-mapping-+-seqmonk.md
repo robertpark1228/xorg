@@ -14,10 +14,16 @@ hisat2는 만들어진 버전을 사용하시는게 좋습니다.
 [https://daehwankimlab.github.io/hisat2/download/\#version-hisat2-221](https://daehwankimlab.github.io/hisat2/download/#version-hisat2-221)
 
 ```bash
-$ hisat2
+$ hisat2  -p 16 -x ./hisat2_ref_genome/grch38/genome -1 ./hfsips1_p23_1.fq.gz -2 ./hfsips1_p23_2.fq.gz -S hfsip1.sam --dta-cufflinks
 ```
 
-
+{% hint style="info" %}
+-p : 쓰레드 / 프로세서 수 / 작업할 워커 수  
+-1 : read1  
+-2 : read2  
+-S : 샘플명  
+--dta-cufflinks : cufflinks 호환모드
+{% endhint %}
 
 ### STAR2 MAPPING 
 
