@@ -2,7 +2,7 @@
 description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 ---
 
-# HISAT2 Mapping + SeqMonk
+# HISAT2/STAR Mapping + SeqMonk
 
 ## 분석 파이프라인 간략
 
@@ -65,14 +65,6 @@ Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분
 ![](../../.gitbook/assets/image%20%28122%29.png)
 
 
-
-
-
-## 
-
-## 
-
-## 
 
 ## 1. 전처리 작업 
 

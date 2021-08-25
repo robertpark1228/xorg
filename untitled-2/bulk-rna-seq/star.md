@@ -2,7 +2,7 @@
 description: Star 2Pass Mapping
 ---
 
-# STAR2-GATK Mapping
+# STAR2-GATK Variants Calling
 
 
 
