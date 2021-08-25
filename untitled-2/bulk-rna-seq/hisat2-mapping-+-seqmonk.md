@@ -27,7 +27,9 @@ $ hisat2  -p 16 -x ./hisat2_ref_genome/grch38/genome -1 ./hfsips1_p23_1.fq.gz -2
 
 ### STAR2 MAPPING 
 
+{% page-ref page="untitled.md" %}
 
+초기 부분 참
 
 ### HISAT2 MAPPING
 
