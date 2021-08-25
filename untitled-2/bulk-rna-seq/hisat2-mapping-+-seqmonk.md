@@ -19,6 +19,14 @@ $ hisat2
 
 
 
+### STAR2 MAPPING 
+
+
+
+### HISAT2 MAPPING
+
+
+
 ## 0. Seqmonk 소개
 
 
