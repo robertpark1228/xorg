@@ -8,7 +8,10 @@ description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 
 Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분석 -&gt; REACTOME 분석
 
+## Reference Genome 만들기\(1회성\) / 
 
+hisat2는 만들어진 버전을 사용하시는게 좋습니다.  
+[https://daehwankimlab.github.io/hisat2/download/\#version-hisat2-221](https://daehwankimlab.github.io/hisat2/download/#version-hisat2-221)
 
 ```bash
 $ hisat2

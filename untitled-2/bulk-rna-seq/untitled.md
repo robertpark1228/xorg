@@ -4,11 +4,10 @@ description: 사용법 위주
 
 # STAR2 - HT-seq
 
-### Reference Genome 및 Transcriptome 만들기 
+### Reference Genome 및 Transcriptome 만들기 \(1회성\)
 
 ```text
 $ STAR --runThreadN 6 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile ./Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
-
 ```
 
 {% hint style="info" %}
