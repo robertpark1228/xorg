@@ -4,6 +4,192 @@ description: 서버 운용시 필요한 내용들을 전반적으로 기술해 �
 
 # 기타 : 서버 운용
 
+## **L**inux Archive Tools \(tar, star, gzip, bzip2, zip, cpio\)
+
+This article discusses the archiving tools available in Linux, with specific reference to the information needed for the [RHCSA EX200](http://www.redhat.com/training/courses/ex200/examobjective) and [RHCE EX300](http://www.redhat.com/training/courses/ex300/examobjective) certification exams.
+
+Remember, the exams are hands-on, so it doesn't matter which method you use to achieve the result, so long as the end product is correct.
+
+* [tar](https://oracle-base.com/articles/linux/linux-archive-tools#tar)
+* [star](https://oracle-base.com/articles/linux/linux-archive-tools#star)
+* [gzip](https://oracle-base.com/articles/linux/linux-archive-tools#gzip)
+* [bzip2](https://oracle-base.com/articles/linux/linux-archive-tools#bzip2)
+* [zip](https://oracle-base.com/articles/linux/linux-archive-tools#zip)
+* [cpio](https://oracle-base.com/articles/linux/linux-archive-tools#cpio)
+
+All the commands in this article have many options in addition to the basic ones being used here. Please check the `man` pages for each command. The examples will use the following files.
+
+```text
+mkdir -p /tmp/test-dir/subdir1
+mkdir -p /tmp/test-dir/subdir2
+mkdir -p /tmp/test-dir/subdir3
+mkdir -p /tmp/extract-dir
+touch /tmp/test-dir/subdir1/file1.txt
+touch /tmp/test-dir/subdir1/file2.txt
+touch /tmp/test-dir/subdir2/file3.txt
+touch /tmp/test-dir/subdir2/file4.txt
+touch /tmp/test-dir/subdir3/file5.txt
+touch /tmp/test-dir/subdir3/file6.txt
+```
+
+Extracts assume the "/tmp/extract-dir" directory is empty.
+
+### tar
+
+Create an archive.
+
+```text
+# cd /tmp
+# tar -cvf archive1.tar test-dir
+```
+
+Check the contents.
+
+```text
+# tar -tvf /tmp/archive1.tar
+```
+
+Extract it.
+
+```text
+# cd /tmp/extract-dir
+# tar -xvf /tmp/archive1.tar
+```
+
+### star
+
+The `star` command may not be installed by default, but you can install it with the following command.
+
+```text
+# yum install star
+```
+
+Create an archive.
+
+```text
+# cd /tmp
+# star -cv f=archive2.star test-dir
+```
+
+Check the contents.
+
+```text
+# star -tv f=/tmp/archive2.star
+```
+
+Extract it.
+
+```text
+# cd /tmp/extract-dir
+# star -xv f=/tmp/archive2.star
+```
+
+### gzip
+
+The `gzip` command compresses the specified files, giving them a ".gz" extension. In this case we will use it to compress a ".tar" file.
+
+```text
+# cd /tmp
+# tar -cvf archive3.tar test-dir
+# gzip archive3.tar
+```
+
+The "-z" option of the `tar` command allows you to do this directly.
+
+```text
+# cd /tmp
+# tar -cvzf archive3.tar.gz test-dir
+```
+
+The files are uncompressed using the `gunzip` command.
+
+```text
+# gunzip archive3.tar.gz
+```
+
+The "-z" option of the `tar` command allows you to directly `ungzip` and extract a ".tar.gz" file.
+
+```text
+# cd /tmp/extract-dir
+# tar -xvzf /tmp/archive3.tar.gz
+```
+
+### bzip2
+
+The `bzip2` command is similar to the `gzip` command. It compresses the specified files, giving them a ".bz2" extension. In this case we will use it to compress a ".tar" file.
+
+```text
+# cd /tmp
+# tar -cvf archive4.tar test-dir
+# bzip2 archive4.tar
+```
+
+The "-j" option of the `tar` command allows you to do this directly.
+
+```text
+# cd /tmp
+# tar -cvjf archive4.tar.bz2 test-dir
+```
+
+The files are uncompressed using the `bunzip2` command.
+
+```text
+# bunzip2 archive4.tar.bz2
+```
+
+The "-j" option of the `tar` command allows you to directly `bunzip2` and extract a ".tar.bz2" file.
+
+```text
+# cd /tmp/extract-dir
+# tar -xvjf /tmp/archive4.tar.bz2
+```
+
+### zip
+
+Create an archive.
+
+```text
+# cd /tmp
+# zip -r archive5.zip test-dir
+```
+
+Check the contents.
+
+```text
+# unzip -l archive5.zip
+```
+
+Extract it.
+
+```text
+# cd /tmp/extract-dir
+# unzip /tmp/archive5.zip
+```
+
+### cpio
+
+Create an archive.
+
+```text
+# cd /tmp
+# find test-dir | cpio -ov > archive6.cpio
+```
+
+Check the contents.
+
+```text
+# cpio -t < /tmp/archive6.cpio
+```
+
+Extract it.
+
+```text
+# cd /tmp/extract-dir
+# cpio -idmv < /tmp/archive6.cpio
+```
+
+### \*\*\*\*
+
 ### **/etc/passwd\(사용자 정보\)**
 
 cat /etc/passwd 를 실행하면 정보가 있으며 이에 대한 설명 입니다.
