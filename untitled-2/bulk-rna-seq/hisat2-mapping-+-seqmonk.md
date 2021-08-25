@@ -12,7 +12,31 @@ Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분
 
 
 
-![](../../.gitbook/assets/.png.png)
+![](../../.gitbook/assets/image%20%28116%29.png)
+
+![](../../.gitbook/assets/image%20%28115%29.png)
+
+![](../../.gitbook/assets/image%20%28113%29.png)
+
+![](../../.gitbook/assets/image%20%28120%29.png)
+
+![](../../.gitbook/assets/image%20%28112%29.png)
+
+![](../../.gitbook/assets/image%20%28117%29.png)
+
+![](../../.gitbook/assets/image%20%28119%29.png)
+
+![](../../.gitbook/assets/image%20%28118%29.png)
+
+![](../../.gitbook/assets/image%20%28114%29.png)
+
+![](../../.gitbook/assets/image%20%28121%29.png)
+
+![](../../.gitbook/assets/image%20%28122%29.png)
+
+
+
+
 
 
 
