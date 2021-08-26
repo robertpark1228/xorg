@@ -4,6 +4,28 @@ description: Star 2Pass Mapping
 
 # STAR2-GATK Variants Calling
 
+## RNA Variants Calling
+
+### RNA Variants Calling 의 목적
+
+RNA Variants Calling 은 해석에 주안점을 두고 접근 해야 합니다.
+
+![](../../.gitbook/assets/image%20%28139%29.png)
+
+
+
+
+
+![](../../.gitbook/assets/image%20%28142%29.png)
+
+![](../../.gitbook/assets/image%20%28136%29.png)
+
+![](../../.gitbook/assets/image%20%28141%29.png)
+
+![](../../.gitbook/assets/image%20%28137%29.png)
+
+
+
 STAR2 2PASS MAPPING
 
 ```text
@@ -12,7 +34,23 @@ $ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2
 
 {% embed url="https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-" %}
 
+![](../../.gitbook/assets/image%20%28138%29.png)
 
 
 
+
+
+
+
+
+
+
+
+
+
+1\) [https://www.researchgate.net/figure/Comparison-between-WES-data-and-RNA-Seq-data-This-image-shows-the-motivation-and-the\_fig1\_275525746](https://www.researchgate.net/figure/Comparison-between-WES-data-and-RNA-Seq-data-This-image-shows-the-motivation-and-the_fig1_275525746)  
+2\)[https://www.nature.com/articles/s41467-020-20573-7](https://www.nature.com/articles/s41467-020-20573-7)  
+3\) [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791257/\#:~:text=The%20ability%20to%20independently%20call,by%20using%20RNA%2Dseq%20data.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791257/#:~:text=The%20ability%20to%20independently%20call,by%20using%20RNA%2Dseq%20data.)  
+4\) [https://www.nature.com/articles/s41598-021-89938-2](https://www.nature.com/articles/s41598-021-89938-2)  
+5\)  [https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full](https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full)
 
