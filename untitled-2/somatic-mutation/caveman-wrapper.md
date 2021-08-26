@@ -10,39 +10,23 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 | :--- | :--- | :--- | :--- | :--- |
 | **Tools** | **CAVEMAN** | **PINDEL** | **ASCAT** | **BRASS** |
 
-  
-
-
-  
-
-
 \(전처리 - FASTQ-BAM파일\)  
 \(중간 처리 - BAM 파일\) [https://github.com/cancerit/CaVEMan](https://github.com/cancerit/CaVEMan)  
 [https://github.com/cancerit/cgpCaVEManWrapper](https://github.com/cancerit/cgpCaVEManWrapper)
 
-
-
-
-
 1\) Caveman SNV : [https://github.com/cancerit/cgpCaVEManWrapper](https://github.com/cancerit/cgpCaVEManWrapper)  
 [1\) 기초적인 Running 방법 : https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html)
-
-
-
-
 
 ## : DOCKER 기반의 caveman Wrapper 실행
 
 * DOCKER 이미지 접속 
-
-
 
 ```text
 $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
 ```
 
 {% hint style="info" %}
-
+-it : 
 {% endhint %}
 
 ```text

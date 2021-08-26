@@ -24,6 +24,7 @@
     * [GATK - Mutect2 Pipeline](untitled-2/somatic-mutation/gatk-mutect2-pipeline.md)
     * [실습과제](untitled-2/somatic-mutation/undefined.md)
   * [SV : CNV 분석](untitled-2/sv-cnv/README.md)
+    * [ASCAT](untitled-2/sv-cnv/ascat.md)
     * [Annotation](untitled-2/sv-cnv/annotation.md)
     * [Reference](untitled-2/sv-cnv/reference.md)
     * [도커 / 도커 간단 사용법](untitled-2/sv-cnv/undefined.md)
