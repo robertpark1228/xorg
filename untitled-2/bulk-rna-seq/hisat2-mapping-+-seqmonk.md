@@ -6,7 +6,7 @@ description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 
 ## 분석 파이프라인 간략
 
-Rawdata Filtering -&gt; HISAT2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분석 -&gt; REACTOME 분석
+Rawdata Filtering -&gt; HISAT2/STAR2 Mapping -&gt; SeqMonk Data QC -&gt; DE / GSEA 분석 -&gt; REACTOME 분석
 
 ## Reference Genome 만들기\(1회성\) / 
 
