@@ -26,7 +26,9 @@ RNA Variants Calling 은 해석에 주안점을 두고 접근 해야 합니다.
 
 
 
-STAR2 2PASS MAPPING
+![](../../.gitbook/assets/image%20%28138%29.png)
+
+### STAR2 2PASS MAPPING
 
 ```text
 $ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2.fq.gz --runThreadN 64 --readFilesCommand zcat --outFilterType BySJout --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outSAMtype BAM SortedByCoordinate --outSAMattrRGline ID:hfsips1_p23 LB:library PL:illumina PU:machine SM:hfsips1_p23 --twopassMode Basic
@@ -34,11 +36,35 @@ $ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2
 
 {% embed url="https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-" %}
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+### MarkDuplicates \([https://gatk.broadinstitute.org/hc/en-us/articles/4404604742683-MarkDuplicates-Picard-](https://gatk.broadinstitute.org/hc/en-us/articles/4404604742683-MarkDuplicates-Picard-)\)
 
+```text
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar MarkDuplicates -I ./Aligned.sortedByCoord.t.bam -O ./Aligned.sortedByCoord.out.mark.bam -M ./Aligned.sortedByCoord.out.bam.txt --REMOVE_DUPLICATES TRUE
+```
 
+{% hint style="info" %}
 
+{% endhint %}
 
+### SplitNCigarREADS\([https://gatk.broadinstitute.org/hc/en-us/articles/4404604888731-SplitNCigarReads](https://gatk.broadinstitute.org/hc/en-us/articles/4404604888731-SplitNCigarReads)\)
+
+```text
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar SplitNCigarReads -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.bam -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bam
+```
+
+{% hint style="info" %}
+
+{% endhint %}
+
+### BaseQualityScoreRecalibrator\([https://gatk.broadinstitute.org/hc/en-us/articles/4404604765467-BaseRecalibrator](https://gatk.broadinstitute.org/hc/en-us/articles/4404604765467-BaseRecalibrator)\)
+
+```text
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar BaseRecalibrator -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bam -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa --known-sites ./1000G_omni2.5.hg38.vcf.gz -O Aligned.sortedByCoord.out.mark.splitNCigar.bam.table
+```
+
+{% hint style="info" %}
+
+{% endhint %}
 
 
 
