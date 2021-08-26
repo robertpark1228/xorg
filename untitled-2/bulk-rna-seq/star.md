@@ -66,9 +66,11 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar BaseRecalibr
 
 {% endhint %}
 
+### ApplyBQSR \([https://gatk.broadinstitute.org/hc/en-us/articles/4404604653979-ApplyBQSR](https://gatk.broadinstitute.org/hc/en-us/articles/4404604653979-ApplyBQSR)\)
 
-
-
+```text
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar ApplyBQSR -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bam --bqsr-recal-file recal_data.table -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam
+```
 
 
 
