@@ -43,8 +43,12 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar MarkDuplicat
 ```
 
 {% hint style="info" %}
-
+WGRS 동일
 {% endhint %}
+
+{% page-ref page="../../untitled/whole-genome-sequencing.md" %}
+
+
 
 ### SplitNCigarREADS\([https://gatk.broadinstitute.org/hc/en-us/articles/4404604888731-SplitNCigarReads](https://gatk.broadinstitute.org/hc/en-us/articles/4404604888731-SplitNCigarReads)\)
 
@@ -72,13 +76,17 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar BaseRecalibr
 $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar ApplyBQSR -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bam --bqsr-recal-file recal_data.table -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam
 ```
 
-### HaplotypeCaller
+### HaplotypeCaller\([https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-HaplotypeCaller](https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-HaplotypeCaller)\)
 
 ```text
 $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar HaplotypeCaller -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam.g.vcf
 ```
 
+### GenotypeGVCFs\([https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs](https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs)\)
 
+```text
+$
+```
 
 {% hint style="info" %}
 
