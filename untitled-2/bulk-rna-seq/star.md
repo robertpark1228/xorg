@@ -74,11 +74,24 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar ApplyBQSR -R
 
 ### HaplotypeCaller
 
+```text
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar HaplotypeCaller -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam.g.vcf
+```
+
+
+
+{% hint style="info" %}
+
+
+* We have not yet fully tested the interaction between the GVCF-based calling or the multisample calling and the RNAseq-specific functionalities. Use those in combination at your own risk.
+{% endhint %}
+
 
 
 1\) [https://www.researchgate.net/figure/Comparison-between-WES-data-and-RNA-Seq-data-This-image-shows-the-motivation-and-the\_fig1\_275525746](https://www.researchgate.net/figure/Comparison-between-WES-data-and-RNA-Seq-data-This-image-shows-the-motivation-and-the_fig1_275525746)  
 2\)[https://www.nature.com/articles/s41467-020-20573-7](https://www.nature.com/articles/s41467-020-20573-7)  
 3\) [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791257/\#:~:text=The%20ability%20to%20independently%20call,by%20using%20RNA%2Dseq%20data.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791257/#:~:text=The%20ability%20to%20independently%20call,by%20using%20RNA%2Dseq%20data.)  
 4\) [https://www.nature.com/articles/s41598-021-89938-2](https://www.nature.com/articles/s41598-021-89938-2)  
-5\)  [https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full](https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full)
+5\)  [https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full](https://www.biorxiv.org/content/10.1101/2020.06.03.131532v2.full)  
+6\) [https://www.nature.com/articles/s41596-021-00591-5](https://www.nature.com/articles/s41596-021-00591-5)\(Identification of cancer-related mutations in human pluripotent stem cells using RNA-seq analysis\)
 
