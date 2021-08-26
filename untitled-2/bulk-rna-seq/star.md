@@ -18,13 +18,25 @@ RNA Variants Calling 은 해석에 주안점을 두고 접근 해야 합니다.
 
 ![](../../.gitbook/assets/image%20%28142%29.png)
 
+
+
+
+
+
+
 ![](../../.gitbook/assets/image%20%28136%29.png)
 
 ![](../../.gitbook/assets/image%20%28141%29.png)
 
 ![](../../.gitbook/assets/image%20%28137%29.png)
 
+![](../../.gitbook/assets/image%20%28143%29.png)
 
+
+
+
+
+## RNAseq short variant discovery \(SNPs + Indels\), \([https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-)\)
 
 ![](../../.gitbook/assets/image%20%28138%29.png)
 
@@ -33,6 +45,8 @@ RNA Variants Calling 은 해석에 주안점을 두고 접근 해야 합니다.
 ```text
 $ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2.fq.gz --runThreadN 64 --readFilesCommand zcat --outFilterType BySJout --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outSAMtype BAM SortedByCoordinate --outSAMattrRGline ID:hfsips1_p23 LB:library PL:illumina PU:machine SM:hfsips1_p23 --twopassMode Basic
 ```
+
+
 
 {% embed url="https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-" %}
 
