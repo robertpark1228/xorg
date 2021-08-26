@@ -67,7 +67,7 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar BaseRecalibr
 ```
 
 {% hint style="info" %}
-
+WGRS 동일
 {% endhint %}
 
 ### ApplyBQSR \([https://gatk.broadinstitute.org/hc/en-us/articles/4404604653979-ApplyBQSR](https://gatk.broadinstitute.org/hc/en-us/articles/4404604653979-ApplyBQSR)\)
@@ -76,11 +76,19 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar BaseRecalibr
 $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar ApplyBQSR -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bam --bqsr-recal-file recal_data.table -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam
 ```
 
+{% hint style="info" %}
+WGRS 동일
+{% endhint %}
+
 ### HaplotypeCaller\([https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-HaplotypeCaller](https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-HaplotypeCaller)\)
 
 ```text
 $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar HaplotypeCaller -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa -I ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam -O ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam.g.vcf
 ```
+
+{% hint style="info" %}
+
+{% endhint %}
 
 ### GenotypeGVCFs\([https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs](https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs)\)
 
@@ -89,8 +97,6 @@ $
 ```
 
 {% hint style="info" %}
-
-
 * We have not yet fully tested the interaction between the GVCF-based calling or the multisample calling and the RNAseq-specific functionalities. Use those in combination at your own risk.
 {% endhint %}
 
