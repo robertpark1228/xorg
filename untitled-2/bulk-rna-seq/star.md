@@ -87,13 +87,13 @@ $ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar HaplotypeCal
 ```
 
 {% hint style="info" %}
-
+WGRS 동일
 {% endhint %}
 
 ### GenotypeGVCFs\([https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs](https://gatk.broadinstitute.org/hc/en-us/articles/360037057852-GenotypeGVCFs)\)
 
 ```text
-$
+$ java -jar /DAS3/oneomics_analysis/alpha_pipeline/modules/gatk.jar GenotypeGVCFs -V ./Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam.g.vcf -O Aligned.sortedByCoord.out.mark.splitNCigar.bqsr.bam.vcf -R ./Homo_sapiens.GRCh38.dna_rm.primary_assembly.fa
 ```
 
 {% hint style="info" %}
