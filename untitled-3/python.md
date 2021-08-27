@@ -28,7 +28,7 @@ description: 파이썬 기초 + 응용 패키지 사용
 
 {% file src="../.gitbook/assets/\_2-.pptx" %}
 
-
+{% file src="../.gitbook/assets/\_3-.pptx" caption="파이썬\_3일차.pptx" %}
 
 
 
