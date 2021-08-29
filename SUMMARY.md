@@ -31,7 +31,7 @@
   * [Bulk RNA Seq](untitled-2/bulk-rna-seq/README.md)
     * [\[RNA-Variants Calling\] STAR2-GATK Variants Calling](untitled-2/bulk-rna-seq/star.md)
     * [\[RNA-Expression\]STAR2 - HT-seq](untitled-2/bulk-rna-seq/untitled.md)
-    * [Salmon-Deseq2 / edgeR](untitled-2/bulk-rna-seq/rna_o-g.md)
+    * [\[RNA-Expression\] Salmon-Deseq2 / edgeR](untitled-2/bulk-rna-seq/rna_o-g.md)
     * [HISAT2/STAR Mapping + SeqMonk](untitled-2/bulk-rna-seq/hisat2-mapping-+-seqmonk.md)
     * [HISAT2 / Cufflinks / Cuffdiff](untitled-2/bulk-rna-seq/hisat2-cufflinks-cuffdiff.md)
     * [참고 \) RNAseq 통계 모델](untitled-2/bulk-rna-seq/rnaseq.md)

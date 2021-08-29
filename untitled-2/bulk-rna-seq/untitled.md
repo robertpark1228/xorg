@@ -1,5 +1,5 @@
 ---
-description: 사용법 위주
+description: 사용법 위주 / HT-Seq 은 속도가 느립니다.
 ---
 
 # \[RNA-Expression\]STAR2 - HT-seq
