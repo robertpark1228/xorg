@@ -4,6 +4,48 @@ description: '참조)https://quadrant.tistory.com/3'
 
 # HISAT2 / Cufflinks / Cuffdiff
 
+## 분석 파이프라인 간략
+
+Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: DE / GSEA 분석 -&gt; REACTOME 분석
+
+## 
+
+
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
+### 
+
 ### 리눅스 \(Ubuntu 16.0.4\) 운영체제에서 분석한 내용을 토대로 작성한 글입니다.
 
 **\(Illumina short read RNA-seq, Paired-end reads\)**
