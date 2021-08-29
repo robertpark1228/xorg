@@ -14,6 +14,18 @@ Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\
 
 ### Cufflinks - FPKM / Expression 계산\([http://cole-trapnell-lab.github.io/cufflinks/tools/](http://cole-trapnell-lab.github.io/cufflinks/tools/)\)
 
+### 래퍼런스 : [https://support.illumina.com/sequencing/sequencing\_software/igenome.html](https://support.illumina.com/sequencing/sequencing_software/igenome.html)
+
+![](../../.gitbook/assets/image%20%28145%29.png)
+
+```text
+$  cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf -o ./p33 ../../hisat2_bam/sample_hfsips1-p33.sorted.bam
+```
+
+분석  중 화면 
+
+![](../../.gitbook/assets/image%20%28144%29.png)
+
 
 
 

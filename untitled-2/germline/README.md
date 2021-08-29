@@ -52,7 +52,7 @@ $ trim_galore --trim1 --illumina --paired [file1] [file2] -O [OUTPUT_FOLDER] -j 
 ```
 
 {% hint style="info" %}
-Paired End ㅓㄱ 및 일루미나 데이터 기준
+Paired End  및 일루미나 데이터 기준
 {% endhint %}
 
 ### Mapping - 맵핑작업 
