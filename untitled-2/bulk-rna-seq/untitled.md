@@ -2,7 +2,7 @@
 description: 사용법 위주
 ---
 
-# STAR2 - HT-seq
+# \[RNA-Expression\]STAR2 - HT-seq
 
 ### Reference Genome 및 Transcriptome 만들기 \(1회성\)
 
