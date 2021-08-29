@@ -8,9 +8,13 @@ description: '참조)https://quadrant.tistory.com/3'
 
 Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: DE / GSEA 분석 -&gt; REACTOME 분석
 
-## HISAT2 MAPPING
+### HISAT2 MAPPING
 
 {% page-ref page="hisat2-mapping-+-seqmonk.md" %}
+
+### Cufflinks - FPKM / Expression 계산\([http://cole-trapnell-lab.github.io/cufflinks/tools/](http://cole-trapnell-lab.github.io/cufflinks/tools/)\)
+
+
 
 
 
