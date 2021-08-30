@@ -24,7 +24,17 @@ $  cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo
 
 
 
+```text
+$ cuffdiff
+```
 
+
+
+
+
+```text
+$ cuffdiff -o ./ -b /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38.fa -u ./merged.gtf -p 40 -L C1,C2 /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p23/sample_hfsips1-p23.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p24.sorted.bam /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p41_con.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p33/sample_hfsips1-p33.sorted.bam
+```
 
 
 
