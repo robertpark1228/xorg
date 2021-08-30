@@ -22,19 +22,25 @@ Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\
 $  cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf -o ./p33 ../../hisat2_bam/sample_hfsips1-p33.sorted.bam
 ```
 
+### 
 
+### cuffmerge \(샘플을 합해줌\)
 
 ```text
-$ cuffdiff
+$ cuffmerge
 ```
 
 
 
-
+### cuffdiff \(합해진 샘플에서 DEG 데이터 제작\)
 
 ```text
 $ cuffdiff -o ./ -b /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38.fa -u ./merged.gtf -p 40 -L C1,C2 /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p23/sample_hfsips1-p23.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p24.sorted.bam /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p41_con.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p33/sample_hfsips1-p33.sorted.bam
 ```
+
+
+
+cummeRbund \( R Package\)
 
 
 
