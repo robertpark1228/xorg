@@ -43,7 +43,7 @@
   * [RNASeq 실습](4./untitled-1.md)
   * [WGRS 실습](4./untitled-4.md)
 * [6. Data Science](untitled-1/README.md)
-  * [Untitled](untitled-1/untitled-1.md)
+  * [시각화](untitled-1/untitled-1.md)
   * [Untitled](untitled-1/untitled.md)
 * [기타 - 정리중](untitled/README.md)
   * [유용한 툴](untitled/undefined-4.md)
