@@ -4,9 +4,19 @@ description: '참조)https://quadrant.tistory.com/3'
 
 # \[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff
 
+### **주의사**
+
+BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.
+
+
+
+BAM 또는 SAM 파일 확인은 samtools view -h 
+
+## \*\*\*\*
+
 ## 분석 파이프라인 간략
 
-Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: DE / GSEA 분석 -&gt; REACTOME 분석  
+Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: cummDE / GSEA 분석 -&gt; REACTOME 분석  
 
 
 ### Cufflinks 파일 포맷 설명
