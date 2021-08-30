@@ -6,7 +6,14 @@ description: '참조)https://quadrant.tistory.com/3'
 
 ## 분석 파이프라인 간략
 
-Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: DE / GSEA 분석 -&gt; REACTOME 분석
+Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: DE / GSEA 분석 -&gt; REACTOME 분석  
+
+
+### Cufflinks 파일 포맷 설명
+
+[http://cole-trapnell-lab.github.io/cufflinks/file\_formats/](http://cole-trapnell-lab.github.io/cufflinks/file_formats/)
+
+
 
 ### HISAT2 MAPPING
 
