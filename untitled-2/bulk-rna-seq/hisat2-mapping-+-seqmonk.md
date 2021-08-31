@@ -2,7 +2,7 @@
 description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 ---
 
-# HISAT2/STAR Mapping + SeqMonk
+# \[RNA-Expression\]HISAT2/STAR Mapping + SeqMonk
 
 ## 분석 파이프라인 간략
 
