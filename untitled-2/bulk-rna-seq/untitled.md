@@ -7,7 +7,7 @@ description: 사용법 위주 / HT-Seq 은 속도가 느립니다.
 ### Reference Genome 및 Transcriptome 만들기 \(1회성\)
 
 ```text
-$ STAR --runThreadN 120 --runMode genomeGenerate --genomeDir /main/references/hg38/STAR_reference --genomeFastaFiles /main/references/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile /main/references/hg38/Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
+$ STARf --runThreadN 120 --runMode genomeGenerate --genomeDir /main/references/hg38/STAR_reference --genomeFastaFiles /main/references/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile /main/references/hg38/Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
 ```
 
 {% hint style="info" %}
