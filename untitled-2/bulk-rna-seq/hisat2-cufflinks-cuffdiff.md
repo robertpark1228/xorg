@@ -4,7 +4,7 @@ description: '참조)https://quadrant.tistory.com/3'
 
 # \[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff
 
-### **주의사**
+### **주의사항**
 
 BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.
 
