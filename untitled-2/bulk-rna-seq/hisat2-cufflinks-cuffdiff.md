@@ -10,7 +10,9 @@ BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가
   
 
 
-#### 해당 Method 는 생산성 면에서는 상당히 떨어진다고 생각하기 때문에 개인적으론 참고만 하는 게 좋다고 생각합니다.
+#### 해당 Method 는 생산성 면에서는 상당히 떨어진다고 생각하기 때문에 개인적으론 참고만 하는 게 좋다고 생각합니다. 
+
+#### RNAseq 에서는 방법 자체가 옳거나 그른 것은 없기 때문에 개인의 취향에 따라 맞춰서 분석하시길 바랍니다.
 
 ## 분석 파이프라인 간략
 
@@ -115,11 +117,11 @@ Deseq2/EdgeR/Ballgown과 같은 지위를 가지나 구동의 까다로움/Figur
   
 
 
-![](../../.gitbook/assets/image%20%28159%29.png)
+![](../../.gitbook/assets/image%20%28163%29.png)
 
-![](../../.gitbook/assets/image%20%28158%29.png)
+![](../../.gitbook/assets/image%20%28161%29.png)
 
-![](../../.gitbook/assets/image%20%28160%29.png)
+![](../../.gitbook/assets/image%20%28166%29.png)
 
 ```text
 #Rscript 
@@ -127,27 +129,63 @@ library("cummeRbund")
 
 #분석 폴더 지정 / cuffdiff 가 끝난 
 cuff<-readCufflinks("D:/assembled_2/")
+#데이터가 잘 들어왔는지 확인
+cuff 
 
+disp<-dispersionPlot(genes(cuff))
+disp
+
+genes.scv<-fpkmSCVPlot(genes(cuff))
+isoforms.scv<-fpkmSCVPlot(isoforms(cuff))
+ 
+ 
+dens<-csDensity(genes(cuff))
+dens
+
+densRep<-csDensity(genes(cuff),replicates=T)
+densRep
+
+#MA Plot
+m<-MAplot(genes(cuff),"p_Case","p_Control")
+m
+
+#MA COUNT PLOT
+mCount<-MAplot(genes(cuff),"p_Case","p_Control",useCount=T)
+mCount
+
+#Volcano Plot
+v<-csVolcanoMatrix(genes(cuff))
+v
+#Transcriptome 의 FPKM Value
+fpkmMatrix(genes(cuff))
 ```
 
+![disp&amp;lt;-dispersionPlot\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28160%29.png)
 
 
 
+![dens&amp;lt;-csDensity\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28158%29.png)
+
+![pDendro&amp;lt;-csDendro\(genes\(cuff\),replicates=T\)](../../.gitbook/assets/image%20%28165%29.png)
 
    
 
 
-
-
-Cuffmerge
-
+![csScatterMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28162%29.png)
 
 
 
+![MAplot\(genes\(cuff\),&quot;p\_Case&quot;,&quot;p\_Control&quot;\)](../../.gitbook/assets/image%20%28164%29.png)
+
+![csVolcanoMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28159%29.png)
 
 
 
-Cuffdiff
+
+
+
+
+
 
 
 
