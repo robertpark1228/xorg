@@ -4,6 +4,10 @@ description: '참조)https://quadrant.tistory.com/3'
 
 # \[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff
 
+### **파이**
+
+### \*\*\*\*
+
 ### **주의사항**
 
 BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.
@@ -39,15 +43,24 @@ Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\
 cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf -o ./p33 ../../hisat2_bam/sample_hfsips1-p33.sorted.bam
 ```
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](../../.gitbook/assets/image%20%28153%29.png)
 
-### 
+![](../../.gitbook/assets/image%20%28155%29.png)
 
 ### cuffmerge \(샘플을 합해줌\)
 
+샘플별 계산이 끝난 transcript.gtf 파일의 위치 정보가 담긴 텍스트 파일이 필요 합니다\(제작\)  
+아래 예시\)
+
+![](../../.gitbook/assets/image%20%28156%29.png)
+
 ```text
-cuffmerge
+cuffmerge -p 40 -o ./assembled -g /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes_no_chr.gtf -s /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38_nochr.fa ./merge.txt
 ```
+
+![](../../.gitbook/assets/image%20%28149%29.png)
+
+
 
 
 
@@ -59,7 +72,7 @@ cuffdiff -o ./ -b /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38.fa
 
 
 
-cummeRbund \( R Package\)
+## cummeRbund \( R Package\)
 
 
 
