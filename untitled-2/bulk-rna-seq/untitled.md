@@ -27,7 +27,7 @@ FASTA : [ftp://ftp.ensembl.org/pub/release-104/fasta/homo\_sapiens/dna/Homo\_sap
 {% endhint %}
 
 ```text
-$ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsips1_p23_2.fq.gz --outFileNamePrefix ./STAR_Expression --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsips1_p23_2.fq.gz --outFileNamePrefix ./STAR_Expression --outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
 ```
 
 {% hint style="info" %}
@@ -38,9 +38,29 @@ $ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hf
 --outSAMtype : SAM / BAM 어떤것으로 할지 / Coordinate 된 bam 파일을 만들지  
 --outSAMunmapped : Unmapped 파일 처리여부  
 --outSAMattributes : SAM 파일 내 Specification 명칭 여부  
---readFilesCommand : ReadFileIn gunzip / gz 로 압축된 경우 붙이지 않으면 에러  
-  
+--readFilesCommand : ReadFileIn gunzip / gz 로 압축된 경우 붙이지 않으면 에러
 {% endhint %}
+
+```text
+htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sortedByCoord.out.bam /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens.GRCh38.104.gtf
+```
+
+{% hint style="info" %}
+-f : format \(BAM/SAM\)  
+-r : name \(정렬기준/Paired-End, Sorted 된 파일, Default : name\)  
+-i : GFF 래퍼런스 파일에서 사용될 ID  
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28163%29.png)
+
+{% hint style="info" %}
+-s : 방향성 \(Paired end -&gt; reverse / Single End no \)  
+-t : feature \(어떤 것을 기준으로 삼을건지\)  feature type \(3rd column in GFF file\) to be used, all features of other type are ignored \(default, suitable for RNA-Seq analysis using an [Ensembl GTF](http://mblab.wustl.edu/GTF22.html) file: `exon`\)
+{% endhint %}
+
+
+
+
 
 ## 기타 : STAR Aligner 알고리즘 / 참고
 
@@ -80,4 +100,8 @@ The separate seeds are stitched together to create a complete read by first clus
 Then the seeds are stitched together based on the best alignment for the read \(scoring based on mismatches, indels, gaps, etc.\).
 
 ![STAR\_step5](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/img/alignment_STAR_step5.png)
+
+HT-Seq -&gt; Deseq2
+
+
 

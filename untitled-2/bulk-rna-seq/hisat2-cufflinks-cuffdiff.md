@@ -117,11 +117,11 @@ Deseq2/EdgeR/Ballgown과 같은 지위를 가지나 구동의 까다로움/Figur
   
 
 
-![](../../.gitbook/assets/image%20%28163%29.png)
+![](../../.gitbook/assets/image%20%28164%29.png)
 
 ![](../../.gitbook/assets/image%20%28161%29.png)
 
-![](../../.gitbook/assets/image%20%28166%29.png)
+![](../../.gitbook/assets/image%20%28167%29.png)
 
 ```text
 #Rscript 
@@ -166,7 +166,7 @@ fpkmMatrix(genes(cuff))
 
 ![dens&amp;lt;-csDensity\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28158%29.png)
 
-![pDendro&amp;lt;-csDendro\(genes\(cuff\),replicates=T\)](../../.gitbook/assets/image%20%28165%29.png)
+![pDendro&amp;lt;-csDendro\(genes\(cuff\),replicates=T\)](../../.gitbook/assets/image%20%28166%29.png)
 
    
 
@@ -175,7 +175,7 @@ fpkmMatrix(genes(cuff))
 
 
 
-![MAplot\(genes\(cuff\),&quot;p\_Case&quot;,&quot;p\_Control&quot;\)](../../.gitbook/assets/image%20%28164%29.png)
+![MAplot\(genes\(cuff\),&quot;p\_Case&quot;,&quot;p\_Control&quot;\)](../../.gitbook/assets/image%20%28165%29.png)
 
 ![csVolcanoMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28159%29.png)
 
