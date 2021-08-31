@@ -2,21 +2,15 @@
 description: '참조)https://quadrant.tistory.com/3'
 ---
 
-# \[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff
-
-### **파이**
-
-### \*\*\*\*
+# \[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff CummeRbund
 
 ### **주의사항**
 
-BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.
+BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.BAM 또는 SAM 파일 확인은 samtools view -h / fasta 파일은 cat 으로 확인 하시길 바랍니다.  
+  
 
 
-
-BAM 또는 SAM 파일 확인은 samtools view -h 
-
-## \*\*\*\*
+#### 해당 Method 는 생산성 면에서는 상당히 떨어진다고 생각하기 때문에 개인적으론 참고만 하는 게 좋다고 생각합니다.
 
 ## 분석 파이프라인 간략
 
@@ -47,6 +41,12 @@ cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sa
 
 ![](../../.gitbook/assets/image%20%28155%29.png)
 
+{% hint style="info" %}
+-p : 프로세서 \(동시작업수\)  
+-G : 래퍼런스 GTF 확장 \(다운을 받아야 하며 래퍼런스가 맞는지 확인 합니다\)  
+-o : 결과 파일이 저장될 폴더\(폴더 베이스 입니다\)
+{% endhint %}
+
 ### cuffmerge \(샘플을 합해줌\)
 
 샘플별 계산이 끝난 transcript.gtf 파일의 위치 정보가 담긴 텍스트 파일이 필요 합니다\(제작\)  
@@ -62,28 +62,80 @@ cuffmerge -p 40 -o ./assembled -g /disk1/oneomics_analysis/beta_pipeline/referen
 
 
 
-
-
 ### cuffdiff \(합해진 샘플에서 DEG 데이터 제작\)
 
 ```text
-cuffdiff -o ./ -b /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38.fa -u ./merged_asm/merged.gtf -p 40 -L Case,Control /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p23/sample_hfsips1-p23.sorted.bam /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/p33/sample_hfsips1-p33.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p33_cddo_5nm.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p41_cddo_5nm.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/sample_hfsips1-p41_con.sorted.bam
+cuffdiff -o ./assembled_2 -b /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38_nochr.fa -u ./assembled/merged.gtf -p 40 -L p_Case,p_Control /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/Case/sample_hfsips1-p23.sorted.bam /disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/Control/sample_hfsips1-p33_cddo_5nm.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2_bam/Control/sample_hfsips1-p33.sorted.bam
+```
+
+{% hint style="info" %}
+-o : 결과물 폴더  
+-b : fasta reference 파일  
+-u : merged.gtf / cuffmerge 에서 만들어 놓은 파  
+-p : 동시작업 수  
+-L : 샘플 그룹 / 예시 : 
+
+```text
+-L p_Case,p_Control
+```
+
+폴더 아래 샘플을 넣고 샘플 그룹과 맞춰 줘야 합니다.
+
+/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/**Case**/sample\_hfsips1-p23.sorted.bam  
+  
+같은 샘플 그룹 / 쉼표
+
+/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/**Control**/sample\_hfsips1-p33\_cddo\_5nm.sorted.bam,/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/Control/sample\_hfsips1-p33.sorted.bam
+{% endhint %}
+
+
+
+
+
+![](../../.gitbook/assets/image%20%28146%29.png)
+
+생성파일 : 
+
+**여기서 유전자 발현값에 집중하는 연구라면, 주로 확인하는 파일은  
+  
+gene\_exp.diff, genes.read\_group\_tracking**
+
+**요 2개입니다.**
+
+## cummeRbund \( R Package \)
+
+Differential Expression 을 그림으로 나타내주고 여러 Plot 을 볼 수 있습니다.  
+패키지 업데이트 등 상당히 오래된 패키지라 그래픽 수준이 많이 떨어집니다.  
+  
+Deseq2/EdgeR/Ballgown과 같은 지위를 가지나 구동의 까다로움/Figure 가 Draft 수준이라 요즘에는 잘 쓰이지는 않는 것 같습니다. 참고 삼아서 구동해 보시길 바랍니다.  
+\([https://wikis.utexas.edu/display/bioiteam/Testing+for+Differential+Expression](https://wikis.utexas.edu/display/bioiteam/Testing+for+Differential+Expression)\)  
+\([http://compbio.mit.edu/cummeRbund/manual\_2\_0.html](http://compbio.mit.edu/cummeRbund/manual_2_0.html)\)  
+\(  
+  
+  
+
+
+![](../../.gitbook/assets/image%20%28159%29.png)
+
+![](../../.gitbook/assets/image%20%28158%29.png)
+
+![](../../.gitbook/assets/image%20%28160%29.png)
+
+```text
+#Rscript 
+library("cummeRbund")
+
+#분석 폴더 지정 / cuffdiff 가 끝난 
+cuff<-readCufflinks("D:/assembled_2/")
+
 ```
 
 
 
-## cummeRbund \( R Package\)
 
 
+   
 
-
-
-
-
-분석  중 화면   
-
-
-![](../../.gitbook/assets/image%20%28146%29.png)
 
 
 
