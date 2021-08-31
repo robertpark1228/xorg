@@ -1,3 +1,7 @@
+---
+description: 'https://biohpc.cornell.edu/lab/doc/linux_examples_exercises_v5.html'
+---
+
 # Linux 운용 및 기본 기능 소개/실습
 
 ## 자주 사용하는 명령어 정리 
