@@ -51,12 +51,15 @@ htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sorted
 -i : GFF 래퍼런스 파일에서 사용될 ID  
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28163%29.png)
+![GTF](../../.gitbook/assets/image%20%28163%29.png)
 
 {% hint style="info" %}
 -s : 방향성 \(Paired end -&gt; reverse / Single End no \)  
--t : feature \(어떤 것을 기준으로 삼을건지\)  feature type \(3rd column in GFF file\) to be used, all features of other type are ignored \(default, suitable for RNA-Seq analysis using an [Ensembl GTF](http://mblab.wustl.edu/GTF22.html) file: `exon`\)
+-t : feature \(어떤 것을 기준으로 삼을건지\)  feature type \(3rd column in GFF file\) to be used, all features of other type are ignored \(default, suitable for RNA-Seq analysis using an [Ensembl GTF](http://mblab.wustl.edu/GTF22.html) file: `exon`\)  
+\([https://htseq.readthedocs.io/en/release\_0.11.1/count.html](https://htseq.readthedocs.io/en/release_0.11.1/count.html)\)
 {% endhint %}
+
+
 
 
 
