@@ -8,15 +8,11 @@ description: '참조)https://quadrant.tistory.com/3'
 
 BAM 파일과 GFF 또는 GTF 그리고 hs38 fasta 파일의 chr 존재 여부가 일치하는지 확인하고 진행 하셔야 합니다.BAM 또는 SAM 파일 확인은 samtools view -h / fasta 파일은 cat 으로 확인 하시길 바랍니다.  
   
-
-
-#### 해당 Method 는 생산성 면에서는 상당히 떨어진다고 생각하기 때문에 개인적으론 참고만 하는 게 좋다고 생각합니다. 
-
-#### RNAseq 에서는 방법 자체가 옳거나 그른 것은 없기 때문에 개인의 취향에 따라 맞춰서 분석하시길 바랍니다.
+해당 Method 는 생산성 면에서는 상당히 떨어진다고 생각하기 때문에 개인적으론 참고만 하는 게 좋다고 생각합니다. RNAseq 에서는 방법 자체가 옳거나 그른 것은 없기 때문에 개인의 연구 목적에 따라 맞춰서 분석하시길 바랍니다.
 
 ## 분석 파이프라인 간략
 
-Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; R: cummDE / GSEA 분석 -&gt; REACTOME 분석  
+Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\) -&gt; Cuffdiff \(얼마나 다른지\) -&gt; cummeRbund\(도표/그래프\)  
 
 
 ### Cufflinks 파일 포맷 설명
@@ -92,8 +88,6 @@ cuffdiff -o ./assembled_2 -b /disk1/oneomics_analysis/beta_pipeline/references/h
 
 
 
-
-
 ![](../../.gitbook/assets/image%20%28146%29.png)
 
 생성파일 : 
@@ -117,11 +111,11 @@ Deseq2/EdgeR/Ballgown과 같은 지위를 가지나 구동의 까다로움/Figur
   
 
 
-![](../../.gitbook/assets/image%20%28164%29.png)
+![](../../.gitbook/assets/image%20%28165%29.png)
 
-![](../../.gitbook/assets/image%20%28161%29.png)
+![](../../.gitbook/assets/image%20%28162%29.png)
 
-![](../../.gitbook/assets/image%20%28167%29.png)
+![](../../.gitbook/assets/image%20%28168%29.png)
 
 ```text
 #Rscript 
@@ -160,72 +154,26 @@ v
 fpkmMatrix(genes(cuff))
 ```
 
-![disp&amp;lt;-dispersionPlot\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28160%29.png)
+![disp&amp;lt;-dispersionPlot\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28161%29.png)
 
 
 
-![dens&amp;lt;-csDensity\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28158%29.png)
+![dens&amp;lt;-csDensity\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28159%29.png)
 
-![pDendro&amp;lt;-csDendro\(genes\(cuff\),replicates=T\)](../../.gitbook/assets/image%20%28166%29.png)
+![pDendro&amp;lt;-csDendro\(genes\(cuff\),replicates=T\)](../../.gitbook/assets/image%20%28167%29.png)
 
    
 
 
-![csScatterMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28162%29.png)
+![csScatterMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28163%29.png)
 
 
 
-![MAplot\(genes\(cuff\),&quot;p\_Case&quot;,&quot;p\_Control&quot;\)](../../.gitbook/assets/image%20%28165%29.png)
+![MAplot\(genes\(cuff\),&quot;p\_Case&quot;,&quot;p\_Control&quot;\)](../../.gitbook/assets/image%20%28166%29.png)
 
-![csVolcanoMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28159%29.png)
+![csVolcanoMatrix\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28160%29.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
-
-### 
+## 참조
 
 ### 리눅스 \(Ubuntu 16.0.4\) 운영체제에서 분석한 내용을 토대로 작성한 글입니다.
 

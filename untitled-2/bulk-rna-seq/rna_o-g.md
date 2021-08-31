@@ -4,7 +4,7 @@ description: Salmon -> DEseq2 / edgeR Pipeline /
 
 # \[RNA-Expression\] Salmon-Deseq2 / edgeR
 
-SALMON -&gt; READ COUNT 세는 방법
+### SALMON -&gt; READ COUNT 세는 방법
 
 ```text
 $salmon quant -i /main/references/hg38/salmon_index/ -l A -1 ./${1}_1.fq.gz -2 ./${1}_2.fq.gz -o ${1}.quant --gcBias --useVBOpt
@@ -19,13 +19,7 @@ gcBias: DESeq2 에서 Recommendation
 useBVopt : 베이지안 EM 알고리즘을 사용  
 {% endhint %}
 
-
-
-
-
-
-
-SALMON -&gt; DESEQ2
+### SALMON -&gt; DESEQ2
 
 ```text
 ############################

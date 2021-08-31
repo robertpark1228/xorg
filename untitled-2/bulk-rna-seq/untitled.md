@@ -42,7 +42,7 @@ STAR --genomeDir ./genome --runThreadN 16 --readFilesIn hfsips1_p23_1.fq.gz hfsi
 {% endhint %}
 
 ```text
-htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sortedByCoord.out.bam /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens.GRCh38.104.gtf
+htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sortedByCoord.out.bam /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens.GRCh38.104.gtf > htseq_count_샘플명.txt
 ```
 
 {% hint style="info" %}
@@ -51,7 +51,7 @@ htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sorted
 -i : GFF 래퍼런스 파일에서 사용될 ID  
 {% endhint %}
 
-![GTF](../../.gitbook/assets/image%20%28163%29.png)
+![GTF](../../.gitbook/assets/image%20%28164%29.png)
 
 {% hint style="info" %}
 -s : 방향성 \(Paired end -&gt; reverse / Single End no \)  
@@ -60,6 +60,26 @@ htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sorted
 {% endhint %}
 
 
+
+### 결과물 
+
+\(Gene\_Name ReadCoung\)
+
+![](../../.gitbook/assets/image%20%28158%29.png)
+
+결과 해석의 Deseq2 
+
+```text
+library("DESeq2")
+directory<-("D:/")
+samples <- c("p22.gff", "p33.gff")
+filename <-c ("p22_count.txt","p33_count.txt")
+conditions <- c("control", "case")
+sampleTable<-data.frame(sampleName=samples, fileName=filename, condition=conditions)
+sampleTable
+dds<-DESeqDataSetFromHTSeqCount(sampleTable=sampleTable, directory=directory, design=~condition)
+colData(dds)$condition<-factor(colData(dds)$condition, levels=c("control", "case"))
+```
 
 
 
