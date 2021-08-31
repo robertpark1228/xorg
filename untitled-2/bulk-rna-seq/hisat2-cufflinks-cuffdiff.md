@@ -39,6 +39,8 @@ Rawdata Filtering -&gt; HISAT2 \(맵핑\) -&gt; Cufflink \(붙은 갯수 계산\
 cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf -o ./p33 ../../hisat2_bam/sample_hfsips1-p33.sorted.bam
 ```
 
+![](../../.gitbook/assets/image%20%28152%29.png)
+
 ### 
 
 ### cuffmerge \(샘플을 합해줌\)
