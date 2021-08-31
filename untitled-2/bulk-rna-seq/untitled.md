@@ -7,7 +7,7 @@ description: 사용법 위주 / HT-Seq 은 속도가 느립니다.
 ### Reference Genome 및 Transcriptome 만들기 \(1회성\)
 
 ```text
-$ STARf --runThreadN 120 --runMode genomeGenerate --genomeDir /main/references/hg38/STAR_reference --genomeFastaFiles /main/references/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile /main/references/hg38/Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
+$ STAR --runThreadN 120 --runMode genomeGenerate --genomeDir /main/references/hg38/STAR_reference --genomeFastaFiles /main/references/hg38/Homo_sapiens.GRCh38.dna.primary_assembly.fa --sjdbGTFfile /main/references/hg38/Homo_sapiens.GRCh38.104.gtf --sjdbOverhang 150
 ```
 
 {% hint style="info" %}
@@ -72,20 +72,41 @@ htseq-count -f bam -r name -i gene_id -s reverse -t exon ./p33_conAligned.sorted
 ```text
 library("DESeq2")
 directory<-("D:/")
-samples <- c("p22.gff", "p33.gff")
-filename <-c ("p22_count.txt","p33_count.txt")
-conditions <- c("control", "case")
+samples <- c("p22_Control", "p33_0nm_Case","p33_5nm_Case.txt")
+filename <- c("p22_count.txt","p33_count.txt","p33_con.txt")
+conditions <- c("control", "case","case")
 sampleTable<-data.frame(sampleName=samples, fileName=filename, condition=conditions)
 sampleTable
 dds<-DESeqDataSetFromHTSeqCount(sampleTable=sampleTable, directory=directory, design=~condition)
 colData(dds)$condition<-factor(colData(dds)$condition, levels=c("control", "case"))
+dds$sample<-colnames(dds)
+
+dds <- DESeq(dds)
+res <- results(dds)
+
+
+#filtering_part
+res_sig <- subset(res, padj<.05)
+res_lfc <- subset(res_sig, abs(log2FoldChange) > 1) 
+
+#plotCounts(dds, gene="TP53", intgroup="condition")
+plotCounts(dds, gene=which.min(res$padj), intgroup="condition")
+
+assay(vsd)
+vsd <- vst(dds)
+# calculate sample distances
+sample_dists <- assay(vsd) %>%
+  t() %>%
+  dist() %>%
+  as.matrix() 
+
+#SALMON 과 거의 동일 (DESEQ2의 분석)
+
+
+mdsData <- data.frame(cmdscale(sample_dists))
+mds <- cbind(mdsData, as.data.frame(colData(vsd)))
+plotPCA(vsd)
 ```
-
-
-
-
-
-## 기타 : STAR Aligner 알고리즘 / 참고
 
 #### STAR Alignment Strategy <a id="star-alignment-strategy"></a>
 

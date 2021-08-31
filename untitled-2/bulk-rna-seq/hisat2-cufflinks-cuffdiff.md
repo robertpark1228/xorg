@@ -152,6 +152,11 @@ v<-csVolcanoMatrix(genes(cuff))
 v
 #Transcriptome 의 FPKM Value
 fpkmMatrix(genes(cuff))
+
+
+
+
+
 ```
 
 ![disp&amp;lt;-dispersionPlot\(genes\(cuff\)\)](../../.gitbook/assets/image%20%28161%29.png)
