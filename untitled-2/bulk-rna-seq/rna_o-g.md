@@ -16,8 +16,35 @@ $salmon quant -i /main/references/hg38/salmon_index/ -l A -1 ./${1}_1.fq.gz -2 .
 -2 : read2  
 -o : output folder   
 gcBias: DESeq2 에서 Recommendation   
-useBVopt : 베이지안 EM 알고리즘을 사용  
+useBVopt : 베이지안 EM 알고리즘을 사용
 {% endhint %}
+
+### Genemap 파일 만드는 방법
+
+Transcription ID 로 되어 있기 때문에 \(XLOC\_\) -&gt; GeneID 로 바꿔주기 위함  
+
+
+```text
+tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
+```
+
+### [https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv)
+
+![](../../.gitbook/assets/image%20%28170%29.png)
+
+### Sample 리스트 파일
+
+
+
+![](../../.gitbook/assets/image%20%28169%29.png)
+
+```text
+samples <- read_csv("D:/RNASEQ_SALMON_QUANTIFICATION/sample.csv")
+```
+
+
+
+
 
 ### SALMON -&gt; DESEQ2
 
@@ -43,7 +70,7 @@ library("DESeq2")
 #install.packages("pheatmap")
 library(pheatmap)
 library("tximeta")
-library("dplyr")
+library("dplyr
 library("ggplot2")
 
 library("BiocParallel")
@@ -81,6 +108,8 @@ library("ensembldb")
 
 #샘플정의파일/Gene Annotation 파일 준비 
 tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
+
+
 #https://bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html
 ##############################ANNOTATION 다운로드#####################
 tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
