@@ -36,7 +36,17 @@ description: 파이썬 기초 + 응용 패키지 사용
 
 
 
-Python 추천 강좌 - Advanced
+Python 추천 강좌 - Advanced  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+[https://blog.naver.com/sw4r/222492240453](https://blog.naver.com/sw4r/222492240453)
 
 
 
