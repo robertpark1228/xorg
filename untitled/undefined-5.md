@@ -1,4 +1,4 @@
-# 유용한 강좌
+# Bioinformatics 강좌 모음
 
 1\) Bioinformatics File Format
 
