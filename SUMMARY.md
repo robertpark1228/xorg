@@ -31,6 +31,7 @@
     * [도커 / 도커 간단 사용법](untitled-2/sv-cnv/undefined.md)
   * [Bulk RNA Seq](untitled-2/bulk-rna-seq/README.md)
     * [\[RNA-Expression\]HISAT2/STAR Mapping + SeqMonk](untitled-2/bulk-rna-seq/hisat2-mapping-+-seqmonk.md)
+    * [RNA 분석 관련 문서 모음](untitled-2/bulk-rna-seq/rna.md)
     * [\[RNA-Variants Calling\] STAR2-GATK Variants Calling](untitled-2/bulk-rna-seq/star.md)
     * [\[RNA-Expression\]STAR2 - HT-seq](untitled-2/bulk-rna-seq/untitled.md)
     * [\[RNA-Expression\] Salmon-Deseq2 / edgeR](untitled-2/bulk-rna-seq/rna_o-g.md)
