@@ -39,7 +39,7 @@
     * [참고 \) RNAseq 통계 모델](untitled-2/bulk-rna-seq/rnaseq.md)
   * [Whole Genome Methylation Sequencing](untitled-2/whole-genome-methylation-sequencing.md)
   * [Single Cell RNASeq](untitled-2/single-cell-rnaseq/README.md)
-    * [Single Cell RNA](untitled-2/single-cell-rnaseq/single-cell-rna.md)
+    * [참고사이트](untitled-2/single-cell-rnaseq/single-cell-rna.md)
   * [Single Cell DNASeq](untitled-2/single-cell-dnaseq.md)
 * [4. Chip 분석](4.-chip.md)
 * [5. 실습 및 기타 참고 자료](4./README.md)
