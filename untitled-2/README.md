@@ -2,7 +2,7 @@
 description: Next Generation Sequencing 기본
 ---
 
-# 4. NGS 기본
+# 3. NGS 기본
 
 ## NGS  - Wet Lab : Sample QC / Library QC / LIBRARY LOADING 
 
