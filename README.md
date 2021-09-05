@@ -92,11 +92,7 @@
 
 
 
-
-
-
-
-
+### 8. 연락처
 
 {% embed url="https://www.linkedin.com/in/youngchan-park-860103b8/" %}
 
