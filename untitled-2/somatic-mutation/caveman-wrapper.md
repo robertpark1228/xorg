@@ -30,13 +30,7 @@ $ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae
 {% endhint %}
 
 ```text
-$ ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz -a /home/ubuntu/data/reference/VAGrENT
-_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz -si /home/ubuntu/data/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz -t /home/
-ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam -tidx /home/ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam.bai -
-n /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.bam -nidx /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.b
-am.bai -species human -assembly GRCh38 -cores 100 -exclude chrEBV,%_random,chrUn_% -o /home/ubuntu/data/ -cs /home/ubuntu/dat
-a/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz -qcset /home/ubuntu/data/reference/qcGenotype_GRCh38_hla_decoy_ebv
-.tar.gz -pl 3.65 -pu 1.0
+ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz -a /home/ubuntu/data/reference/VAGrENT_ref_GRCh38_hla_decoy_ebv_ensembl_91.tar.gz -si /home/ubuntu/data/reference/SNV_INDEL_ref_GRCh38_hla_decoy_ebv-fragment.tar.gz -t /home/ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam -tidx /home/ubuntu/data/p41-CDDO5nM/mapped/p41-CDDO5nM_sorted.bam.bai -n /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.bam -nidx /home/ubuntu/data/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.bam.bai -species human -assembly GRCh38 -cores 100 -exclude chrEBV,%_random,chrUn_% -o /home/ubuntu/data/ -cs /home/ubuntu/data/reference/CNV_SV_ref_GRCh38_hla_decoy_ebv_brass6+.tar.gz -qcset /home/ubuntu/data/reference/qcGenotype_GRCh38_hla_decoy_ebv.tar.gz -pl 3.65 -pu 1.0
 ```
 
 ## 구동 성공시 :

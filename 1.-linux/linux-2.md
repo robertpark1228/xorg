@@ -8,5 +8,5 @@
 
 2\) R Studio
 
-[https://www.rstudio.com/products/rstudio/download-server/debian-ubuntu/](https://www.rstudio.com/products/rstudio/download-server/debian-ubuntu/)
+[https://www.digitalocean.com/community/tutorials/how-to-set-up-rstudio-on-an-ubuntu-cloud-server](https://www.digitalocean.com/community/tutorials/how-to-set-up-rstudio-on-an-ubuntu-cloud-server)
 
