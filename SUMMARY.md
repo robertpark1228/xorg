@@ -12,6 +12,7 @@
   * [House Keeping Gene](2./house-keeping-gene.md)
 * [3. 기초 프로그래밍 언어](untitled-3/README.md)
   * [Bash Script](untitled-3/bash-script/README.md)
+    * [DB 파싱 명령어](untitled-3/bash-script/db.md)
     * [파싱 명령어 소개](untitled-3/bash-script/undefined-1.md)
     * [Bash Script 고급](untitled-3/bash-script/untitled.md)
   * [Python 기초](untitled-3/python.md)
