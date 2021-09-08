@@ -1,12 +1,30 @@
+---
+description: Singel Cell RNA 분석
+---
+
 # Single Cell RNASeq
 
-### 
+### Single Cell RNA 분석 
+
+![](../../.gitbook/assets/image%20%28249%29.png)
+
+![](../../.gitbook/assets/image%20%28250%29.png)
 
 ### 
 
-### 
 
-### 
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Rawdata Count 
 

@@ -52,7 +52,7 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
     </tr>
     <tr>
       <td style="text-align:center">RPKM/FPKM</td>
-      <td style="text-align:center"></td>
+      <td style="text-align:center">&#xAE38;&#xC774;&#xB300;&#xBE44; normalization</td>
       <td style="text-align:center">&#xC0D8;&#xD50C; &#xB0B4; Gene &#xC758;
         <br />&#xBC1C;&#xD604; &#xBE44;&#xAD50;</td>
     </tr>
