@@ -30,6 +30,8 @@
     * [SignR](untitled-2/somatic-mutation/signr.md)
     * [실습과제](untitled-2/somatic-mutation/undefined.md)
   * [SV : CNV 분석](untitled-2/sv-cnv/README.md)
+    * [SAVVI2](untitled-2/sv-cnv/savvi2.md)
+    * [MANTA](untitled-2/sv-cnv/manta.md)
     * [ASCAT](untitled-2/sv-cnv/ascat.md)
     * [Annotation](untitled-2/sv-cnv/annotation.md)
     * [Reference](untitled-2/sv-cnv/reference.md)
