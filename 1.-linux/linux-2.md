@@ -1,8 +1,10 @@
 # Linux 필수 및 분석 툴 설치 방법
 
-1\) apt install python3-pip
+1\) apt install 
 
-bwa, bcftools, bedtools
+
+
+python3-pip, bwa, bcftools, bedtools
 
 
 
