@@ -43,7 +43,11 @@ getN <- function(x) sum(getUniques(x))
 track <- cbind(out, getN(dadaFs), getN(dadaRs), getN(mergers), rowSums(seqtab.nochim))
 colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
 rownames(track) <- sample.names
-
+#silva_16s reference
+#https://www.nature.com/articles/s41598-020-60564-8
+#https://benjjneb.github.io/dada2/tutorial.html
+#SILVA REference
+#https://benjjneb.github.io/dada2/training.html
 taxa <- assignTaxonomy(seqtab.nochim, "C:/Users/rober/Desktop/X201SC21081623-Z01-F001/silva_nr_v132_train_set.fa.gz", multithread=TRUE)
 taxa <- addSpecies(taxa,"C:/Users/rober/Desktop/X201SC21081623-Z01-F001/silva_species_assignment_v132.fa.gz") 
 
@@ -59,7 +63,7 @@ ranks <- c("domain", "phylum", "class", "order", "family", "genus", "species")
 
 ```
 
-
+[https://www.bioconductor.org/packages/release/bioc/html/DECIPHER.html](https://www.bioconductor.org/packages/release/bioc/html/DECIPHER.html)
 
 [https://www.frontiersin.org/files/Articles/644662/fmicb-12-644662-HTML/image\_m/fmicb-12-644662-g001.jpg](https://www.frontiersin.org/files/Articles/644662/fmicb-12-644662-HTML/image_m/fmicb-12-644662-g001.jpg)
 
