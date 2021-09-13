@@ -1,6 +1,63 @@
 # Metagenome
 
-### 1\) 16s Amplicon Sequencing
+### 1\) 16s Amplicon Sequencing : DADA2 파이프라인
+
+```text
+library("dada2")
+fnFs <- c("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_1.fq.gz")
+fnRs <- c("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_2.fq.gz")
+
+plotQualityProfile(fnFs[1:2])
+plotQualityProfile(fnRs[1:2])
+
+filtFs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_1.filtered.fq.gz")
+filtRs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_2.filtered.fq.gz")
+
+#QC
+plotQualityProfile(fnFs[1:2])
+plotQualityProfile(fnRs[1:2])
+
+#truncLen QC 레포트 참고해서 수치 바꿔야함(Fwd,Rev)
+out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(240,240),
+                     maxN=0, maxEE=c(2,2), truncQ=1, rm.phix=TRUE,
+                     compress=TRUE, multithread=TRUE) # On Windows set multithread=FALSE
+
+
+#Error Rate
+errF <- learnErrors(filtFs, multithread=TRUE)
+errR <- learnErrors(filtRs, multithread=TRUE)
+
+plotErrors(errF, nominalQ=TRUE)
+plotErrors(errR, nominalQ=TRUE)
+
+dadaFs <- dada(filtFs, err=errF, multithread=TRUE)
+dadaRs <- dada(filtRs, err=errR, multithread=TRUE)
+
+mergers <- mergePairs(dadaFs, filtFs, dadaRs, filtRs, verbose=TRUE)
+seqtab <- makeSequenceTable(mergers)
+
+seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE, verbose=TRUE)
+
+getN <- function(x) sum(getUniques(x))
+
+track <- cbind(out, getN(dadaFs), getN(dadaRs), getN(mergers), rowSums(seqtab.nochim))
+colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
+rownames(track) <- sample.names
+
+taxa <- assignTaxonomy(seqtab.nochim, "C:/Users/rober/Desktop/X201SC21081623-Z01-F001/silva_nr_v132_train_set.fa.gz", multithread=TRUE)
+taxa <- addSpecies(taxa,"C:/Users/rober/Desktop/X201SC21081623-Z01-F001/silva_species_assignment_v132.fa.gz") 
+
+taxa.print <- taxa 
+rownames(taxa.print) <- NULL
+write.csv(taxa.print,"C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041_result.csv")
+
+
+
+load("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/SILVA_SSU_r138_2019.RData")
+
+ranks <- c("domain", "phylum", "class", "order", "family", "genus", "species")
+
+```
 
 
 
