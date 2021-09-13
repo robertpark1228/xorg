@@ -19,6 +19,7 @@
   * [Python 기초](untitled-3/python.md)
   * [R](untitled-3/untitled-1.md)
 * [4. NGS 기본](untitled-2/README.md)
+  * [Metagenome](untitled-2/metagenome.md)
   * [Rawdata QC 및 전처리](untitled-2/untitled.md)
   * [Mapping](untitled-2/mapping.md)
   * [Whole Genome/Exome/Target Seq. 소개](untitled-2/whole-genome-exome-traget-seq..md)

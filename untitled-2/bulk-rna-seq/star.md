@@ -43,7 +43,7 @@ RNA Variants Calling 은 해석에 주안점을 두고 접근 해야 합니다.
 ### STAR2 2PASS MAPPING
 
 ```text
-$ STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2.fq.gz --runThreadN 64 --readFilesCommand zcat --outFilterType BySJout --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outSAMtype BAM SortedByCoordinate --outSAMattrRGline ID:hfsips1_p23 LB:library PL:illumina PU:machine SM:hfsips1_p23 --twopassMode Basic
+STAR --genomeDir ./genome/ --readFilesIn ./hfsips1_p23_1.fq.gz ./hfsips1_p23_2.fq.gz --runThreadN 64 --readFilesCommand zcat --outFilterType BySJout --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outSAMtype BAM SortedByCoordinate --outSAMattrRGline ID:hfsips1_p23 LB:library PL:illumina PU:machine SM:hfsips1_p23 --twopassMode Basic
 ```
 
 
