@@ -52,7 +52,7 @@
     * [Seurat Pipeline](untitled-2/single-cell-rnaseq/seurat-pipeline.md)
     * [참고사이트](untitled-2/single-cell-rnaseq/single-cell-rna.md)
   * [Metagenome](untitled-2/metagenome/README.md)
-    * [Whole Metagenome Analysis](untitled-2/metagenome/whole-metagenome-analysis.md)
+    * [Whole Metagenome 분석](untitled-2/metagenome/whole-metagenome-analysis.md)
     * [16s Amplicon Seq 분석](untitled-2/metagenome/16s-amplicon-seq.md)
 * [5. Chip 분석](4.-chip.md)
 * [6. 실습 및 기타 참고 자료](4./README.md)
