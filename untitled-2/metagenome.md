@@ -1,6 +1,12 @@
 # Metagenome
 
-### 1\) 16s Amplicon Sequncing
+### 1\) 16s Amplicon Sequencing
+
+
+
+[https://www.frontiersin.org/files/Articles/644662/fmicb-12-644662-HTML/image\_m/fmicb-12-644662-g001.jpg](https://www.frontiersin.org/files/Articles/644662/fmicb-12-644662-HTML/image_m/fmicb-12-644662-g001.jpg)
+
+[https://benjjneb.github.io/dada2/index.html](https://benjjneb.github.io/dada2/index.html)
 
 [https://www.nature.com/articles/nbt.3935/figures/1](https://www.nature.com/articles/nbt.3935/figures/1)
 
