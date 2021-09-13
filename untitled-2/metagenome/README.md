@@ -2,6 +2,8 @@
 
 ### 1\) 16s Amplicon Sequencing : DADA2 파이프라인
 
+* V3\_V4 16s Amplicon Seq 이
+
 ```text
 library("dada2")
 #DUAL
@@ -63,6 +65,18 @@ load("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/SILVA_SSU_r138_2019.RData")
 ranks <- c("domain", "phylum", "class", "order", "family", "genus", "species")
 
 ```
+
+![](../../.gitbook/assets/image%20%28298%29.png)
+
+--결과에 대한 판단은 ...
+
+-- Seq\_Qual 이 높지 못해 maximum 까지 read를 잡아서 사
+
+
+
+
+
+
 
 [https://www.bioconductor.org/packages/release/bioc/html/DECIPHER.html](https://www.bioconductor.org/packages/release/bioc/html/DECIPHER.html)
 
