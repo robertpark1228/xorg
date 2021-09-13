@@ -1,6 +1,6 @@
 # Metagenome
 
-
+### 1\) 16s Amplicon Sequncing
 
 [https://www.nature.com/articles/nbt.3935/figures/1](https://www.nature.com/articles/nbt.3935/figures/1)
 
