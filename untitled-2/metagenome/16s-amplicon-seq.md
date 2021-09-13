@@ -6,7 +6,7 @@ description: 'QIMM2, DADA2 Pipeline'
 
 ### 1\) 16s Amplicon Sequencing : DADA2 파이프라인
 
-* V3\_V4 16s Amplicon Seq 이
+* V3\_V4 16s Amplicon Seq Analysis
 
 ```text
 library("dada2")
