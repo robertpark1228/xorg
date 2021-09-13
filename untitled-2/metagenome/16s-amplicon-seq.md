@@ -74,7 +74,7 @@ ranks <- c("domain", "phylum", "class", "order", "family", "genus", "species")
 
 --결과에 대한 판단은 ...
 
--- Seq\_Qual 이 높지 못해 maximum 까지 read를 잡아서 사
+-- Seq\_Qual 이 높지 못해 maximum 까지 read를 잡아서 사용 
 
 
 
