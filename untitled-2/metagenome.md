@@ -4,18 +4,19 @@
 
 ```text
 library("dada2")
+#DUAL
 fnFs <- c("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_1.fq.gz")
 fnRs <- c("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_2.fq.gz")
-
-plotQualityProfile(fnFs[1:2])
-plotQualityProfile(fnRs[1:2])
-
-filtFs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_1.filtered.fq.gz")
-filtRs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_2.filtered.fq.gz")
 
 #QC
 plotQualityProfile(fnFs[1:2])
 plotQualityProfile(fnRs[1:2])
+
+#
+filtFs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_1.filtered.fq.gz")
+filtRs <- file.path("C:/Users/rober/Desktop/X201SC21081623-Z01-F001/Rawdata/PRM12_0041/PRM12_0041_raw_2.filtered.fq.gz")
+
+
 
 #truncLen QC 레포트 참고해서 수치 바꿔야함(Fwd,Rev)
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(240,240),
