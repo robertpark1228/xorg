@@ -76,5 +76,7 @@ ranks <- c("domain", "phylum", "class", "order", "family", "genus", "species")
 
 -- Seq\_Qual 이 높지 못해 maximum 까지 read를 잡아서 사용 
 
+-- Annotation 에 몇개 더 시도해볼만한 가치가 있는게 있긴한데
+
 
 
