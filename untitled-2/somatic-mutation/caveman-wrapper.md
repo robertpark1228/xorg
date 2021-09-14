@@ -22,11 +22,11 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 * DOCKER 이미지 접속 
 
 ```text
-$ docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
+docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
 ```
 
 {% hint style="info" %}
--it : 
+-it :  -_it 옵션_은 특히 컨테이너의 쉘\(shell\)이나 CLI 도구를 사용할 때 매우 유용하게 사용됩니다.
 {% endhint %}
 
 ```text
