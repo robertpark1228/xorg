@@ -1,6 +1,6 @@
 # SALMON - QUANTIFICATION 방법
 
-1\) 변환코드\(R\)
+### 1\) 변환코드\(R\)
 
 ```text
 library("tximport")
@@ -20,7 +20,7 @@ write.csv(as.data.frame(txi$counts),"D:/data.csv")
 
 {% file src="../../.gitbook/assets/sample.csv" caption="예제 CSV" %}
 
-2\) Transcriptome ID Vs. Gene ID
+### 2\) Transcriptome ID Vs. Gene ID
 
 ![](../../.gitbook/assets/image%20%28299%29.png)
 
