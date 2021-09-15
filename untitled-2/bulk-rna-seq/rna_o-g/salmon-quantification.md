@@ -24,7 +24,7 @@ write.csv(as.data.frame(txi$counts),"D:/data.csv")
 
 ![](../../../.gitbook/assets/image%20%28300%29.png)
 
-{% file src="../../../.gitbook/assets/image \(300\).png" caption="tx2gene\_map" %}
+{% file src="../../../.gitbook/assets/tx2gene\_map.zip" %}
 
 3\) 기타 / Abundance 를 사용할 수 있으며, TPM 도 사용 가
 
