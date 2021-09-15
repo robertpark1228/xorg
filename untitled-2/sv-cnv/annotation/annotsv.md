@@ -20,7 +20,7 @@ vi ~/.bashrc
 
 4\) 예시
 
-![](../../../.gitbook/assets/image%20%28300%29.png)
+![](../../../.gitbook/assets/image%20%28301%29.png)
 
 [https://github.com/lgmgeo/AnnotSV](https://github.com/lgmgeo/AnnotSV)
 
