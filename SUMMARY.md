@@ -51,6 +51,7 @@
   * [Single Cell DNASeq](untitled-2/single-cell-dnaseq/README.md)
     * [scDNA 전처리](untitled-2/single-cell-dnaseq/scdna.md)
   * [Single Cell RNASeq](untitled-2/single-cell-rnaseq/README.md)
+    * [t-SNE](untitled-2/single-cell-rnaseq/t-sne.md)
     * [10x Genomics - CellRanger](untitled-2/single-cell-rnaseq/10x-genomics-cellranger.md)
     * [Seurat Pipeline](untitled-2/single-cell-rnaseq/seurat-pipeline.md)
     * [참고사이트](untitled-2/single-cell-rnaseq/single-cell-rna.md)
