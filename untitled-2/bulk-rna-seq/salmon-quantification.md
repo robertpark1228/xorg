@@ -18,7 +18,7 @@ colnames(txi$counts) <- samples$sample
 write.csv(as.data.frame(txi$counts),"D:/data.csv")
 ```
 
-{% file src="../../.gitbook/assets/sample.csv" caption="예제 CSV" %}
+{% file src="../../.gitbook/assets/sample.csv" caption="샘플명 리스트 업 CSV 파일" %}
 
 ### 2\) Transcriptome ID Vs. Gene ID
 
