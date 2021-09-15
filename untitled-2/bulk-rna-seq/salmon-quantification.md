@@ -13,11 +13,12 @@ samples <- read_csv("D:/RNASEQ_SALMON_QUANTIFICATION/sample.csv")
 txi <- tximport(files = samples$quant_file, type = "salmon", tx2gene = tx2gene_map)
 #샘플 명 달아주는 작업
 colnames(txi$counts) <- samples$sample
-as.data.frame(txi$counts)
+#as.data.frame(txi$counts)
+#파일저장
 write.csv(as.data.frame(txi$counts),"D:/data.csv")
 ```
 
-
+{% file src="../../.gitbook/assets/sample.csv" caption="예제 CSV" %}
 
 2\) Transcriptome ID Vs. Gene ID
 

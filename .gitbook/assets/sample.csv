@@ -1,0 +1,6 @@
+﻿sample,quant_file
+p23,D:/RNASEQ_SALMON_QUANTIFICATION/sample_hfsips1-p23.salmon/quant.sf
+p24,D:/RNASEQ_SALMON_QUANTIFICATION/sample_hfsips1-p24_trimmed.salmon/quant.sf
+p33,D:/RNASEQ_SALMON_QUANTIFICATION/sample_hfsips1-p33_trimmed_cddo_0nm.salmon/quant.sf
+p41,D:/RNASEQ_SALMON_QUANTIFICATION/sample_hfsips1-p41_trimmed_cddo_5nm.salmon/quant.sf
+p52,D:/RNASEQ_SALMON_QUANTIFICATION/sample_hfsips1-p52_trimmed_cddo_0nm.salmon/quant.sf
