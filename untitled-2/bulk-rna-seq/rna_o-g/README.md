@@ -30,13 +30,13 @@ tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
 
 ### [https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv)
 
-![](../../.gitbook/assets/image%20%28170%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 ### Sample 리스트 파일
 
 
 
-![](../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28169%29.png)
 
 ```text
 samples <- read_csv("D:/RNASEQ_SALMON_QUANTIFICATION/sample.csv")

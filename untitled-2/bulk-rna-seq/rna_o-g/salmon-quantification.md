@@ -1,4 +1,4 @@
-# SALMON - QUANTIFICATION 방법
+# SALMON - QUANTIFICATION \(TPM\)방법
 
 ### 1\) 변환코드\(R\)
 
@@ -18,11 +18,11 @@ colnames(txi$counts) <- samples$sample
 write.csv(as.data.frame(txi$counts),"D:/data.csv")
 ```
 
-{% file src="../../.gitbook/assets/sample.csv" caption="샘플명 리스트 업 CSV 파일" %}
+{% file src="../../../.gitbook/assets/sample.csv" caption="샘플명 리스트 업 CSV 파일" %}
 
 ### 2\) Transcriptome ID Vs. Gene ID
 
-![](../../.gitbook/assets/image%20%28299%29.png)
+![](../../../.gitbook/assets/image%20%28299%29.png)
 
-{% file src="../../.gitbook/assets/image \(299\).png" caption="tx2gene\_map" %}
+{% file src="../../../.gitbook/assets/image \(299\).png" caption="tx2gene\_map" %}
 
