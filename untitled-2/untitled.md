@@ -2,7 +2,7 @@
 description: Rawdata Preprocessing
 ---
 
-# Rawdata QC 및 전처리
+# \[공통\]Rawdata QC 및 전처리
 
 ## 1. Trim\_galore
 

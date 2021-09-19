@@ -2,7 +2,7 @@
 description: 분석 실습
 ---
 
-# Germline Mutation 분석
+# \[DNA\]Germline Mutation 분석
 
 ## 분석 개요
 

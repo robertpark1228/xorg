@@ -2,7 +2,7 @@
 description: 'Structure Variation [구조변이 : 복제수 변이]'
 ---
 
-# SV : CNV 분석
+# \[DNA\]SV : CNV 분석
 
 ### Copy Number Variation \(복제수변이/CNV\)
 

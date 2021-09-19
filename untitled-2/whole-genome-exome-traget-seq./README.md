@@ -1,4 +1,4 @@
-# Whole Genome/Exome/Target Seq. 소개
+# \[DNA\]Whole Genome/Exome/Target Seq. 소개
 
 ## Whole Genome/Exome/Target Sequencing
 
@@ -24,7 +24,7 @@
   
 Haplotype 알츠하이머 예시 APOE SNP 형에 따른 알츠하이머 유병
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../../.gitbook/assets/image%20%2885%29.png)
 
 ### 3. 분석 방법 정의 후 
 
@@ -61,7 +61,7 @@ Germline 분석 후 VCF 를 합쳐 Manual 분석, 일반적으로 maf 값 0.01 �
 
 #### 간략\) FASTQ -&gt; QC된 FASTQ -&gt; BAM 파일 MAPPING -&gt; MarkDuplicate\(PCR 여부\) -&gt; Base Quality Score Recalibration\(BQSR\)-&gt; Haplotype Calling -&gt; Variants Calling -&gt; 추가분
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 ### 
 
@@ -69,7 +69,7 @@ Germline 분석 후 VCF 를 합쳐 Manual 분석, 일반적으로 maf 값 0.01 �
 
 #### 간략\) FASTQ -&gt; QC된 FASTQ -&gt; BAM 파일 MAPPING -&gt; MarkDuplicate\(PCR 여부\) -&gt; Base Quality Score Recalibration\(BQSR\)-&gt; N-T Paired 또는 Normal 환자군 수가 되는 경우 PoN 제작 또는 Tumor Sample 만 있는 경우 공개된 PoN 사용\(보증X\)  -&gt; 추가분석
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 ### 5. 기타
 
@@ -79,7 +79,7 @@ Exome 및 Target Seq은 최종 분석 후 bed 또는 gff 를 이용하여 초기
 
 상용 Exome Kit 의 경우 회사별로 bed 파일이 제공되는 경우가 일반적이며 Exome kit 마다 Target 으로 하는 Coverage Size 가 다르기 때문에 Reads Depth 선정이 잘되어야 합니다.
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 
 

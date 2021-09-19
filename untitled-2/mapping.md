@@ -1,4 +1,8 @@
-# Mapping
+---
+description: 홀지놈/홀엑솜/RNASEQ-EXPRESSION/RNASEQ-VARINATS_CALLING/WGBS/SINGLE_CELL
+---
+
+# \[공통\]Mapping
 
 Mapping File 내부에 대한 정보 입니다.
 
