@@ -78,6 +78,9 @@
   * [실습](untitled/undefined-1.md)
 * [9. 통계](9..md)
 * [10. 알고리즘](10..md)
-* [11. 데이터 분석 / 기타](11./README.md)
+* [11. 데이터 분석 진행/의뢰](11./README.md)
+  * [RP Data - 2차](11./rp-data-2.md)
+  * [RP Data - 1차](11./rp-data-1.md)
+  * [SMC-WGRS/CNV/STR - GRCh37/38](11./smc-wgrs-cnv-str-grch37-38.md)
   * [P\_Series](11./p_series.md)
 
