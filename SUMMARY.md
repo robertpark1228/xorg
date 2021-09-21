@@ -74,4 +74,6 @@
   * [Whole Genome Sequencing](untitled/whole-genome-sequencing.md)
   * [References](untitled/undefined-2.md)
   * [실습](untitled/undefined-1.md)
+* [9. 통계](9..md)
+* [10. 알고리즘](10..md)
 
