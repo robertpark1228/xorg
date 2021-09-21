@@ -2,7 +2,7 @@
 description: 분석 위주
 ---
 
-# \[RNA\]Bulk RNA Seq
+# Bulk RNA Seq
 
 ## RNASeq 소개
 

@@ -1,4 +1,4 @@
-# \[WGBS\]Whole Genome Methylation Sequencing
+# Whole Genome Methylation Sequencing
 
 
 

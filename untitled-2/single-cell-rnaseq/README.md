@@ -2,7 +2,7 @@
 description: Singel Cell RNA 분석
 ---
 
-# \[scRNA\]Single Cell RNASeq
+# Single Cell RNASeq
 
 ### Single Cell RNA 분석 
 
