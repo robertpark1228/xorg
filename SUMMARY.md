@@ -49,6 +49,8 @@
     * [참고 \) RNAseq 통계 모델](untitled-2/bulk-rna-seq/rnaseq.md)
   * [\[WGBS\]Whole Genome Methylation Sequencing](untitled-2/whole-genome-methylation-sequencing.md)
   * [\[scDNA\]Single Cell DNASeq](untitled-2/single-cell-dnaseq/README.md)
+    * [참고자료](untitled-2/single-cell-dnaseq/undefined.md)
+    * [Publication](untitled-2/single-cell-dnaseq/publication.md)
     * [scDNA 전처리](untitled-2/single-cell-dnaseq/scdna.md)
   * [\[scRNA\]Single Cell RNASeq](untitled-2/single-cell-rnaseq/README.md)
     * [t-SNE](untitled-2/single-cell-rnaseq/t-sne.md)
