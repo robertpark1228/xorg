@@ -83,4 +83,5 @@
   * [RP Data - 1차](11./rp-data-1.md)
   * [SMC-WGRS/CNV/STR - GRCh37/38](11./smc-wgrs-cnv-str-grch37-38.md)
   * [P\_Series](11./p_series.md)
+* [12. Data 분석 효율화](12.-data.md)
 
