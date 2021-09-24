@@ -9,13 +9,19 @@ description: Rawdata Preprocessing
 1. 설치 시 필수로 요구하는 툴 :  1\) cutadapt [https://cutadapt.readthedocs.io/en/stable/installation.html](https://cutadapt.readthedocs.io/en/stable/installation.html) 2\) fastqc  [https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  1. cutadapt 설치 \( 계정 별로 설치 필요할 수 있습니다.\)
 
 ```
-$ sudo apt install cutadapt
+sudo apt install cutadapt
 ```
 
         2. fastqc 설치 \( 계정 별로 필요할 수 있습니다.\)
 
 ```bash
-$ sudo apt install fastqc
+sudo apt install fastqc
+```
+
+       3. Running
+
+```bash
+trim_galore --trim1 --illumina --paired [1.fq] [2.fq] -j [core]
 ```
 
 ## 2. Trimmomatic
