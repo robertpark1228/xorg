@@ -94,7 +94,7 @@
 
 ### 8. CV/RESUME
 
-멀티오믹스 분석 시스템 설치 / 실습 강좌 및 교육 관
+멀티오믹스 분석 / 시스템 설치 / 구동 / 실습 강좌 및 교육 관
 
 {% embed url="https://www.linkedin.com/in/youngchan-park-860103b8/" %}
 
