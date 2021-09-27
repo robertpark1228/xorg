@@ -1,2 +1,2 @@
-# RP Data - 2차
+# S-RP Data - 2차
 

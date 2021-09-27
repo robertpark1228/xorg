@@ -1,4 +1,4 @@
-# P\_Series
+# K-P\_Series
 
 ### Goals \(DRAFT\)
 
