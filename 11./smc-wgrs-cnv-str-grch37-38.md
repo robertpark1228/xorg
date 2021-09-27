@@ -1,4 +1,4 @@
-# SMC-WGRS/CNV/STR - GRCh37/38
+# WGRS 규모
 
 ### Goals \(DRAFT\)
 
