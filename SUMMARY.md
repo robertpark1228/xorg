@@ -85,5 +85,6 @@
   * [S-RP Data - 1차](11./rp-data-1.md)
   * [S-WGRS 규모](11./smc-wgrs-cnv-str-grch37-38.md)
   * [K-P\_Series](11./p_series.md)
-* [12. Data 분석 효율화](12.-data.md)
+* [12. Data 분석 효율화](12.-data/README.md)
+  * [Untitled](12.-data/untitled.md)
 
