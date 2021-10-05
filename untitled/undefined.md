@@ -4,7 +4,7 @@ description: 래퍼런스/인덱스/기타 분석 중 필요한 파일 다운로
 
 # 인덱스/래퍼런스 파일
 
-WGS/WES 래퍼런스 통일
+WGS/WES/RNASeq/MethyleSeq 래퍼런스 통일
 
 [https://ewels.github.io/AWS-iGenomes/](https://ewels.github.io/AWS-iGenomes/)
 
