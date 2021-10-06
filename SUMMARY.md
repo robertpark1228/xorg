@@ -70,6 +70,7 @@
   * [시각화](untitled-1/untitled-1.md)
   * [Untitled](untitled-1/untitled.md)
 * [8. 기타](untitled/README.md)
+  * [논문정리\(정리해야됨\)](untitled/undefined-7.md)
   * [Bioinformatics 강좌 모음](untitled/undefined-5.md)
   * [ERROR 처리 / 문제점 처리](untitled/error.md)
   * [유용한 툴](untitled/undefined-4.md)
