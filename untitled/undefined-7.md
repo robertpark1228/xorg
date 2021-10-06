@@ -8,5 +8,5 @@
 
 ![](../.gitbook/assets/image%20%28302%29.png)
 
-
+## The Emerging Genetic Landscape of Hirschsprung Disease and Its Potential Clinical Applications
 
