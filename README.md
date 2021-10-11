@@ -1,4 +1,8 @@
-# 목차
+---
+description: 정리본
+---
+
+# 😀 목차
 
 ## 1. Linux 시스템 기본
 
@@ -36,7 +40,7 @@
 
 ## 6. 스케쥴
 
-![](.gitbook/assets/image%20%28172%29.png)
+![](<.gitbook/assets/image (172).png>)
 
 ## 7. 기타
 
@@ -44,29 +48,47 @@
 
 ### INTEGRATED
 
-1. [ ] WGRS/WES GATK4 Germline / GATK4 Mutect2 / Caveman DNASEQ ANALYSIS  1\) SNV/INDEL 2\) MUT SNV / INDEL 3\) GERMLINE CNV ANALYSIS / 5 CNV Caller + AnnotSV + Visualization + IGV Loading  기타\)  1. FFPE 샘플의 경우 파이프라인에 변화가 있습니다. 2. 실험 방법 중 PCR Duplicate 은 고려되어야 합니다. 3. FFPE 가 아닌 WGRS/WES 의 경우 실험 과정에서 샘플이 바뀌지 않는 이상 이상하게 나오는 경우는 일반적으로 거의 없으며, batch effect 영향이 그리 크지는 않어 분석 진행시 marginal 한 부분이 있습니다. 
+* [ ] WGRS/WES GATK4 Germline / GATK4 Mutect2 / Caveman DNASEQ ANALYSIS \
+  1\) SNV/INDEL\
+  2\) MUT SNV / INDEL\
+  3\) GERMLINE CNV ANALYSIS / 5 CNV Caller + AnnotSV + Visualization + IGV Loading\
+  \
+  기타) \
+  1\. FFPE 샘플의 경우 파이프라인에 변화가 있습니다.\
+  2\. 실험 방법 중 PCR Duplicate 은 고려되어야 합니다.\
+  3\. FFPE 가 아닌 WGRS/WES 의 경우 실험 과정에서 샘플이 바뀌지 않는 이상 이상하게 나오는 경우는 일반적으로 거의 없으며, batch effect 영향이 그리 크지는 않어 분석 진행시 marginal 한 부분이 있습니다. 
 
 
 
-* [ ] TOTAL RNASEQ ANALYSIS  Rawdata read count Analysis 1\) STAR2-GATK Variants Calling \[MAPPING - CALLING \] 2\) HISAT2-SEQMONK \[MAPPING - RPKM READ COUNT\] 3\) HISAT2-CUFFLINKS  4\) Salmon - Deseq2/EdgeR2 Analysis \[ NON-MAPPING \(TPM\) - 
+* [ ] TOTAL RNASEQ ANALYSIS \
+  Rawdata read count Analysis\
+  1\) STAR2-GATK Variants Calling \[MAPPING - CALLING ]\
+  2\) HISAT2-SEQMONK \[MAPPING - RPKM READ COUNT]\
+  3\) HISAT2-CUFFLINKS \
+  4\) Salmon - Deseq2/EdgeR2 Analysis \[ NON-MAPPING (TPM) - 
 
 
 
-* [ ] Total RNAseq Post Processing 1\) GSEA ANALYSIS 2\) Deseq2 / EdgeR2 Analysis
+* [ ] Total RNAseq Post Processing\
+  1\) GSEA ANALYSIS 2) Deseq2 / EdgeR2 Analysis
 
 
 
-* [ ] Single Cell RNA - 1\) Basic Analysis  2\) Seurat Analysis  3\) Cell Time Serise Analysis
+* [ ] Single Cell RNA -\
+  1\) Basic Analysis \
+  2\) Seurat Analysis \
+  3\) Cell Time Serise Analysis
 
 
 
-* [ ] Methyle Seq Analysis 1\) MAPPING + Bismark + Seqmonk
+* [ ] Methyle Seq Analysis\
+  1\) MAPPING + Bismark + Seqmonk
 
 ###      
 
 ### Multiomics 분석 : 
 
-![](.gitbook/assets/image%20%2896%29.png)
+![](<.gitbook/assets/image (96).png>)
 
 ### 각 데이터에서 유의미한 뭔 가를 끌어 내는 것.
 
@@ -88,7 +110,7 @@
 >
 > RNA/scRNA & Cancer
 
-### [https://www.mcponline.org/article/S1535-9476\(20\)60015-9/fulltext](https://www.mcponline.org/article/S1535-9476%2820%2960015-9/fulltext)
+### [https://www.mcponline.org/article/S1535-9476(20)60015-9/fulltext](https://www.mcponline.org/article/S1535-9476\(20\)60015-9/fulltext)
 
 
 
@@ -97,6 +119,4 @@
 멀티오믹스 분석 / 시스템 설치 / 구동 / 실습 강좌 및 교육 관련
 
 {% embed url="https://www.linkedin.com/in/youngchan-park-860103b8/" %}
-
-
 
