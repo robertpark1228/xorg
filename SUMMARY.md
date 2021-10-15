@@ -63,6 +63,7 @@
   * [\[Microbiome\]Metagenome](untitled-2/metagenome/README.md)
     * [Whole Metagenome 분석](untitled-2/metagenome/whole-metagenome-analysis.md)
     * [16s Amplicon Seq 분석](untitled-2/metagenome/16s-amplicon-seq.md)
+    * [Page 1](untitled-2/metagenome/page-1.md)
 * [5. Chip 분석](4.-chip.md)
 * [6. 실습 및 기타 참고 자료](4./README.md)
   * [RNASeq 실습](4./untitled-1.md)

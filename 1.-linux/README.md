@@ -10,8 +10,6 @@ description: Linux 시스템 간략 소개Linux 운용 및 기본 기능 소개/
 
 #### Linux 명령어 실습
 
-  
-
-
+\
 
 

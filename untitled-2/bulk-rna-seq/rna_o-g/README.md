@@ -2,43 +2,43 @@
 description: Salmon -> DEseq2 / edgeR Pipeline /
 ---
 
-# \[RNA-Expression\] Salmon-Deseq2 / edgeR
+# \[RNA-Expression] Salmon-Deseq2 / edgeR
 
-### SALMON -&gt; READ COUNT 세는 방법
+### SALMON -> READ COUNT 세는 방법
 
-```text
+```
 $salmon quant -i /main/references/hg38/salmon_index/ -l A -1 ./${1}_1.fq.gz -2 ./${1}_2.fq.gz -o ${1}.quant --gcBias --useVBOpt
 ```
 
 {% hint style="info" %}
--l : 라이브러리 타입, A = 자동  
--1 : read1  
--2 : read2  
--o : output folder   
-gcBias: DESeq2 에서 Recommendation   
+\-l : 라이브러리 타입, A = 자동\
+\-1 : read1\
+\-2 : read2\
+\-o : output folder \
+gcBias: DESeq2 에서 Recommendation \
 useBVopt : 베이지안 EM 알고리즘을 사용
 {% endhint %}
 
 ### Genemap 파일 만드는 방법
 
-Transcription ID 로 되어 있기 때문에 \(XLOC\_\) -&gt; GeneID 로 바꿔주기 위함  
+Transcription ID 로 되어 있기 때문에 (XLOC\_) -> GeneID 로 바꿔주기 위함\
 
 
-```text
+```
 tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
 ```
 
 ### [https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv)
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](<../../../.gitbook/assets/image (170).png>)
 
 ### Sample 리스트 파일
 
 
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](<../../../.gitbook/assets/image (169).png>)
 
-```text
+```
 samples <- read_csv("D:/RNASEQ_SALMON_QUANTIFICATION/sample.csv")
 ```
 
@@ -46,9 +46,9 @@ samples <- read_csv("D:/RNASEQ_SALMON_QUANTIFICATION/sample.csv")
 
 
 
-### SALMON -&gt; DESEQ2
+### SALMON -> DESEQ2
 
-```text
+```
 ############################
 #USEFUL command
 #utils::View
@@ -326,7 +326,7 @@ genetable <- data.frame(gene.id = rownames(txi$counts))
 
 
 
-[http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching\_pg/workshops/biocDGE.html\#gc\_content](http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content)
+[http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content](http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content)
 
 
 
@@ -336,7 +336,5 @@ GO / GSEA 분석은 웹 및 Cytoscape 이용 추천
 
 
 
-{% embed url="https://combine-lab.github.io/salmon/getting\_started/" %}
-
-
+{% embed url="https://combine-lab.github.io/salmon/getting_started/" %}
 

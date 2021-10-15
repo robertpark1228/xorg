@@ -12,7 +12,7 @@ WGS/WES/RNASeq/MethyleSeq 래퍼런스 통일
 
 
 
-[ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38\_hla\_decoy\_ebv/](ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38_hla_decoy_ebv/)
+[ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38\_hla_decoy_ebv/](ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/GRCh38\_hla_decoy_ebv/)
 
 
 
@@ -26,13 +26,11 @@ WGS/WES/RNASeq/MethyleSeq 래퍼런스 통일
 
 [https://www.biostars.org/p/404411/](https://www.biostars.org/p/404411/)
 
-{% embed url="https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF\_000001405.39\_GRCh38.p13/" %}
+{% embed url="https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/" %}
 
-: 트랜스크립톰 GENE ID &lt;-&gt; ENSEMBLE ID
+: 트랜스크립톰 GENE ID <-> ENSEMBLE ID
 
 tximport 시 필요.
-
-
 
 
 

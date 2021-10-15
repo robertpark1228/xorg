@@ -10,11 +10,11 @@ description: 파이썬 기초 + 응용 패키지 사용
 
 
 
-### 
+###
 
-### 
+###
 
-### 
+###
 
 ### Python 기본 강의 - 참고 자료
 
@@ -24,31 +24,31 @@ description: 파이썬 기초 + 응용 패키지 사용
 
 
 
-{% file src="../.gitbook/assets/\_1-.pptx" caption="" %}
+{% file src="../.gitbook/assets/_1-.pptx" %}
 
-{% file src="../.gitbook/assets/\_2-.pptx" %}
+{% file src="../.gitbook/assets/_2-.pptx" %}
 
-{% file src="../.gitbook/assets/\_3-.pptx" caption="파이썬\_3일차.pptx" %}
-
-
-
-
+{% file src="../.gitbook/assets/_3-.pptx" %}
+파이썬\_3일차.pptx
+{% endfile %}
 
 
 
-Python 추천 강좌 - Advanced  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+Python 추천 강좌 - Advanced\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 [https://blog.naver.com/sw4r/222492240453](https://blog.naver.com/sw4r/222492240453)
-
-
 
 
 

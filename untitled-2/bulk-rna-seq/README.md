@@ -2,205 +2,152 @@
 description: 분석 위주
 ---
 
-# \[RNA\]Bulk RNA Seq
+# \[RNA]Bulk RNA Seq
 
 ## RNASeq 소개
 
-RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 파이프라인\(분석하는 전략\)이 수십개씩 쏟아져 나오고 있는 상황 입니다. 상대적으로 적은 용량에 적당한 PC가 있으면 분석이 가능하며, 클라우드에 업로드도 용이하여 NGS 분석 중 그나마 Workload 가 작은 분석 방식 입니다.  
-  
+RNA 분석은 매년 다양한 방법이 소개되고 있으며, 1년에 분석 파이프라인(분석하는 전략)이 수십개씩 쏟아져 나오고 있는 상황 입니다. 상대적으로 적은 용량에 적당한 PC가 있으면 분석이 가능하며, 클라우드에 업로드도 용이하여 NGS 분석 중 그나마 Workload 가 작은 분석 방식 입니다.\
+\
 이는 물론 Resequencing 이 가능한 Human 한정이며, 다른 포유류, 식물등은 Denovo 방식을 고려해야 하기 때문에 분석이 쉬운 편은 아닙니다.   
 
-RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있으며, 분석법 역시 많이 출시가 되어 있으나   
-결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다.  
-  
+RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있으며, 분석법 역시 많이 출시가 되어 있으나 \
+결국 기초 자료로 활용되는 GENE 대비 RAW COUNT 자료 이며, 대표적으로 활용되는 DESeq2 / EdgeR 등에서는 Raw Count 만을 활용 합니다.\
+\
 
 
 [https://pubmed.ncbi.nlm.nih.gov/22988256/](https://pubmed.ncbi.nlm.nih.gov/22988256/)
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:center">&#xACC4;&#xC0B0;&#xBC29;&#xC2DD;</th>
-      <th style="text-align:center">&#xD65C;&#xC6A9;&#xBAA8;&#xB378;</th>
-      <th style="text-align:center">&#xC0AC;&#xC6A9; &#xD558;&#xB294; &#xACF3;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center">
-        <p>CPM</p>
-        <p>Counts Per Million</p>
-      </td>
-      <td style="text-align:center">&#xC804;&#xCCB4; Reads &#xC758; &#xC218;</td>
-      <td style="text-align:center">
-        <p>&#xB3D9;&#xC77C; &#xC0D8;&#xD50C; &#xADF8;&#xB8F9;&#xC758;
-          <br />Replicates &#xC0D8;&#xD50C;&#xAC04;
-          <br />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;&#xAD50;</p>
-        <p></p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center">TPM</td>
-      <td style="text-align:center">Transcript / Reads</td>
-      <td style="text-align:center">
-        <p>&#xAC19;&#xC740; &#xC0D8;&#xD50C; &#xAC04;
-          <br />&#xAC19;&#xC740; &#xC0D8;&#xD50C; &#xADF8;&#xB8F9; &#xB0B4; &#xC0D8;&#xD50C;&#xC5D0;&#xC11C;</p>
-        <p>Gene &#xC758; &#xBC1C;&#xD604; &#xBE44;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center">RPKM/FPKM</td>
-      <td style="text-align:center">&#xAE38;&#xC774;&#xB300;&#xBE44; normalization</td>
-      <td style="text-align:center">&#xC0D8;&#xD50C; &#xB0B4; Gene &#xC758;
-        <br />&#xBC1C;&#xD604; &#xBE44;&#xAD50;</td>
-    </tr>
-    <tr>
-      <td style="text-align:center">DESeq2</td>
-      <td style="text-align:center">Raw Count &#xAE30;&#xBC18; GLM</td>
-      <td style="text-align:center">&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;&#xC758; &#xBE44;&#xAD50;
-        <br
-        />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;
-        <br /><b>DEG &#xBD84;&#xC11D;</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center">EdgeR</td>
-      <td style="text-align:center">TMM &#xACC4;&#xC0B0;</td>
-      <td style="text-align:center">
-        <p>&#xC0D8;&#xD50C;&#xACFC; &#xC0D8;&#xD50C;/&#xC0D8;&#xD50C; &#xB0B4;
-          <br
-          />Gene &#xC758; &#xBC1C;&#xD604;&#xB7C9; &#xBE44;
-          <br /><b>DEG &#xBD84;&#xC11D;</b>
-        </p>
-        <p>&lt;b&gt;&lt;/b&gt;</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+|                계산방식                 |        활용모델         |                                        사용 하는 곳                                         |
+| :---------------------------------: | :-----------------: | :------------------------------------------------------------------------------------: |
+| <p>CPM</p><p>Counts Per Million</p> |     전체 Reads 의 수    |               <p>동일 샘플 그룹의 <br>Replicates 샘플간<br>Gene 의 발현량 비교</p><p></p>              |
+|                 TPM                 | Transcript / Reads  |                 <p>같은 샘플 간  <br>같은 샘플 그룹 내 샘플에서 </p><p>Gene 의 발현 비</p>                 |
+|              RPKM/FPKM              |  길이대비 normalization |                              <p>샘플 내 Gene 의 <br>발현 비교</p>                              |
+|                DESeq2               |  Raw Count 기반 GLM   |              <p>샘플과 샘플의 비교<br>Gene 의 발현량 비<br><strong>DEG 분석</strong></p>              |
+|                EdgeR                |        TMM 계산       | <p>샘플과 샘플/샘플 내<br>Gene 의 발현량 비 <br><strong>DEG 분석</strong></p><p><strong></strong></p> |
 
-\*\*\*\*
+****
 
 
 
-\(STAR - HTSEQ COUNT.txt 자료\) 
+(STAR - HTSEQ COUNT.txt 자료) 
 
-![](../../.gitbook/assets/image%20%2898%29.png)
+![](<../../.gitbook/assets/image (98).png>)
 
 
 
 ## RNA 분석 정리 
 
-![](../../.gitbook/assets/image%20%28200%29.png)
+![](<../../.gitbook/assets/image (200).png>)
 
-![](../../.gitbook/assets/image%20%28217%29.png)
+![](<../../.gitbook/assets/image (217).png>)
 
-![](../../.gitbook/assets/image%20%28196%29.png)
+![](<../../.gitbook/assets/image (196).png>)
 
-![](../../.gitbook/assets/image%20%28219%29.png)
+![](<../../.gitbook/assets/image (219).png>)
 
-![](../../.gitbook/assets/image%20%28211%29.png)
+![](<../../.gitbook/assets/image (211).png>)
 
-![](../../.gitbook/assets/image%20%28236%29.png)
+![](<../../.gitbook/assets/image (236).png>)
 
-![](../../.gitbook/assets/image%20%28199%29.png)
+![](<../../.gitbook/assets/image (199).png>)
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](<../../.gitbook/assets/image (194).png>)
 
-![](../../.gitbook/assets/image%20%28245%29.png)
+![](<../../.gitbook/assets/image (245).png>)
 
-![](../../.gitbook/assets/image%20%28206%29.png)
+![](<../../.gitbook/assets/image (206).png>)
 
-![](../../.gitbook/assets/image%20%28239%29.png)
+![](<../../.gitbook/assets/image (239).png>)
 
-![](../../.gitbook/assets/image%20%28228%29.png)
+![](<../../.gitbook/assets/image (228).png>)
 
-![](../../.gitbook/assets/image%20%28221%29.png)
+![](<../../.gitbook/assets/image (221).png>)
 
-![](../../.gitbook/assets/image%20%28202%29.png)
+![](<../../.gitbook/assets/image (202).png>)
 
-![](../../.gitbook/assets/image%20%28204%29.png)
+![](<../../.gitbook/assets/image (204).png>)
 
-![](../../.gitbook/assets/image%20%28243%29.png)
+![](<../../.gitbook/assets/image (243).png>)
 
-![](../../.gitbook/assets/image%20%28190%29.png)
+![](<../../.gitbook/assets/image (190).png>)
 
-![](../../.gitbook/assets/image%20%28230%29.png)
+![](<../../.gitbook/assets/image (230).png>)
 
-![](../../.gitbook/assets/image%20%28198%29.png)
+![](<../../.gitbook/assets/image (198).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28224%29.png)
+![](<../../.gitbook/assets/image (224).png>)
 
-![](../../.gitbook/assets/image%20%28227%29.png)
+![](<../../.gitbook/assets/image (227).png>)
 
-![](../../.gitbook/assets/image%20%28241%29.png)
+![](<../../.gitbook/assets/image (241).png>)
 
-![](../../.gitbook/assets/image%20%28247%29.png)
+![](<../../.gitbook/assets/image (247).png>)
 
-![](../../.gitbook/assets/image%20%28203%29.png)
+![](<../../.gitbook/assets/image (203).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28222%29.png)
+![](<../../.gitbook/assets/image (222).png>)
 
-![](../../.gitbook/assets/image%20%28175%29.png)
+![](<../../.gitbook/assets/image (175).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28238%29.png)
+![](<../../.gitbook/assets/image (238).png>)
 
-![](../../.gitbook/assets/image%20%28193%29.png)
+![](<../../.gitbook/assets/image (193).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28216%29.png)
+![](<../../.gitbook/assets/image (216).png>)
 
-![](../../.gitbook/assets/image%20%28234%29.png)
+![](<../../.gitbook/assets/image (234).png>)
 
-![](../../.gitbook/assets/image%20%28246%29.png)
+![](<../../.gitbook/assets/image (246).png>)
 
-![](../../.gitbook/assets/image%20%28191%29.png)
+![](<../../.gitbook/assets/image (191).png>)
 
-![](../../.gitbook/assets/image%20%28181%29.png)
+![](<../../.gitbook/assets/image (181).png>)
 
-![](../../.gitbook/assets/image%20%28177%29.png)
+![](<../../.gitbook/assets/image (177).png>)
 
-![](../../.gitbook/assets/image%20%28184%29.png)
+![](<../../.gitbook/assets/image (184).png>)
 
-![](../../.gitbook/assets/image%20%28240%29.png)
+![](<../../.gitbook/assets/image (240).png>)
 
-![](../../.gitbook/assets/image%20%28232%29.png)
+![](<../../.gitbook/assets/image (232).png>)
 
-![](../../.gitbook/assets/image%20%28205%29.png)
+![](<../../.gitbook/assets/image (205).png>)
 
-![](../../.gitbook/assets/image%20%28201%29.png)
+![](<../../.gitbook/assets/image (201).png>)
 
-![](../../.gitbook/assets/image%20%28197%29.png)
+![](<../../.gitbook/assets/image (197).png>)
 
-![](../../.gitbook/assets/image%20%28178%29.png)
+![](<../../.gitbook/assets/image (178).png>)
 
-![](../../.gitbook/assets/image%20%28226%29.png)
+![](<../../.gitbook/assets/image (226).png>)
 
-![](../../.gitbook/assets/image%20%28242%29.png)
+![](<../../.gitbook/assets/image (242).png>)
 
-![](../../.gitbook/assets/image%20%28229%29.png)
+![](<../../.gitbook/assets/image (229).png>)
 
-![](../../.gitbook/assets/image%20%28210%29.png)
+![](<../../.gitbook/assets/image (210).png>)
 
-![](../../.gitbook/assets/image%20%28185%29.png)
+![](<../../.gitbook/assets/image (185).png>)
 
-![](../../.gitbook/assets/image%20%28180%29.png)
+![](<../../.gitbook/assets/image (180).png>)
 
-![](../../.gitbook/assets/image%20%28237%29.png)
+![](<../../.gitbook/assets/image (237).png>)
 
-![](../../.gitbook/assets/image%20%28220%29.png)
+![](<../../.gitbook/assets/image (220).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28195%29.png)
+![](<../../.gitbook/assets/image (195).png>)
 
 
 
@@ -208,67 +155,67 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
 
 
 
-![](../../.gitbook/assets/image%20%28192%29.png)
+![](<../../.gitbook/assets/image (192).png>)
 
-![](../../.gitbook/assets/image%20%28209%29.png)
+![](<../../.gitbook/assets/image (209).png>)
 
-![](../../.gitbook/assets/image%20%28207%29.png)
+![](<../../.gitbook/assets/image (207).png>)
 
-![](../../.gitbook/assets/image%20%28174%29.png)
+![](<../../.gitbook/assets/image (174).png>)
 
-![](../../.gitbook/assets/image%20%28182%29.png)
+![](<../../.gitbook/assets/image (182).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28186%29.png)
+![](<../../.gitbook/assets/image (186).png>)
 
-![](../../.gitbook/assets/image%20%28179%29.png)
+![](<../../.gitbook/assets/image (179).png>)
 
-![](../../.gitbook/assets/image%20%28176%29.png)
+![](<../../.gitbook/assets/image (176).png>)
 
-![](../../.gitbook/assets/image%20%28235%29.png)
+![](<../../.gitbook/assets/image (235).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](<../../.gitbook/assets/image (214).png>)
 
-![](../../.gitbook/assets/image%20%28233%29.png)
+![](<../../.gitbook/assets/image (233).png>)
 
-![](../../.gitbook/assets/image%20%28231%29.png)
+![](<../../.gitbook/assets/image (231).png>)
 
-![](../../.gitbook/assets/image%20%28248%29.png)
+![](<../../.gitbook/assets/image (248).png>)
 
-![](../../.gitbook/assets/image%20%28225%29.png)
+![](<../../.gitbook/assets/image (225).png>)
 
-![](../../.gitbook/assets/image%20%28223%29.png)
+![](<../../.gitbook/assets/image (223).png>)
 
-![](../../.gitbook/assets/image%20%28208%29.png)
+![](<../../.gitbook/assets/image (208).png>)
 
-![](../../.gitbook/assets/image%20%28244%29.png)
+![](<../../.gitbook/assets/image (244).png>)
 
-![](../../.gitbook/assets/image%20%28212%29.png)
+![](<../../.gitbook/assets/image (212).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28183%29.png)
+![](<../../.gitbook/assets/image (183).png>)
 
-![](../../.gitbook/assets/image%20%28218%29.png)
+![](<../../.gitbook/assets/image (218).png>)
 
-![](../../.gitbook/assets/image%20%28188%29.png)
+![](<../../.gitbook/assets/image (188).png>)
 
-![](../../.gitbook/assets/image%20%28189%29.png)
+![](<../../.gitbook/assets/image (189).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28215%29.png)
+![](<../../.gitbook/assets/image (215).png>)
 
 
 
-![](../../.gitbook/assets/image%20%28173%29.png)
+![](<../../.gitbook/assets/image (173).png>)
 
-![](../../.gitbook/assets/image%20%28187%29.png)
+![](<../../.gitbook/assets/image (187).png>)
 
-![](../../.gitbook/assets/image%20%28213%29.png)
+![](<../../.gitbook/assets/image (213).png>)
 
 
 
@@ -302,13 +249,13 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
 
 ## 대표적인 Pipeline
 
-![](../../.gitbook/assets/image%20%2827%29.png)
+![](<../../.gitbook/assets/image (27).png>)
 
 
 
 ## 분석 전략을 세울 시 참고 자료
 
-![](../../.gitbook/assets/image%20%2897%29.png)
+![](<../../.gitbook/assets/image (97).png>)
 
 
 
@@ -316,35 +263,33 @@ RNA 분석의 경우 통계를 기반으로 다양한 이론이 소개되고 있
 
 ## - 참고자료
 
-1\) [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8)  
-2\) 상기 링크 번역본  
-[https://ibric.org/myboard/read.php?Board=report&id=2776&Page=8&PARA9=3](https://ibric.org/myboard/read.php?Board=report&id=2776&Page=8&PARA9=3)  
-3\) RPKM/FPKM/기타 발현량 등 benchmark  
-[https://bioinformaticsandme.tistory.com/63](https://bioinformaticsandme.tistory.com/63)  
-4\) RNAseq   
-[https://www.rna-seqblog.com/](https://www.rna-seqblog.com/)  
-  
-5\) 강좌 :   
-[https://www.youtube.com/watch?v=xh\_wpWj0AzM](https://www.youtube.com/watch?v=xh_wpWj0AzM)
+1\) [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8)\
+2\) 상기 링크 번역본\
+[https://ibric.org/myboard/read.php?Board=report\&id=2776\&Page=8\&PARA9=3](https://ibric.org/myboard/read.php?Board=report\&id=2776\&Page=8\&PARA9=3)\
+3\) RPKM/FPKM/기타 발현량 등 benchmark\
+[https://bioinformaticsandme.tistory.com/63](https://bioinformaticsandme.tistory.com/63)\
+4\) RNAseq \
+[https://www.rna-seqblog.com/](https://www.rna-seqblog.com)\
+\
+5\) 강좌 : \
+[https://www.youtube.com/watch?v=xh_wpWj0AzM](https://www.youtube.com/watch?v=xh_wpWj0AzM)
 
 6\) [http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
 
-7\)[https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv\#Gene-Ontology](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv#Gene-Ontology)
+7\)[https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv#Gene-Ontology](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv#Gene-Ontology)
 
-8\)[https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html\#transcript-quantification-and-tximport-txime](https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html#transcript-quantification-and-tximport-tximeta)
+8\)[https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html#transcript-quantification-and-tximport-txime](https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html#transcript-quantification-and-tximport-tximeta)
 
-9\)[https://hbctraining.github.io/DGE\_workshop\_salmon\_online/lessons/03\_DGE\_QC\_analysis.html](https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/03_DGE_QC_analysis.html)
+9\)[https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/03\_DGE_QC_analysis.html](https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/03\_DGE_QC_analysis.html)
 
-10\)[https://angus.readthedocs.io/en/2016/\_static/DifferentialExpressionBasics\_NGS2016\_ID.pdf](https://angus.readthedocs.io/en/2016/_static/DifferentialExpressionBasics_NGS2016_ID.pdf)  
+10\)[https://angus.readthedocs.io/en/2016/\_static/DifferentialExpressionBasics_NGS2016\_ID.pdf](https://angus.readthedocs.io/en/2016/\_static/DifferentialExpressionBasics_NGS2016\_ID.pdf)\
 
 
-11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)  
-  
-12\)[https://support.bioconductor.org/p/119776/](https://support.bioconductor.org/p/119776/)   
-  
+11\) [http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html](http://master.bioconductor.org/packages/release/workflows/html/rnaseqGene.html)\
+\
+12\)[https://support.bioconductor.org/p/119776/](https://support.bioconductor.org/p/119776/) \
+\
 13\) [https://www.biostars.org/p/298272/](https://www.biostars.org/p/298272/)
-
-
 
 
 

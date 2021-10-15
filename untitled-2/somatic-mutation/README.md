@@ -1,12 +1,16 @@
-# \[DNA\]Somatic Mutation
+# \[DNA]Somatic Mutation
 
-* 분석개요  1\) 한 사람 샘플에서 채취한 Normal / Tumor 2\) PoN \(Normal Sample 군\) 에서 만든 Variants 를 Filtering  
+* 분석개요 \
+  1\) 한 사람 샘플에서 채취한 Normal / Tumor\
+  2\) PoN (Normal Sample 군) 에서 만든 Variants 를 Filtering\
+  \
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+
+![](<../../.gitbook/assets/image (53).png>)
 
 ## 샘플 준비
 
-![](../../.gitbook/assets/image%20%2871%29.png)
+![](<../../.gitbook/assets/image (71).png>)
 
 
 
@@ -18,13 +22,13 @@
 
 
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](<../../.gitbook/assets/image (10).png>)
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](<../../.gitbook/assets/image (5).png>)
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](<../../.gitbook/assets/image (47).png>)
 
-## 분석 툴 : 대부분 mapping 된 파일에서 시작\(BAM 파일\)
+## 분석 툴 : 대부분 mapping 된 파일에서 시작(BAM 파일)
 
 ### GATK4 기능 중 Mutect2 pipeline
 
@@ -34,6 +38,4 @@
 
 [https://github.com/cancerit/cgpCaVEManWrapper](https://github.com/cancerit/cgpCaVEManWrapper)
 
-  
-
-
+\
