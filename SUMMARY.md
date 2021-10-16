@@ -29,6 +29,7 @@
   * [\[DNA\]Germline Mutation 분석](untitled-2/germline/README.md)
     * [VCF Annotation](untitled-2/germline/vcf-annotation.md)
   * [\[DNA\]Somatic Mutation](untitled-2/somatic-mutation/README.md)
+    * [SigprofilerExtractor 사용법](untitled-2/somatic-mutation/sigprofilerextractor.md)
     * [CAVEMAN WRAPPER](untitled-2/somatic-mutation/caveman-wrapper.md)
     * [GATK - Mutect2 Pipeline](untitled-2/somatic-mutation/gatk-mutect2-pipeline.md)
     * [SignR](untitled-2/somatic-mutation/signr.md)
