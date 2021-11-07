@@ -11,7 +11,7 @@ description: 'Structure Variation [구조변이 : 복제수 변이]'
   \
 
 
-![](<../../.gitbook/assets/image (79).png>)
+![](<../../.gitbook/assets/image (73).png>)
 
 \
 
@@ -22,7 +22,7 @@ description: 'Structure Variation [구조변이 : 복제수 변이]'
 
 
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (72).png>)
 
 
 
@@ -85,7 +85,7 @@ docker run -v ${folder_1}:/home/dnanexus/in -v ${folder_1}/${bam_name}_output:/h
 결과물\
 
 
-![](<../../.gitbook/assets/image (68).png>)
+![](<../../.gitbook/assets/image (91).png>)
 
 \
 Annotation & Visualization
@@ -94,7 +94,7 @@ Annotation & Visualization
 [https://lbgi.fr/AnnotSV/](https://lbgi.fr/AnnotSV/)\
 
 
-## B-Allele Freq 설명 
+## B-Allele Freq 설명&#x20;
 
 ### [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true\&blogId=jinp7\&logNo=220951636178](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true\&blogId=jinp7\&logNo=220951636178)
 
@@ -105,7 +105,7 @@ Annotation & Visualization
 \- the ratio of the expression levels이 일대일이 아닌경우 allelic imbalance라고 부른다.\
 \- only one allele 존재하면 balance between the two alleles 결정할 수 없다.\
 \- allelic imbalance의 원인은? Gene imprinting, Cis-acting mutations등이 있다. \
-![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjY5/MDAxNDg4ODAzOTQyMjAx.QW2u0ZlbNbI8kEenCMQFMkXGr8-B6eKo-pmY70-RkU8g.suRqnJs7Rm9R0r8dPBtqBG5KbQQzz_PRO7bBwChjapkg.PNG.jinp7/allelicimblance.png?type=w800)
+![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjY5/MDAxNDg4ODAzOTQyMjAx.QW2u0ZlbNbI8kEenCMQFMkXGr8-B6eKo-pmY70-RkU8g.suRqnJs7Rm9R0r8dPBtqBG5KbQQzz\_PRO7bBwChjapkg.PNG.jinp7/allelicimblance.png?type=w800)
 
 \- Examination of allele-specific expression을 통해서 allelic imbalance 확인 할 수 있다. \
 \- individual is a heterozygote for a variant할 때만 identify allele specific expression할 수 있다.\
@@ -117,7 +117,7 @@ Annotation & Visualization
 \- B-allele frequency (BAF)\
 \- 정의: a normalized measure of the allelic intensity ratio of two alleles (A and B), \
 \- A형 allele이라고 말한다면, 이 말에는 A형과 상반되는 다른 allele, 즉 B형이 형질이 있음을 내포\
-![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjcg/MDAxNDg4ODA0NTIxNTg0.JqUoXuMr17h8ZKeoOEcuyhgX2sVQOCro20JF5lmi_rYg.2l4Mt1gKvBnwxB0Ia_hWtSmNlXWjQFb2jVHHd6VIxjYg.PNG.jinp7/monobi2.png?type=w800)
+![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjcg/MDAxNDg4ODA0NTIxNTg0.JqUoXuMr17h8ZKeoOEcuyhgX2sVQOCro20JF5lmi\_rYg.2l4Mt1gKvBnwxB0Ia\_hWtSmNlXWjQFb2jVHHd6VIxjYg.PNG.jinp7/monobi2.png?type=w800)
 
 \- BAF값 0: BB, 0.5: AB, 1:BB, 0.66: BBA\
 \
@@ -126,7 +126,7 @@ Annotation & Visualization
 
 \- monoallelic의 정의: only one of the two copies of a gene is active, while the other is silent. \
 \- Biallelic은 both alleles of a gene are transcribed\
-![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjMy/MDAxNDg4ODA0MDIwMjg1.U_rcij90eTDdNV8JMHaBFt5hvBCwWq9gDF7TgpPyMz4g.YVeh0Q2YMUSO24XQ0KWyFwX09gx1jlaRpcHheP9\_sokg.PNG.jinp7/biallelicmonoallelic.png?type=w800)
+![](https://mblogthumb-phinf.pstatic.net/MjAxNzAzMDZfMjMy/MDAxNDg4ODA0MDIwMjg1.U\_rcij90eTDdNV8JMHaBFt5hvBCwWq9gDF7TgpPyMz4g.YVeh0Q2YMUSO24XQ0KWyFwX09gx1jlaRpcHheP9\_sokg.PNG.jinp7/biallelicmonoallelic.png?type=w800)
 
 [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true\&blogId=jinp7\&logNo=220951636178](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true\&blogId=jinp7\&logNo=220951636178)
 
@@ -148,4 +148,4 @@ Annotation & Visualization
 5\) CNV 관련\
 [https://www.biocompare.com/Editorial-Articles/363086-CNV-Analysis-Shifts-Focus-to-NGS-Sequences/](https://www.biocompare.com/Editorial-Articles/363086-CNV-Analysis-Shifts-Focus-to-NGS-Sequences/)\
 \
-6\) 
+6\)&#x20;

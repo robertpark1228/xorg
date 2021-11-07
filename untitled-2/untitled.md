@@ -4,7 +4,7 @@ description: Rawdata Preprocessing
 
 # \[공통]Rawdata QC 및 전처리
 
-## 1. Trim_galore
+## 1. Trim\_galore
 
 1. 설치 시 필수로 요구하는 툴 : \
    1\) cutadapt\
@@ -18,13 +18,13 @@ description: Rawdata Preprocessing
 sudo apt install cutadapt
 ```
 
-        2\. fastqc 설치 ( 계정 별로 필요할 수 있습니다.)
+&#x20;       2\. fastqc 설치 ( 계정 별로 필요할 수 있습니다.)
 
 ```bash
 sudo apt install fastqc
 ```
 
-       3\. Running
+&#x20;      3\. Running
 
 ```bash
 trim_galore --trim1 --illumina --paired [1.fq] [2.fq] -j [core]
@@ -36,7 +36,7 @@ trim_galore --trim1 --illumina --paired [1.fq] [2.fq] -j [core]
 \
 DOWNLOAD : [http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip)\
 \
-jar 파일로 끝나는 파일들은 java -jar 로 동작을 합니다. 
+jar 파일로 끝나는 파일들은 java -jar 로 동작을 합니다.&#x20;
 
 ```bash
 java -jar trimmomatic-0.39.jar PE input_forward.fq.gz input_reverse.fq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 MINLEN:36
@@ -46,7 +46,7 @@ java -jar trimmomatic-0.39.jar PE input_forward.fq.gz input_reverse.fq.gz output
 
 Scythe, Sickle, Atropos 등 다양한 툴이 있습니다.
 
-참조 ) [https://www.hadriengourle.com/tutorials/qc/](https://www.hadriengourle.com/tutorials/qc/) 
+참조 ) [https://www.hadriengourle.com/tutorials/qc/](https://www.hadriengourle.com/tutorials/qc/)&#x20;
 
 
 

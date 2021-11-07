@@ -6,7 +6,7 @@ description: 래퍼런스 / 참고사이트 / 볼만한 교육자료 등
 
 ## 10x genomics references download
 
-{% file src="../.gitbook/assets/_10x_ref.txt" %}
+{% file src="../.gitbook/assets/주소_10x_ref.txt" %}
 10x genomics ref. download
 {% endfile %}
 
@@ -16,7 +16,7 @@ description: 래퍼런스 / 참고사이트 / 볼만한 교육자료 등
 
 ##
 
-## 1. 암데이터 
+## 1. 암데이터&#x20;
 
 
 
@@ -36,7 +36,7 @@ description: 래퍼런스 / 참고사이트 / 볼만한 교육자료 등
 
 
 
-Methylation Sequencing 참고 사이트 
+Methylation Sequencing 참고 사이트&#x20;
 
 
 
@@ -47,11 +47,11 @@ Single Cell RNA Sequencing 참고 사이트
 ## 기타 툴 참고 사이트
 
 1\) python 기반 VCF 툴 (웹기반) \
-[https://hail.is/docs/0.2/getting_started.html](https://hail.is/docs/0.2/getting_started.html)\
+[https://hail.is/docs/0.2/getting\_started.html](https://hail.is/docs/0.2/getting\_started.html)\
 \
 2\) Docker\
 \
- 
+&#x20;
 
 ## 논문 작성시 참고 할 사이트
 

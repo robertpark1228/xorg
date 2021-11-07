@@ -4,69 +4,69 @@ description: Next Generation Sequencing 기본
 
 # 4. NGS 기본
 
-## NGS  - Wet Lab : Sample QC / Library QC / LIBRARY LOADING 
+## NGS  - Wet Lab : Sample QC / Library QC / LIBRARY LOADING&#x20;
 
-![](<../.gitbook/assets/image (32).png>)
-
-![](<../.gitbook/assets/image (17).png>)
-
-![](<../.gitbook/assets/image (63).png>)
+![](<../.gitbook/assets/image (6).png>)
 
 ![](<../.gitbook/assets/image (7).png>)
 
-
-
-![](<../.gitbook/assets/image (76).png>)
-
-![](<../.gitbook/assets/image (19).png>)
-
-![](<../.gitbook/assets/image (20).png>)
-
-![](<../.gitbook/assets/image (88).png>)
-
-![](<../.gitbook/assets/image (61).png>)
-
-![](<../.gitbook/assets/image (49).png>)
-
-![](<../.gitbook/assets/image (38).png>)
-
-![](<../.gitbook/assets/image (77).png>)
-
-![](<../.gitbook/assets/image (18).png>)
-
-![](<../.gitbook/assets/image (95).png>)
-
-![](<../.gitbook/assets/image (46).png>)
-
-![](<../.gitbook/assets/image (62).png>)
-
-![](<../.gitbook/assets/image (41).png>)
-
-![](<../.gitbook/assets/image (28).png>)
-
-![](<../.gitbook/assets/image (70).png>)
-
-![](<../.gitbook/assets/image (25).png>)
-
-![](<../.gitbook/assets/image (24).png>)
-
-![](<../.gitbook/assets/image (26).png>)
-
-![](<../.gitbook/assets/image (56).png>)
-
-![](<../.gitbook/assets/image (69).png>)
-
-![](<../.gitbook/assets/image (23).png>)
-
-![](<../.gitbook/assets/image (94).png>)
-
-![](<../.gitbook/assets/image (65).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 ![](<../.gitbook/assets/image (9).png>)
 
-![](<../.gitbook/assets/image (84).png>)
 
-## NGS - Genome Data 분석 파트 
+
+![](<../.gitbook/assets/image (16).png>)
+
+![](<../.gitbook/assets/image (17).png>)
+
+![](<../.gitbook/assets/image (21).png>)
+
+![](<../.gitbook/assets/image (24).png>)
+
+![](<../.gitbook/assets/image (29).png>)
+
+![](<../.gitbook/assets/image (30).png>)
+
+![](<../.gitbook/assets/image (32).png>)
+
+![](<../.gitbook/assets/image (33).png>)
+
+![](<../.gitbook/assets/image (34).png>)
+
+![](<../.gitbook/assets/image (35).png>)
+
+![](<../.gitbook/assets/image (36).png>)
+
+![](<../.gitbook/assets/image (37).png>)
+
+![](<../.gitbook/assets/image (38).png>)
+
+![](<../.gitbook/assets/image (39).png>)
+
+![](<../.gitbook/assets/image (40).png>)
+
+![](<../.gitbook/assets/image (41).png>)
+
+![](<../.gitbook/assets/image (42).png>)
+
+![](<../.gitbook/assets/image (43).png>)
+
+![](<../.gitbook/assets/image (44).png>)
+
+![](<../.gitbook/assets/image (45).png>)
+
+![](<../.gitbook/assets/image (46).png>)
+
+![](<../.gitbook/assets/image (47).png>)
+
+![](<../.gitbook/assets/image (48).png>)
+
+![](<../.gitbook/assets/image (49).png>)
+
+![](<../.gitbook/assets/image (50).png>)
+
+## NGS - Genome Data 분석 파트&#x20;
 
 
 
@@ -74,30 +74,30 @@ description: Next Generation Sequencing 기본
 
 
 
-### 분석공통 : Rawdata 소개 및 처리 
+### 분석공통 : Rawdata 소개 및 처리&#x20;
 
-#### Raw data소개 
+#### Raw data소개&#x20;
 
-Rawdata  는 일반적으로 fastq 파일 fq 파일로 되어 있습니다. 
+Rawdata  는 일반적으로 fastq 파일 fq 파일로 되어 있습니다.&#x20;
 
 fastq 파일 또는 fq 파일은 텍스트 파일로 Fasta Quality 파일의 약자 입니다. fasta 파일은 과거에 사용되었던 포맷으로 현재에는 주로  래퍼런스 파일로 사용되고 있습니다. fasta/fastq 파일 형식은 파일을 담는 방법의 큰 틀만 정의 하고 있으며 상세 내용은 내용물을 확인 하셔야 합니다. 두개 형식은 아직 혼용이 되고 있으나 시퀀싱 이후 받는 정보는 대부분 fastq 파일인 경우가 많습니다.
 
 FASTA 는 간단한 형식으로 한개의 Gene / Chromosome / BAC 등을 기재 할 수 있으며 어떤 종류가 와도 상관은 없습니다.
 
-![](<../.gitbook/assets/image (52).png>)
+![](<../.gitbook/assets/image (51).png>)
 
-![human hs38 예제](<../.gitbook/assets/image (14).png>)
+![human hs38 예제](<../.gitbook/assets/image (52).png>)
 
-FASTQ 파일 quality score 가 포함되어 있는 형식으로 각 시퀀스 별로 얼마나 시퀀싱이 제대로 되었는지 점수 정보를 포함 하고 있습니다. 점수 정보의 경우 플랫폼 별로 메기는 방식이 다르기 때문에 같은 fastq 파일이라도 다른 시퀀싱 기기를 이용하는 경우 호환이 되지는 않습니다. 
+FASTQ 파일 quality score 가 포함되어 있는 형식으로 각 시퀀스 별로 얼마나 시퀀싱이 제대로 되었는지 점수 정보를 포함 하고 있습니다. 점수 정보의 경우 플랫폼 별로 메기는 방식이 다르기 때문에 같은 fastq 파일이라도 다른 시퀀싱 기기를 이용하는 경우 호환이 되지는 않습니다.&#x20;
 
-![](<../.gitbook/assets/image (86).png>)
+![](<../.gitbook/assets/image (53).png>)
 
 
 
 참고.1) [https://compgenomr.github.io/book/fasta-and-fastq-formats.html](https://compgenomr.github.io/book/fasta-and-fastq-formats.html)\
 
 
-#### Rawdata 트리밍 작업 
+#### Rawdata 트리밍 작업&#x20;
 
 Fastq 파일은 실험을 진행하며 필요없는 서열이 다량 포함되어 있습니다. 기본적인 Quality 는 시퀀싱 기기에서 demultiplexing 을 진행할때 어느 정도 보장이 되나 필요없는 서열이 포함되어 있을 수 있습니다.
 
@@ -108,7 +108,7 @@ Fastq 파일은 실험을 진행하며 필요없는 서열이 다량 포함되�
 상기 문제점을 해결하기 위해 Fastq QC 를 수행 합니다.\
 
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../.gitbook/assets/image (54).png>)
 
 참고.1) [https://genomics.sschmeier.com/ngs-qc/index.html](https://genomics.sschmeier.com/ngs-qc/index.html)
 
@@ -120,8 +120,8 @@ fastqc 를 하는 이유는 Mapping 시( reference 에 조각난 DNA들을 맞�
 \
 대표적인 툴을 하기와 같습니다.
 
-1\) Trim_galore(cutadapt + fastqc 포함)\
-[https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)\
+1\) Trim\_galore(cutadapt + fastqc 포함)\
+[https://www.bioinformatics.babraham.ac.uk/projects/trim\_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim\_galore/)\
 2\) Trimmomatic\
 [http://www.usadellab.org/cms/?page=trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)\
 국문 - 해석시 참고하세요.) [https://m.blog.naver.com/alsdo0524/221448390423](https://m.blog.naver.com/alsdo0524/221448390423)\
@@ -130,10 +130,10 @@ FASTQC 해석시 - 상기 국문 블로그에 +첨\
 \
 
 
-![](<../.gitbook/assets/image (43).png>)
+![](<../.gitbook/assets/image (56).png>)
 
 1\) Quality Score 가 Sanger / Illumina 1.9 Encoding 확인 - 과거 데이터의 경우 포맷이 달랐으며 Score 에 영향을 미쳤습니다. 특히 2015년 이전 시퀀싱 한 데이터는 확인이 필요 합니다.\
- 2\) 일루미나 Short reads 특성상 뒷부분이 무너지며 Reads2 의 경우 더 무너지는게 정상입니다. \
+&#x20;2\) 일루미나 Short reads 특성상 뒷부분이 무너지며 Reads2 의 경우 더 무너지는게 정상입니다. \
 기본적으로 요즘에는 회사에서 어느 정도 보정을 해서 나옵니다.
 
 
@@ -147,7 +147,7 @@ FASTQC 해석시 - 상기 국문 블로그에 +첨\
 
 
 
-##  
+## &#x20;
 
 
 

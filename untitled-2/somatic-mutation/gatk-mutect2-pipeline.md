@@ -2,7 +2,7 @@
 
 ## 분석개요
 
-![](../../.gitbook/assets/funcotatorpipeline.png)
+![](../../.gitbook/assets/funcotatorPipeline.png)
 
 Mutect2 실행\
 1\) BAM 파일 두개 -> Input\
@@ -11,13 +11,13 @@ Mutect2 실행\
 **4) **[**https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2**](https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2)****\
 ****
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (93).png>)
 
 ****
 
 ****
 
-예시 스크립트 - 서버 상 실행 ) 
+예시 스크립트 - 서버 상 실행 )&#x20;
 
 ```
 java -jar /main/program/gatk-4.2.1.0/gatk-package-4.2.1.0-local.jar Mutect2 -R /main/references/hg38/hs38.fa -I /main/test_analysis/raw_data_wgrs/p22-hFSiPS1/mapped/p22-hFSiPS1_sorted.bam -I /main/test_analysis/raw_data_wgrs/p33-CDDO0nM/mapped/p33-CDDO0nM_sorted.bam -normal p22-hFSiPS1 --output ./mutation.vcf.gz 
@@ -48,7 +48,7 @@ GATK 4.1.1.0 Mutect2  버전 부터 하기 필터링 파이프라인으로 변�
 [https://gatk.broadinstitute.org/hc/en-us/articles/360035531132](https://gatk.broadinstitute.org/hc/en-us/articles/360035531132)
 {% endhint %}
 
-단순한 Filtration / 분석 중 만들어 낸 Stat 파일 기반의 Filtering 
+단순한 Filtration / 분석 중 만들어 낸 Stat 파일 기반의 Filtering&#x20;
 
 ```
 java -jar /main/program/gatk-4.2.1.0/gatk-package-4.2.1.0-local.jar FilterMutectCalls -R /main/references/hg38/hs38.fa -V ./mutation.vcf.gz -O ./mutation.filtered.vcf.gz
@@ -56,7 +56,9 @@ java -jar /main/program/gatk-4.2.1.0/gatk-package-4.2.1.0-local.jar FilterMutect
 
 
 
-## 참고자료 
+참고자료\
+
+
 
 1\) [https://gatk.broadinstitute.org/hc/en-us/articles/360035889931-Funcotator-Information-and-Tutorial](https://gatk.broadinstitute.org/hc/en-us/articles/360035889931-Funcotator-Information-and-Tutorial)
 

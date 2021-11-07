@@ -4,7 +4,7 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 
 # CAVEMAN WRAPPER
 
-### Caveman-Wrapper : Whole Genome & Exome SNV Calling 
+### Caveman-Wrapper : Whole Genome & Exome SNV Calling&#x20;
 
 | **Result** | **SNP(SNV)** | **INDEL**  | **CNV**   | **SV**    |
 | ---------- | ------------ | ---------- | --------- | --------- |
@@ -15,11 +15,11 @@ description: ICGC 분석 파이프라인 Wellcomm Trust Sanger
 [https://github.com/cancerit/cgpCaVEManWrapper](https://github.com/cancerit/cgpCaVEManWrapper)
 
 1\) Caveman SNV : [https://github.com/cancerit/cgpCaVEManWrapper](https://github.com/cancerit/cgpCaVEManWrapper)\
-[1) 기초적인 Running 방법 : https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html)
+[1) 기초적인 Running 방법 : https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html)
 
 ## : DOCKER 기반의 caveman Wrapper 실행
 
-* DOCKER 이미지 접속 
+* DOCKER 이미지 접속&#x20;
 
 ```
 docker run -it -v /main/test_analysis/raw_data_wgrs/:/home/ubuntu/data:rw 1cae84e5cf07
@@ -35,9 +35,9 @@ ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz
 
 ## 구동 성공시 :
 
-![](<../../.gitbook/assets/image (102).png>)
-
 ![](<../../.gitbook/assets/image (106).png>)
+
+![](<../../.gitbook/assets/image (107).png>)
 
 
 
@@ -53,11 +53,11 @@ ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz
 
 ## 에러처리
 
-![bas 파일이 없는 경우](<../../.gitbook/assets/image (107).png>)
+![bas 파일이 없는 경우](<../../.gitbook/assets/image (103).png>)
 
-### :해결방법 
+### :해결방법&#x20;
 
-: bam_stat -i \[bam파일] -o \[bas파일] 
+: bam\_stat -i \[bam파일] -o \[bas파일]&#x20;
 
 ![](<../../.gitbook/assets/image (104).png>)
 
@@ -71,7 +71,7 @@ ds-cgpwgs.pl -r /home/ubuntu/data/reference/core_ref_GRCh38_hla_decoy_ebv.tar.gz
 
 
 Caveman Running 이후 결과 파일\
-1\) 
+1\)&#x20;
 
 
 
@@ -91,7 +91,7 @@ docker 처리 -> filteration stratagy
 
 ## 참고자료
 
-1\) [https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic_snv_calling_practical.html)\
+1\) [https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html](https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2017/Day3/somatic\_snv\_calling\_practical.html)\
 2\) Caveman Wrapper 방법
 
 {% embed url="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6097605/#S21" %}

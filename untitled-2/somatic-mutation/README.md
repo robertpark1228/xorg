@@ -6,11 +6,11 @@
   \
 
 
-![](<../../.gitbook/assets/image (53).png>)
+![](<../../.gitbook/assets/image (84).png>)
 
 ## 샘플 준비
 
-![](<../../.gitbook/assets/image (71).png>)
+![](<../../.gitbook/assets/image (87).png>)
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (88).png>)
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (89).png>)
 
-![](<../../.gitbook/assets/image (47).png>)
+![](<../../.gitbook/assets/image (90).png>)
 
 ## 분석 툴 : 대부분 mapping 된 파일에서 시작(BAM 파일)
 

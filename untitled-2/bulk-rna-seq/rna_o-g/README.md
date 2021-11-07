@@ -30,7 +30,7 @@ tx2gene_map <- read_tsv("D:/RNASEQ_SALMON_QUANTIFICATION/tx2gene_map")
 
 ### [https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv](https://hackmd.io/@NFpEogXySTuWExLvDQQHig/SkwWM4WHv)
 
-![](<../../../.gitbook/assets/image (170).png>)
+![](<../../../.gitbook/assets/image (171).png>)
 
 ### Sample 리스트 파일
 
@@ -326,7 +326,7 @@ genetable <- data.frame(gene.id = rownames(txi$counts))
 
 
 
-[http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content](http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching_pg/workshops/biocDGE.html#gc_content)
+[http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching\_pg/workshops/biocDGE.html#gc\_content](http://www.compbio.dundee.ac.uk/user/pschofield/Projects/teaching\_pg/workshops/biocDGE.html#gc\_content)
 
 
 

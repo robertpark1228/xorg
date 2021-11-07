@@ -17,7 +17,7 @@ Rawdata Filtering -> HISAT2 (맵핑) -> Cufflink (붙은 갯수 계산) -> Cuffd
 
 ### Cufflinks 파일 포맷 설명
 
-[http://cole-trapnell-lab.github.io/cufflinks/file_formats/](http://cole-trapnell-lab.github.io/cufflinks/file_formats/)
+[http://cole-trapnell-lab.github.io/cufflinks/file\_formats/](http://cole-trapnell-lab.github.io/cufflinks/file\_formats/)
 
 
 
@@ -29,7 +29,7 @@ Rawdata Filtering -> HISAT2 (맵핑) -> Cufflink (붙은 갯수 계산) -> Cuffd
 
 ### Cufflinks - FPKM / Expression 계산([http://cole-trapnell-lab.github.io/cufflinks/tools/](http://cole-trapnell-lab.github.io/cufflinks/tools/))
 
-### 래퍼런스 : [https://support.illumina.com/sequencing/sequencing_software/igenome.html](https://support.illumina.com/sequencing/sequencing_software/igenome.html)
+### 래퍼런스 : [https://support.illumina.com/sequencing/sequencing\_software/igenome.html](https://support.illumina.com/sequencing/sequencing\_software/igenome.html)
 
 ![](<../../.gitbook/assets/image (145).png>)
 
@@ -37,9 +37,9 @@ Rawdata Filtering -> HISAT2 (맵핑) -> Cufflink (붙은 갯수 계산) -> Cuffd
 cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf -o ./p33 ../../hisat2_bam/sample_hfsips1-p33.sorted.bam
 ```
 
-![](<../../.gitbook/assets/image (153).png>)
+![](<../../.gitbook/assets/image (154).png>)
 
-![](<../../.gitbook/assets/image (155).png>)
+![](<../../.gitbook/assets/image (156).png>)
 
 {% hint style="info" %}
 \-p : 프로세서 (동시작업수)\
@@ -52,13 +52,13 @@ cufflinks -p 8 -G /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sa
 샘플별 계산이 끝난 transcript.gtf 파일의 위치 정보가 담긴 텍스트 파일이 필요 합니다(제작)\
 아래 예시)
 
-![](<../../.gitbook/assets/image (156).png>)
+![](<../../.gitbook/assets/image (155).png>)
 
 ```
 cuffmerge -p 40 -o ./assembled -g /disk1/oneomics_analysis/beta_pipeline/references/hg38/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes_no_chr.gtf -s /disk1/oneomics_analysis/beta_pipeline/references/hg38/hs38_nochr.fa ./merge.txt
 ```
 
-![](<../../.gitbook/assets/image (149).png>)
+![](<../../.gitbook/assets/image (157).png>)
 
 
 
@@ -73,7 +73,7 @@ cuffdiff -o ./assembled_2 -b /disk1/oneomics_analysis/beta_pipeline/references/h
 \-b : fasta reference 파일\
 \-u : merged.gtf / cuffmerge 에서 만들어 놓은 파\
 \-p : 동시작업 수\
-\-L : 샘플 그룹 / 예시 : 
+\-L : 샘플 그룹 / 예시 :&#x20;
 
 ```
 -L p_Case,p_Control
@@ -81,22 +81,22 @@ cuffdiff -o ./assembled_2 -b /disk1/oneomics_analysis/beta_pipeline/references/h
 
 폴더 아래 샘플을 넣고 샘플 그룹과 맞춰 줘야 합니다.
 
-/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2\_bam/**Case**/sample_hfsips1-p23.sorted.bam\
+/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/**Case**/sample\_hfsips1-p23.sorted.bam\
 \
 같은 샘플 그룹 / 쉼표
 
-/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2\_bam/**Control**/sample_hfsips1-p33\_cddo\_5nm.sorted.bam,/disk1/oneomics_analysis/rna_rnaseq_pipeline/hisat2\_bam/Control/sample_hfsips1-p33.sorted.bam
+/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/**Control**/sample\_hfsips1-p33\_cddo\_5nm.sorted.bam,/disk1/oneomics\_analysis/rna\_rnaseq\_pipeline/hisat2\_bam/Control/sample\_hfsips1-p33.sorted.bam
 {% endhint %}
 
 
 
 ![](<../../.gitbook/assets/image (146).png>)
 
-생성파일 : 
+생성파일 :&#x20;
 
 **여기서 유전자 발현값에 집중하는 연구라면, 주로 확인하는 파일은**\
 ****\
-**gene_exp.diff, genes.read_group_tracking**
+**gene\_exp.diff, genes.read\_group\_tracking**
 
 **요 2개입니다.**
 
@@ -113,11 +113,11 @@ Deseq2/EdgeR/Ballgown과 같은 지위를 가지나 구동의 까다로움/Figur
 \
 
 
-![](<../../.gitbook/assets/image (165).png>)
+![](<../../.gitbook/assets/image (159).png>)
 
-![](<../../.gitbook/assets/image (162).png>)
+![](<../../.gitbook/assets/image (160).png>)
 
-![](<../../.gitbook/assets/image (168).png>)
+![](<../../.gitbook/assets/image (158).png>)
 
 ```
 #Rscript 
@@ -165,20 +165,20 @@ fpkmMatrix(genes(cuff))
 
 
 
-![dens<-csDensity(genes(cuff))](<../../.gitbook/assets/image (159).png>)
+![dens<-csDensity(genes(cuff))](<../../.gitbook/assets/image (162).png>)
 
-![pDendro<-csDendro(genes(cuff),replicates=T)](<../../.gitbook/assets/image (167).png>)
+![pDendro<-csDendro(genes(cuff),replicates=T)](<../../.gitbook/assets/image (163).png>)
 
- \
-
-
-![csScatterMatrix(genes(cuff))](<../../.gitbook/assets/image (163).png>)
+&#x20;\
 
 
+![csScatterMatrix(genes(cuff))](<../../.gitbook/assets/image (164).png>)
 
-![MAplot(genes(cuff),"p_Case","p_Control")](<../../.gitbook/assets/image (166).png>)
 
-![csVolcanoMatrix(genes(cuff))](<../../.gitbook/assets/image (160).png>)
+
+![MAplot(genes(cuff),"p\_Case","p\_Control")](<../../.gitbook/assets/image (165).png>)
+
+![csVolcanoMatrix(genes(cuff))](<../../.gitbook/assets/image (166).png>)
 
 ## 참조
 
@@ -213,7 +213,7 @@ fpkmMatrix(genes(cuff))
 
 **genes.gtf : Annotation 정보 file 입니다.**
 
-**잘 연구가 된 model species 같은 경우에는 illumina 에서 제공하는 **[**싸이트**](https://support.illumina.com/sequencing/sequencing_software/igenome.html)** 에서 다운 받을 수 있습니다.**
+**잘 연구가 된 model species 같은 경우에는 illumina 에서 제공하는 **[**싸이트**](https://support.illumina.com/sequencing/sequencing\_software/igenome.html)** 에서 다운 받을 수 있습니다.**
 
 **(sequence, annotation 파일 외에도 많은 것들이 압축되어 있기 때문에 서버로 다운받는걸 추천)**
 
@@ -342,7 +342,7 @@ samtools  sort  -@ 8   -o  output.sort.bam  output.sam
 
 **-@ : cpu 갯수 입니다.**
 
-###  
+### &#x20;
 
 **3. Generating transcript assembly **
 
@@ -350,7 +350,7 @@ samtools  sort  -@ 8   -o  output.sort.bam  output.sam
 
 Command
 
-cufflinks  -p 8  -G genes.gtf  -o output_directory  output.sort.bam
+cufflinks  -p 8  -G genes.gtf  -o output\_directory  output.sort.bam
 
 **-p : cpu 갯수 입니다.**
 
@@ -363,7 +363,7 @@ cufflinks  -p 8  -G genes.gtf  -o output_directory  output.sort.bam
 **완료되면, 디렉토리 내에 **
 
 ****\
-**genes.fpkm_tracking, isoforms.fpkm_tracking, skipped.gtf, transcripts.gtf**
+**genes.fpkm\_tracking, isoforms.fpkm\_tracking, skipped.gtf, transcripts.gtf**
 
 ****\
 **4개의 파일이 생성됩니다.**
@@ -383,17 +383,17 @@ vi  assemblies.txt
 
 ex) assemblies.txt
 
-**../cufflinks_out/C-1\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/C-1\_cuff\_out/transcripts.gtf**
 
-**../cufflinks_out/C-2\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/C-2\_cuff\_out/transcripts.gtf**
 
-**../cufflinks_out/C-3\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/C-3\_cuff\_out/transcripts.gtf**
 
-**../cufflinks_out/N-1\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/N-1\_cuff\_out/transcripts.gtf**
 
-**../cufflinks_out/N-2\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/N-2\_cuff\_out/transcripts.gtf**
 
-**../cufflinks_out/N-3\_cuff_out/transcripts.gtf**
+**../cufflinks\_out/N-3\_cuff\_out/transcripts.gtf**
 
 Command
 
@@ -407,7 +407,7 @@ cuffmerge  -p 8 -g genes.gtf  -s genome.fa  assemblies.txt
 
 \-o : cufflinks 결과는 디렉토리로 출력되기 때문에 이름을 지정해주면 됩니다.
 
-**완료되면 merged_asm 디렉토리 가 생성되고 그 안에 있는  merged.gtf 가 합쳐진 transcriptome assembly 입니다.**
+**완료되면 merged\_asm 디렉토리 가 생성되고 그 안에 있는  merged.gtf 가 합쳐진 transcriptome assembly 입니다.**
 
 **5. Differential expression analysis**
 
@@ -417,7 +417,7 @@ cuffmerge  -p 8 -g genes.gtf  -s genome.fa  assemblies.txt
 **Command**
 
 ****\
-**cuffdiff   -o diff_out  -b genome.fa  -p 8  -L EB,ES  -u  merged.gtf    output-1.sort.bam  output-2.sort.bam**
+**cuffdiff   -o diff\_out  -b genome.fa  -p 8  -L EB,ES  -u  merged.gtf    output-1.sort.bam  output-2.sort.bam**
 
 **-o : cufdiff 결과는 디렉토리로 출력되기 때문에 이름을 지정해주면 됩니다**\
 **-b : Genome sequence file 입니다. (IndexName 아님)**\
@@ -448,16 +448,16 @@ cuffmerge  -p 8 -g genes.gtf  -s genome.fa  assemblies.txt
 ****\
 ****
 
-**gene_exp.diff, genes.read_group_tracking**
+**gene\_exp.diff, genes.read\_group\_tracking**
 
 **요 2개입니다.**
 
 ****\
 ****\
-**gene_exp.diff 에서는 유전자 별로 샘플들의 발현값 뿐만 아니라 differentially expressed genes 의 여부도 확인 할수 있게 p-value, q-value 정보를 포함하고 있습니다.**
+**gene\_exp.diff 에서는 유전자 별로 샘플들의 발현값 뿐만 아니라 differentially expressed genes 의 여부도 확인 할수 있게 p-value, q-value 정보를 포함하고 있습니다.**
 
 ****\
-**genes.read_group_tracking 는 Replicates 의 발현값을 확인해보기 위해 사용할 수 있습니다.**
+**genes.read\_group\_tracking 는 Replicates 의 발현값을 확인해보기 위해 사용할 수 있습니다.**
 
 ****\
 ****\
@@ -487,4 +487,4 @@ cuffmerge  -p 8 -g genes.gtf  -s genome.fa  assemblies.txt
 
 
 
-[http://wiki.biouml.org/index.php/Quantification_of_RNA-seq_with_Cufflinks\_(no_de-novo_assembly)\_for_FASTQ_files\_(workflow)](http://wiki.biouml.org/index.php/Quantification_of_RNA-seq_with_Cufflinks_\(no_de-novo_assembly\)\_for_FASTQ_files_\(workflow\))
+[http://wiki.biouml.org/index.php/Quantification\_of\_RNA-seq\_with\_Cufflinks\_(no\_de-novo\_assembly)\_for\_FASTQ\_files\_(workflow)](http://wiki.biouml.org/index.php/Quantification\_of\_RNA-seq\_with\_Cufflinks\_\(no\_de-novo\_assembly\)\_for\_FASTQ\_files\_\(workflow\))

@@ -8,7 +8,7 @@ description: HISAT2 MAPPING / SeqMonk 플랫폼을 이용한 RNAseq 분석
 
 Rawdata Filtering -> HISAT2/STAR2 Mapping -> SeqMonk Data QC -> DE / GSEA 분석 -> REACTOME 분석
 
-## Reference Genome 만들기(1회성) / 
+## Reference Genome 만들기(1회성) /&#x20;
 
 hisat2는 만들어진 버전을 사용하시는게 좋습니다.\
 [https://daehwankimlab.github.io/hisat2/download/#version-hisat2-221](https://daehwankimlab.github.io/hisat2/download/#version-hisat2-221)
@@ -25,7 +25,7 @@ $ hisat2  -p 16 -x ./hisat2_ref_genome/grch38/genome -1 ./hfsips1_p23_1.fq.gz -2
 \--dta-cufflinks : cufflinks 호환모드
 {% endhint %}
 
-### STAR2 MAPPING 
+### STAR2 MAPPING&#x20;
 
 {% content-ref url="untitled.md" %}
 [untitled.md](untitled.md)
@@ -41,29 +41,29 @@ $ hisat2  -p 16 -x ./hisat2_ref_genome/grch38/genome -1 ./hfsips1_p23_1.fq.gz -2
 
 
 
-![](<../../.gitbook/assets/image (119).png>)
-
-![](<../../.gitbook/assets/image (117).png>)
-
-![](<../../.gitbook/assets/image (114).png>)
-
-![](<../../.gitbook/assets/image (129).png>)
+![](<../../.gitbook/assets/image (112).png>)
 
 ![](<../../.gitbook/assets/image (113).png>)
 
-![](<../../.gitbook/assets/image (123).png>)
-
-![](<../../.gitbook/assets/image (128).png>)
-
-![](<../../.gitbook/assets/image (127).png>)
+![](<../../.gitbook/assets/image (114).png>)
 
 ![](<../../.gitbook/assets/image (115).png>)
 
-![](<../../.gitbook/assets/image (132).png>)
+![](<../../.gitbook/assets/image (116).png>)
 
-![](<../../.gitbook/assets/image (133).png>)
+![](<../../.gitbook/assets/image (117).png>)
 
-![](<../../.gitbook/assets/image (126).png>)
+![](<../../.gitbook/assets/image (118).png>)
+
+![](<../../.gitbook/assets/image (119).png>)
+
+![](<../../.gitbook/assets/image (120).png>)
+
+![](<../../.gitbook/assets/image (121).png>)
+
+![](<../../.gitbook/assets/image (122).png>)
+
+![](<../../.gitbook/assets/image (123).png>)
 
 ![](<../../.gitbook/assets/image (124).png>)
 
@@ -71,31 +71,31 @@ $ hisat2  -p 16 -x ./hisat2_ref_genome/grch38/genome -1 ./hfsips1_p23_1.fq.gz -2
 
 
 
-![](<../../.gitbook/assets/image (121).png>)
+![](<../../.gitbook/assets/image (126).png>)
 
-![](<../../.gitbook/assets/image (131).png>)
+![](<../../.gitbook/assets/image (127).png>)
+
+![](<../../.gitbook/assets/image (128).png>)
+
+![](<../../.gitbook/assets/image (129).png>)
 
 ![](<../../.gitbook/assets/image (130).png>)
 
-![](<../../.gitbook/assets/image (116).png>)
 
-![](<../../.gitbook/assets/image (118).png>)
+
+![](<../../.gitbook/assets/image (131).png>)
+
+![](<../../.gitbook/assets/image (132).png>)
+
+![](<../../.gitbook/assets/image (133).png>)
 
 
 
 ![](<../../.gitbook/assets/image (134).png>)
 
-![](<../../.gitbook/assets/image (120).png>)
-
-![](<../../.gitbook/assets/image (112).png>)
 
 
-
-![](<../../.gitbook/assets/image (122).png>)
-
-
-
-## 1. 전처리 작업 
+## 1. 전처리 작업&#x20;
 
 ### Rawdata QC 및 전처리 파트 참고( [Rawdata QC 및 전처리](../untitled.md))
 
@@ -120,18 +120,18 @@ RNA 용 파이프라인 Mapper\
 \--dta-cufflinks : 후속 단에서 cufflinks 라는 quantification 툴 분석을 위한 옵션
 {% endhint %}
 
-## 3. SeqMonk - 기본 분석 / DEG 분석 / GSEA 분 
+## 3. SeqMonk - 기본 분석 / DEG 분석 / GSEA 분&#x20;
 
 Mobaxterm 원격 X 모니터를 이용한 작업\
 \- 해당 작업은 서버상 화면을 불러와 작업 하는 방식 입니다.\
 \
-Seqmonk 파일 실행 
+Seqmonk 파일 실행&#x20;
 
 ```bash
 $ /main/program/SeqMonk/seqmonk
 ```
 
-![초기화면](<../../.gitbook/assets/image (21).png>)
+![초기화면](<../../.gitbook/assets/image (76).png>)
 
 ### Using custom genomes folder 문구 나올 시
 
@@ -158,18 +158,18 @@ Illumina reads count 기반으로 계산을 하기 위해 기본 옵션으로 �
 RNA-Seq Quatntitiation Pipeline 을 설정 하여 -> Run pipeline\
 Probe 기존 정보 덮어 쓰는 문구 -> YES\
 \
- \
+&#x20;\
 Plot -> Data Store Similarity -> PCA tSNE DataTree 등을 Selection 된 probe 에서 확인 가능
 
 \
- \
+&#x20;\
 \
 
 {% endhint %}
 
 ### RNA-QC
 
-![](<../../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (77).png>)
 
 ![](<../../.gitbook/assets/image (78).png>)
 
@@ -177,16 +177,16 @@ Plot -> Data Store Similarity -> PCA tSNE DataTree 등을 Selection 된 probe �
 
 "Data -> Define Probes -> Feature Probe Generator 이후 Quantification 화면  "
 
-![](<../../.gitbook/assets/image (59).png>)
+![](<../../.gitbook/assets/image (80).png>)
 
 
 
-![Exon Region 에 붙은 Reads 들 확인 RNASeq Pipeline 실행 전](<../../.gitbook/assets/image (35).png>)
+![Exon Region 에 붙은 Reads 들 확인 RNASeq Pipeline 실행 전](<../../.gitbook/assets/image (81).png>)
 
 \
 
 
-![RNASeq 으로 Quantification 후](<../../.gitbook/assets/image (90).png>)
+![RNASeq 으로 Quantification 후](<../../.gitbook/assets/image (82).png>)
 
 
 

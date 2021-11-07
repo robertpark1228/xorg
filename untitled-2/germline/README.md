@@ -6,13 +6,13 @@ description: 분석 실습
 
 ## 분석 개요
 
-![](<../../.gitbook/assets/image (51).png>)
+![](<../../.gitbook/assets/image (70).png>)
 
 ## 필수  다운로드
 
 {% tabs %}
 {% tab title="SampleQC" %}
-1\) [https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
+1\) [https://www.bioinformatics.babraham.ac.uk/projects/trim\_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim\_galore/)
 
 2\) [http://www.usadellab.org/cms/?page=trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
 
@@ -43,9 +43,9 @@ apt install vcftools\
 
 ### Preprocessing - 전처리
 
-[https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md](https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md)
+[https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim\_Galore\_User\_Guide.md](https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim\_Galore\_User\_Guide.md)
 
-#### Trim_galore 
+#### Trim\_galore&#x20;
 
 ```
 $ trim_galore --trim1 --illumina --paired [file1] [file2] -O [OUTPUT_FOLDER] -j [동시에 일 코어 숫자]
@@ -55,7 +55,7 @@ $ trim_galore --trim1 --illumina --paired [file1] [file2] -O [OUTPUT_FOLDER] -j 
 Paired End  및 일루미나 데이터 기준
 {% endhint %}
 
-### Mapping - 맵핑작업 
+### Mapping - 맵핑작업&#x20;
 
 #### BWA Mapping / Sorting 동시작업
 
@@ -67,11 +67,11 @@ $ bwa mem -M -t 16 -R "@RG\tID:TEST_1\tSM:TEST_1\tPL:ILLUMINA" Ref_file read_1.f
 \-M : GATK Markduplicate 분석을 위함 \
 \-t : 코어수 (동시에 일할 코어수)\
 \-R : ReadGroup (샘플 이름)\
-Ref_file : 래퍼런스 파일 (GRCh37, GRCh38)\
+Ref\_file : 래퍼런스 파일 (GRCh37, GRCh38)\
 read\_1 : read 1번\
 read\_2 : read 2번\
 \-Sb: BAM 파일 Output\
-Sort : Read 를 Chromosome 별로 Sorting 하고 중복 Masking  
+Sort : Read 를 Chromosome 별로 Sorting 하고 중복 Masking &#x20;
 {% endhint %}
 
 ###
@@ -85,12 +85,12 @@ $ java -jar gatk.jar MarkDuplicates REMOVE_DUPLICATES=true ${bam_input} O=${fold
 {% hint style="info" %}
 Markduplicate 기능  \
 REMOVEDUPLICATE=true : Duplicate 없앤 파일 제작\
-CREATE_INDEX=true / bam file index 제작
+CREATE\_INDEX=true / bam file index 제작
 {% endhint %}
 
 ###
 
-### GATK-BQSR 1단계 - 통계치 작성 
+### GATK-BQSR 1단계 - 통계치 작성&#x20;
 
 ```bash
 $ ${gatk_4} BaseRecalibrator -L ${interval_bed} -R ${reference} -I ${folder}/${custom_name}_sorted_MarkDuplicate.bam --known-sites ${gatk4_dbsnp} --known-sites ${gatk4_mills} --known-sites ${gatk4_1000g_indel} --known-sites ${gatk4_1000g_snp} -O ${folder}/${custom_name}_sorted_MarkDuplicate.table
@@ -107,7 +107,7 @@ BaseRecalibrator 기능\
 
 ###
 
-### GATK-BQSR 2단계 - 작성 통계치 적용된 파일 제작  
+### GATK-BQSR 2단계 - 작성 통계치 적용된 파일 제작 &#x20;
 
 ```bash
 $ ${gatk_4} ApplyBQSR -L ${interval_bed} -R ${reference} -I ${folder}/${custom_name}_sorted_MarkDuplicate.bam -bqsr ${folder}/${custom_name}_sorted_MarkDuplicate.table -O ${folder}/${custom_name}_sorted_MarkDuplicate_bqsr.bam
@@ -139,7 +139,7 @@ HaplotypeCaller기능\
 \--native-pair-hmm-threads : 알고리즘 계산시 들어갈 코어 숫자 (숫자)\
 \--ERC GVCF : g.vcf 아웃풋\
 \-G StandardAnnotation : 콜링 알고리즘 옵션\
-\-G AS_StandardAnnotation : 콜링 알고리즘 옵션\
+\-G AS\_StandardAnnotation : 콜링 알고리즘 옵션\
 \-G StandardHCAnnotation : 콜링 알고리즘 옵션\
 \
 ([https://gatk.broadinstitute.org/hc/en-us/articles/360035890551-Allele-specific-annotation-and-filtering-of-germline-short-variants](https://gatk.broadinstitute.org/hc/en-us/articles/360035890551-Allele-specific-annotation-and-filtering-of-germline-short-variants))\
@@ -163,9 +163,9 @@ GenotypeGVCFs 기능\
 
 
 
-### Exome / Target Seq 의 경우 후 처리 방법 
+### Exome / Target Seq 의 경우 후 처리 방법&#x20;
 
-1. vcftools 를 이용한 방법 
+1. vcftools 를 이용한 방법&#x20;
 
 ```bash
 $ vcftools --vcf ${file} --bed ${PWD}/references/6format_grch37_agil_v6.bed --out ${file}_agilent_v6.vcf --recode --keep-INFO-all
@@ -179,7 +179,7 @@ $ vcftools --vcf ${file} --bed ${PWD}/references/6format_grch37_agil_v6.bed --ou
 \--keep-INFO-all: vcf 내용에 변화를 주지 않
 {% endhint %}
 
-   2\. bcftools 를 이용한 방법 (tabix 를 이용하여 vcf 파일 indexing 필수) 
+&#x20;  2\. bcftools 를 이용한 방법 (tabix 를 이용하여 vcf 파일 indexing 필수)&#x20;
 
 ```bash
 $ bcftools norm --threads 40 -f ${ref} ${file} -R ${exome5bed} -O z -o ${file}.agil5.gz
@@ -194,15 +194,17 @@ norm : indel 위치 normalization (노멀라이즈 아래 Figure 참고)\
 \-o : output 파일  \
 ${file} : input 파일 \
 \
-([https://genome.sph.umich.edu/wiki/Variant_Normalization](https://genome.sph.umich.edu/wiki/Variant_Normalization))\
+([https://genome.sph.umich.edu/wiki/Variant\_Normalization](https://genome.sph.umich.edu/wiki/Variant\_Normalization))\
 
 {% endhint %}
 
-![](<../../.gitbook/assets/image (89).png>)
+![](<../../.gitbook/assets/image (65).png>)
 
 ### 기타
 
-## 래퍼런스 파일 다운로드 받는 위치 
+래퍼런스 파일 다운로드 받는 위치\
+
+
 
 [https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0/\
 ](https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0/)

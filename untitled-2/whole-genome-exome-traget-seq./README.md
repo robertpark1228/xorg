@@ -2,12 +2,12 @@
 
 ## Whole Genome/Exome/Target Sequencing
 
-### 1. 연구 주제 정의 
+### 1. 연구 주제 정의&#x20;
 
 1\) Population Study :  Cohort 에서 나타나는 Variants 에 대한 양상 파악, 군집 Vs 군집 대 양상 파악 \
 2\) Individual Case(Cancer)-Control(Normal Tissue) : 한 사람(Individual)에서 여러 샘플을 채취 -> 분석\
 일반적으로 암샘플 분석시 사용\
-3\) 기타 : Trio analysis : 가계 분석 등 ( Rare Disease) 
+3\) 기타 : Trio analysis : 가계 분석 등 ( Rare Disease)&#x20;
 
 
 
@@ -24,9 +24,9 @@
 \
 Haplotype 알츠하이머 예시 APOE SNP 형에 따른 알츠하이머 유병
 
-![](<../../.gitbook/assets/image (85).png>)
+![](<../../.gitbook/assets/image (57).png>)
 
-### 3. 분석 방법 정의 후 
+### 3. 분석 방법 정의 후&#x20;
 
 ### 파이프라인 선정
 
@@ -38,7 +38,7 @@ Haplotype 알츠하이머 예시 APOE SNP 형에 따른 알츠하이머 유병
 
 Germline 분석 후 연구 목적에 맞춰 maf 값 < 0.05, 0.05 > maf > 0.95 : 일반질환(GWAS) 또는 국가별 population 비교 연구의 경우 conserved 한 snp 을 찾어 비교
 
-참)[https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/DNA_Seq_Variant_Calling_Pipeline/](https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/DNA_Seq_Variant_Calling_Pipeline/)
+참)[https://docs.gdc.cancer.gov/Data/Bioinformatics\_Pipelines/DNA\_Seq\_Variant\_Calling\_Pipeline/](https://docs.gdc.cancer.gov/Data/Bioinformatics\_Pipelines/DNA\_Seq\_Variant\_Calling\_Pipeline/)
 
 ####
 
@@ -48,20 +48,20 @@ Mutect2 / Caveman 파이프라인 등 두 개의 bam 파일을 비교 분석 할
 \
 
 
-#### 3.  Trio 분석 : 1번 분석의 확장이며 가계도 중 유전적으로 희귀질환 환자가 있는 경우 
+#### 3.  Trio 분석 : 1번 분석의 확장이며 가계도 중 유전적으로 희귀질환 환자가 있는 경우&#x20;
 
 Germline 분석 후 VCF 를 합쳐 Manual 분석, 일반적으로 maf 값 0.01 이하의 mutation 을 검사.\
 
 
 ### 4. 대표 파이프라인 소개
 
-### 1. GATK4 Germline 파이프라인 
+### 1. GATK4 Germline 파이프라인&#x20;
 
 참고) [https://gatk.broadinstitute.org/hc/en-us/categories/360002302312](https://gatk.broadinstitute.org/hc/en-us/categories/360002302312)
 
 #### 간략) FASTQ -> QC된 FASTQ -> BAM 파일 MAPPING -> MarkDuplicate(PCR 여부) -> Base Quality Score Recalibration(BQSR)-> Haplotype Calling -> Variants Calling -> 추가분
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (58).png>)
 
 ###
 
@@ -69,17 +69,17 @@ Germline 분석 후 VCF 를 합쳐 Manual 분석, 일반적으로 maf 값 0.01 �
 
 #### 간략) FASTQ -> QC된 FASTQ -> BAM 파일 MAPPING -> MarkDuplicate(PCR 여부) -> Base Quality Score Recalibration(BQSR)-> N-T Paired 또는 Normal 환자군 수가 되는 경우 PoN 제작 또는 Tumor Sample 만 있는 경우 공개된 PoN 사용(보증X)  -> 추가분석
 
-![](<../../.gitbook/assets/image (48).png>)
+![](<../../.gitbook/assets/image (62).png>)
 
 ### 5. 기타
 
-Exome 및 Target Seq은 최종 분석 후 bed 또는 gff 를 이용하여 초기 실험 선정시 선택하지 않은 region 을 제거해야 합니다. Short reads 의 특성상 Genome 전체에 mapping 을 하는 구조이기 때문에  목표하지 않는 부분에도 reads 가 붙는 가능성이 높습니다. 
+Exome 및 Target Seq은 최종 분석 후 bed 또는 gff 를 이용하여 초기 실험 선정시 선택하지 않은 region 을 제거해야 합니다. Short reads 의 특성상 Genome 전체에 mapping 을 하는 구조이기 때문에  목표하지 않는 부분에도 reads 가 붙는 가능성이 높습니다.&#x20;
 
 해당 reads 는 False Positive 일 가능성이 크기 때문에 제거를 하나 Exon 에 가깝게 붙은 Variants 의 경우 경험적인 판단이 필요할 수 있습니다.
 
 상용 Exome Kit 의 경우 회사별로 bed 파일이 제공되는 경우가 일반적이며 Exome kit 마다 Target 으로 하는 Coverage Size 가 다르기 때문에 Reads Depth 선정이 잘되어야 합니다.
 
-![](<../../.gitbook/assets/image (83).png>)
+![](<../../.gitbook/assets/image (63).png>)
 
 
 
@@ -93,11 +93,11 @@ Exome 및 Target Seq은 최종 분석 후 bed 또는 gff 를 이용하여 초기
 
 \[분석방법 파이프라인]
 
-참고.) [http://bigd.big.ac.cn/gvm/analysis_standards](http://bigd.big.ac.cn/gvm/analysis_standards)\
+참고.) [http://bigd.big.ac.cn/gvm/analysis\_standards](http://bigd.big.ac.cn/gvm/analysis\_standards)\
 
 
 \[Calling 방법]\
-참고.) [https://www.pnas.org/content/114/40/E8320](https://www.pnas.org/content/114/40/E8320) 
+참고.) [https://www.pnas.org/content/114/40/E8320](https://www.pnas.org/content/114/40/E8320)&#x20;
 
 
 
