@@ -93,3 +93,4 @@
   * [K-P\_Series](11./p\_series.md)
 * [12. Data 분석 효율화](12.-data/README.md)
   * [Untitled](12.-data/untitled.md)
+* [13. 미정리 GITHUB/논문등](13.-github.md)

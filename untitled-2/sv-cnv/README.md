@@ -138,7 +138,7 @@ Annotation & Visualization
 2\) Structural variant detection in cancer genomes: computational challenges and perspectives for precision oncology\
 [https://www.nature.com/articles/s41698-021-00155-6](https://www.nature.com/articles/s41698-021-00155-6)\
 \
-3\) CNV/SV 상세 설\
+3\) CNV/SV 상세 설명 \
 [https://2wordspm.com/2018/05/02/ngs-%eb%8d%b0%ec%9d%b4%ed%84%b0%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%9c-cnv-%eb%b6%84%ec%84%9d/](https://2wordspm.com/2018/05/02/ngs-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-cnv-%EB%B6%84%EC%84%9D/)\
 \
 4\) exome CNV Benchmarking (비교 테스트)
