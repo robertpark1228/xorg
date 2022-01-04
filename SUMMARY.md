@@ -52,6 +52,7 @@
     * [\[RNA-Expression\]HISAT2 / Cufflinks / Cuffdiff CummeRbund](untitled-2/bulk-rna-seq/hisat2-cufflinks-cuffdiff.md)
     * [RNA 분석 관련 문서 모음](untitled-2/bulk-rna-seq/rna.md)
     * [참고 ) RNAseq 통계 모델](untitled-2/bulk-rna-seq/rnaseq.md)
+    * [RNA-GUI 분석툴 메뉴얼](untitled-2/bulk-rna-seq/rna-gui.md)
   * [\[WGBS\]Whole Genome Methylation Sequencing](untitled-2/whole-genome-methylation-sequencing.md)
   * [\[scDNA\]Single Cell DNASeq](untitled-2/single-cell-dnaseq/README.md)
     * [참고자료](untitled-2/single-cell-dnaseq/undefined.md)
