@@ -33,15 +33,13 @@ for (i in libs){
 Run the following command to launch `TCC-GUI` in your local environment, then it will download `TCC-GUI` automatically from github and launch.
 
 ```
-// Some codeshiny::runApp("./TCC-GUI", host="172.36.1.200", port=4444)
-ffd
+shiny::runApp("./TCC-GUI", host="172.36.1.200", port=4444)
 ```
 
 ```
 shiny::runApp("[TCC-GUI 다운받은 폴더]", host = 내서버IP, port = 사용할포트 )
 ```
 
-*
 *
 *
 *
