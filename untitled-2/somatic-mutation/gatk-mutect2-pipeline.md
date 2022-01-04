@@ -7,8 +7,8 @@
 Mutect2 실행\
 1\) BAM 파일 두개 -> Input\
 2\) 대부분 비교 분석 파이프라인\
-3\) ** Tumor with matched normal : "두 개 샘플이 매치 되는 경우"**\
-**4) **[**https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2**](https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2)****\
+3\) **Tumor with matched normal : "두 개 샘플이 매치 되는 경우"**\
+**4)** [**https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2**](https://gatk.broadinstitute.org/hc/en-us/articles/360051306691-Mutect2)****\
 ****
 
 ![](<../../.gitbook/assets/image (93).png>)

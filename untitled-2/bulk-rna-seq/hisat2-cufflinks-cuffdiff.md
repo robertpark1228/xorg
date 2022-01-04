@@ -201,7 +201,7 @@ fpkmMatrix(genes(cuff))
 
 **Reference based transcriptome analysis 에서**
 
-**필요한 tool은 hisat2, cufflinks, samtools 는 필수이며, bowtie, bowtie2 는 위 tool 설치 과정에서 필요할 수 있습니다. **
+**필요한 tool은 hisat2, cufflinks, samtools 는 필수이며, bowtie, bowtie2 는 위 tool 설치 과정에서 필요할 수 있습니다.**&#x20;
 
 **0. Preparing genome data**
 
@@ -213,7 +213,7 @@ fpkmMatrix(genes(cuff))
 
 **genes.gtf : Annotation 정보 file 입니다.**
 
-**잘 연구가 된 model species 같은 경우에는 illumina 에서 제공하는 **[**싸이트**](https://support.illumina.com/sequencing/sequencing\_software/igenome.html)** 에서 다운 받을 수 있습니다.**
+**잘 연구가 된 model species 같은 경우에는 illumina 에서 제공하는** [**싸이트**](https://support.illumina.com/sequencing/sequencing\_software/igenome.html) **에서 다운 받을 수 있습니다.**
 
 **(sequence, annotation 파일 외에도 많은 것들이 압축되어 있기 때문에 서버로 다운받는걸 추천)**
 
@@ -221,9 +221,9 @@ fpkmMatrix(genes(cuff))
 
 **1. Mapping reads to genome**
 
-**\~Mapping 을 진행할 때는 **[**HISAT2**](https://ccb.jhu.edu/software/hisat2/manual.shtml#indexing-a-reference-genome)** program \[1] 을 사용하였습니다.\~**
+**\~Mapping 을 진행할 때는** [**HISAT2**](https://ccb.jhu.edu/software/hisat2/manual.shtml#indexing-a-reference-genome) **program \[1] 을 사용하였습니다.\~**
 
-**Reference 에 reads 를 mapping 하기전에 indexing 을 먼저 해야합니다. **
+**Reference 에 reads 를 mapping 하기전에 indexing 을 먼저 해야합니다.**&#x20;
 
 **\* indexing 이란?**
 
@@ -279,7 +279,7 @@ fpkmMatrix(genes(cuff))
 
 ****\
 ****\
-**\*\*\* 중요한 점 **
+**\*\*\* 중요한 점**&#x20;
 
 **hisat2 mapping 이 끝나면 alignment summary  가 출력 되는데**
 
@@ -293,7 +293,7 @@ fpkmMatrix(genes(cuff))
 **저는 command 뒤에  2>&1  |tee  alignmet.summary 이런식으로 지정을 해줍니다.**
 
 ****\
-**hisat2  -p 8 -x IndexName -1 forward.fastq -2 reverse.fastq -S output.sam  --dta-cufflinks  2>&1  |tee alignmet.summary **
+**hisat2  -p 8 -x IndexName -1 forward.fastq -2 reverse.fastq -S output.sam  --dta-cufflinks  2>&1  |tee alignmet.summary**&#x20;
 
 ****\
 ****\
@@ -302,31 +302,31 @@ fpkmMatrix(genes(cuff))
 
 **37537336 reads; of these:**
 
-**  37537336 (100.00%) were paired; of these:**
+&#x20; **37537336 (100.00%) were paired; of these:**
 
-**    986245 (2.63%) aligned concordantly 0 times**
+&#x20;   **986245 (2.63%) aligned concordantly 0 times**
 
-**    33036211 (88.01%) aligned concordantly exactly 1 time**
+&#x20;   **33036211 (88.01%) aligned concordantly exactly 1 time**
 
-**    3514880 (9.36%) aligned concordantly >1 times**
+&#x20;   **3514880 (9.36%) aligned concordantly >1 times**
 
-**    ----**
+&#x20;   **----**
 
-**    986245 pairs aligned concordantly 0 times; of these:**
+&#x20;   **986245 pairs aligned concordantly 0 times; of these:**
 
-**      112422 (11.40%) aligned discordantly 1 time**
+&#x20;     **112422 (11.40%) aligned discordantly 1 time**
 
-**    ----**
+&#x20;   **----**
 
-**    873823 pairs aligned 0 times concordantly or discordantly; of these:**
+&#x20;   **873823 pairs aligned 0 times concordantly or discordantly; of these:**
 
-**      1747646 mates make up the pairs; of these:**
+&#x20;     **1747646 mates make up the pairs; of these:**
 
-**        1077358 (61.65%) aligned 0 times**
+&#x20;       **1077358 (61.65%) aligned 0 times**
 
-**        579867 (33.18%) aligned exactly 1 time**
+&#x20;       **579867 (33.18%) aligned exactly 1 time**
 
-**        90421 (5.17%) aligned >1 times**
+&#x20;       **90421 (5.17%) aligned >1 times**
 
 **98.56% overall alignment rate**
 
@@ -344,7 +344,7 @@ samtools  sort  -@ 8   -o  output.sort.bam  output.sam
 
 ### &#x20;
 
-**3. Generating transcript assembly **
+**3. Generating transcript assembly**&#x20;
 
 **이후 과정은 Tuxedo protocol \[2] 을 기반으로 진행합니다.**
 
@@ -360,7 +360,7 @@ cufflinks  -p 8  -G genes.gtf  -o output\_directory  output.sort.bam
 
 ****\
 ****\
-**완료되면, 디렉토리 내에 **
+**완료되면, 디렉토리 내에**&#x20;
 
 ****\
 **genes.fpkm\_tracking, isoforms.fpkm\_tracking, skipped.gtf, transcripts.gtf**
