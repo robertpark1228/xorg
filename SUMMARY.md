@@ -11,6 +11,7 @@
   * [Linux 운용 및 기본 기능 소개/실습](1.-linux/linux.md)
   * [기타 : 서버 운용](1.-linux/undefined.md)
   * [R 설치 방법](1.-linux/r.md)
+  * [Linux:scp 사용법](1.-linux/linux-scp.md)
 * [2. 유전학 기초](2./README.md)
   * [유전체학\[유전체학\] Denovo Mutation (DNM) 발생 매커니즘tled](2./denovo-mutation-dnm-tled.md)
   * [House Keeping Gene](2./house-keeping-gene.md)
