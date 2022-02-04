@@ -10,10 +10,16 @@ description: scp 명령어 사용법
 
 사용법
 
-#### scp -rP \[포트번호] \[유저]@\[IP주소] :thumbsup:폴더 또는 파일) (카피될 폴더)
+{% hint style="info" %}
+sdfsdfzx
+{% endhint %}
 
-예시
+##
 
-scp -rP 3030 h   &#x20;
+#### scp -rP \[포트번호] \[유저]@\[IP주소]:(폴더 또는 파일) (카피될 폴더)
+
+예시-
+
+scp -rP 3030 ㅗfsd
 
 &#x20;
